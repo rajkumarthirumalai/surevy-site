@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Citizen Engagement Portal</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header" class="fixed-top header-scrolled">
+        <div class="container d-flex align-items-center">
+    
+          <div class=" me-auto">
+            <h1 class="logo"><a href="index.html">Madurai</a></h1>  
+            <p style="color: white; font-size: x-small;" >Land of Opportunities and Sustainable Living</p>  
+          
+          </div>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+    
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto active" href="index.html#services">Latest Events</a></li>
+              <li><a class="nav-link scrollto" href="index.html#about">LPA</a></li>
+              <li><a class="nav-link scrollto" href="index.html#services">Master Plan</a></li>
+              <li><a class="nav-link scrollto" href="index.html#portfolio">Project Proposal</a></li>
+              <li><a class="nav-link scrollto" href="index.html#team">Land Use Proposal</a></li>
+              <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="#">Drop Down 1</a></li>
+                  <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="#">Deep Drop Down 1</a></li>
+                      <li><a href="#">Deep Drop Down 2</a></li>
+                      <li><a href="#">Deep Drop Down 3</a></li>
+                      <li><a href="#">Deep Drop Down 4</a></li>
+                      <li><a href="#">Deep Drop Down 5</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Drop Down 2</a></li>
+                  <li><a href="#">Drop Down 3</a></li>
+                  <li><a href="#">Drop Down 4</a></li>
+                </ul>
+              </li> -->
+              <li><a class="nav-link scrollto" href="#contact">FeedBack</a></li>
+              <li><a class="getstarted scrollto" href="#about">Citizen Survey</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+    
+        </div>
+      </header>
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact mt-5">
+        <div class="container justify-content-center " data-aos="fade-up">
+            <div class="section-title mt-5">
+                <h2>FEEDBACK FORM</h2>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+                    fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+
+            <div class="row d-flex justify-content-center">
+
+
+                <div class="col-lg-10 mt-5  ">
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <form class="needs-validation was-validated" novalidate="">
+                            <div class="row g-3">
+                                <div class="row mt-5 justify-content-center">
+
+                                    <div class="col-sm-5">
+                                        <label for="user-name" class="form-label">User name</label>
+                                        <input type="text" class="form-control" id="user-name" placeholder="" value=""
+                                            required="">
+                                        <div class="invalid-feedback">
+                                            Valid User name is required.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-5">
+                                        <label for="phone" class="form-label">Phone</label>
+                                        <input type="text" class="form-control" id="phone" placeholder="" value=""
+                                            required="">
+                                        <div class="invalid-feedback">
+                                            Valid Phone Number is required.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-5 justify-content-center">
+
+                                    <div class="col-md-2 ">
+                                        <label for="age" class="form-label">Age</label>
+                                        <input type="text" class="form-control" id="age" placeholder="" value=""
+                                            required="">
+                                        <div class="invalid-feedback">
+                                            Valid Age is required.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 ">
+                                        <label for="country" class="form-label">Gender</label>
+
+                                        <div class="form-check ">
+                                            <input id="credit" name="gender" type="radio" class="form-check-input"
+                                                value="male" checked="" required="">
+                                            <label class="form-check-label" for="credit">male</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input id="debit" name="gender" type="radio" class="form-check-input"
+                                                value="female" required="">
+                                            <label class="form-check-label" for="debit">female</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <label for="state" class="form-label">Occupation</label>
+                                        <select class="form-select" id="state" required="">
+                                            <option value="">Choose...</option>
+                                            <option value="teacher">Teacher</option>
+                                            <option value="software-engineer">Software Engineer</option>
+                                            <option value="nurse">Nurse</option>
+                                            <option value="doctor">Doctor</option>
+                                            <option value="salesperson">Salesperson</option>
+                                            <option value="artist">Artist</option>
+                                            <option value="chef">Chef</option>
+                                            <option value="lawyer">Lawyer</option>
+                                            <option value="writer">Writer</option>
+                                            <option value="farmer">Farmer</option>
+                                            <option value="librarian">Librarian</option>
+                                            <option value="social-worker">Social Worker</option>
+                                            <option value="scientist">Scientist</option>
+                                            <option value="construction-worker">Construction Worker</option>
+                                            <option value="fitness-trainer">Fitness Trainer</option>
+                                            <option value="archaeologist">Archaeologist</option>
+                                            <option value="dancer">Dancer</option>
+                                            <option value="weaver">Weaver</option>
+                                            <option value="fisherman">Fisherman</option>
+                                            <option value="priest">Priest</option>
+                                            <option value="auto-driver">Auto Rickshaw Driver</option>
+                                            <option value="housemaid">Housemaid</option>
+                                            <option value="business-owner">Business Owner</option>
+                                            <option value="film-actor-actress">Film Actor/Actress</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid Occupation
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <label for="zip" class="form-label">Area</label>
+                                        <input type="text" class="form-control" id="zip" placeholder="" required="">
+                                        <div class="invalid-feedback">
+                                            Area required.
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <hr class="my-4">
+                            <div class="row my-3 justify-content-center">
+                                <!-- 1st question -->
+                                <div class="col-md-5">
+                                    <label for="restoring-lakes" class="form-label">1. Do you feel that restoring lakes
+                                        and water bodies will help improve the beauty of the LPA?</label>
+                                    <div class="form-check">
+                                        <input id="agree" name="restoring-lakes" type="radio" class="form-check-input"
+                                            value="agree" required>
+                                        <label class="form-check-label" for="agree">A. Strongly agree</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="somewhat-agree" name="restoring-lakes" type="radio"
+                                            class="form-check-input" value="somewhat-agree" required>
+                                        <label class="form-check-label" for="somewhat-agree">B. Agree</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="disagree" name="restoring-lakes" type="radio"
+                                            class="form-check-input" value="disagree" required>
+                                        <label class="form-check-label" for="disagree">C. Somewhat agree</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="strongly-disagree" name="restoring-lakes" type="radio"
+                                            class="form-check-input" value="strongly-disagree" required>
+                                        <label class="form-check-label" for="strongly-disagree">D. Disagree</label>
+                                    </div>
+                                </div>
+
+                                <!-- 2nd question -->
+                                <div class="col-md-5">
+                                    <label for="buffer-for-water-body" class="form-label">2. Do you feel that
+                                        providing a buffer for a water body will help in improving its
+                                        quality?</label>
+                                    <div class="form-check">
+                                        <input id="buffer-yes" name="buffer-for-water-body" type="radio"
+                                            class="form-check-input" value="yes" required>
+                                        <label class="form-check-label" for="buffer-yes">A. Yes</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="buffer-no" name="buffer-for-water-body" type="radio"
+                                            class="form-check-input" value="no" required>
+                                        <label class="form-check-label" for="buffer-no">B. No</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="buffer-not-sure" name="buffer-for-water-body" type="radio"
+                                            class="form-check-input" value="not-sure" required>
+                                        <label class="form-check-label" for="buffer-not-sure">C. Not
+                                            sure</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- 3rd question -->
+                            <div class="row my-3 justify-content-center">
+                                <div class="col-md-5">
+                                    <label for="proposed-road-network" class="form-label">3. Do you feel that the
+                                        Proposed Road network will improve help in improving its quality?</label>
+                                    <div class="form-check">
+                                        <input id="road-network-very-important" name="proposed-road-network"
+                                            type="radio" class="form-check-input" value="very-important" required>
+                                        <label class="form-check-label" for="road-network-very-important">A. Very
+                                            Important</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="road-network-important" name="proposed-road-network" type="radio"
+                                            class="form-check-input" value="important" required>
+                                        <label class="form-check-label" for="road-network-important">B.
+                                            Important</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="road-network-somewhat-important" name="proposed-road-network"
+                                            type="radio" class="form-check-input" value="somewhat-important" required>
+                                        <label class="form-check-label" for="road-network-somewhat-important">C.
+                                            Somewhat Important</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="road-network-not-important" name="proposed-road-network" type="radio"
+                                            class="form-check-input" value="not-important" required>
+                                        <label class="form-check-label" for="road-network-not-important">D. Not
+                                            Important</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="road-network-not-relevant" name="proposed-road-network" type="radio"
+                                            class="form-check-input" value="not-relevant" required>
+                                        <label class="form-check-label" for="road-network-not-relevant">E. Not
+                                            Relevant</label>
+                                    </div>
+                                </div>
+
+                                <!-- 4th question -->
+                                <div class="col-md-5">
+                                    <label for="infrastructure-for-cycling-walking" class="form-label">4. Do you feel
+                                        that creating infrastructure suitable for cycling and walking can help create
+                                        safe streets for school children and women?</label>
+                                    <div class="form-check">
+                                        <input id="cycling-walking-strongly-agree"
+                                            name="infrastructure-for-cycling-walking" type="radio"
+                                            class="form-check-input" value="strongly-agree" required>
+                                        <label class="form-check-label" for="cycling-walking-strongly-agree">A. Strongly
+                                            agree</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="cycling-walking-agree" name="infrastructure-for-cycling-walking"
+                                            type="radio" class="form-check-input" value="agree" required>
+                                        <label class="form-check-label" for="cycling-walking-agree">B. Agree</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="cycling-walking-somewhat-agree"
+                                            name="infrastructure-for-cycling-walking" type="radio"
+                                            class="form-check-input" value="somewhat-agree" required>
+                                        <label class="form-check-label" for="cycling-walking-somewhat-agree">C. Somewhat
+                                            agree</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="cycling-walking-disagree" name="infrastructure-for-cycling-walking"
+                                            type="radio" class="form-check-input" value="disagree" required>
+                                        <label class="form-check-label" for="cycling-walking-disagree">D.
+                                            Disagree</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="cycling-walking-strongly-disagree"
+                                            name="infrastructure-for-cycling-walking" type="radio"
+                                            class="form-check-input" value="strongly-disagree" required>
+                                        <label class="form-check-label" for="cycling-walking-strongly-disagree">E.
+                                            Strongly Disagree</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 5th question -->
+                            <div class="row my-3 justify-content-center">
+                                <div class="col-md-5">
+                                    <label for="greening-and-green-spaces" class="form-label">5. Greening of Sanjeevi
+                                        Malai and increasing green spaces in LPA through parks and open spaces will
+                                        enhance its beauty and overall happiness in town. Do you agree with this
+                                        statement?</label>
+                                    <div class="form-check">
+                                        <input id="greening-strongly-agree" name="greening-and-green-spaces"
+                                            type="radio" class="form-check-input" value="strongly-agree" required>
+                                        <label class="form-check-label" for="greening-strongly-agree">A. Strongly
+                                            agree</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="greening-agree" name="greening-and-green-spaces" type="radio"
+                                            class="form-check-input" value="agree" required>
+                                        <label class="form-check-label" for="greening-agree">B. Agree</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="greening-somewhat-agree" name="greening-and-green-spaces"
+                                            type="radio" class="form-check-input" value="somewhat-agree" required>
+                                        <label class="form-check-label" for="greening-somewhat-agree">C. Somewhat
+                                            agree</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="greening-disagree" name="greening-and-green-spaces" type="radio"
+                                            class="form-check-input" value="disagree" required>
+                                        <label class="form-check-label" for="greening-disagree">D. Disagree</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="greening-strongly-disagree" name="greening-and-green-spaces"
+                                            type="radio" class="form-check-input" value="strongly-disagree" required>
+                                        <label class="form-check-label" for="greening-strongly-disagree">E. Strongly
+                                            Disagree</label>
+                                    </div>
+                                </div>
+
+                                <!-- 6th question -->
+                                <div class="col-md-5">
+                                    <label for="heritage-and-cultural-identity" class="form-label">6. How important is
+                                        the unique heritage and cultural character of the LPA must be protected to
+                                        maintain and preserve the cultural identity of Rajapalayam?</label>
+                                    <div class="form-check">
+                                        <input id="heritage-very-important" name="heritage-and-cultural-identity"
+                                            type="radio" class="form-check-input" value="very-important" required>
+                                        <label class="form-check-label" for="heritage-very-important">A. Very
+                                            Important</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="heritage-important" name="heritage-and-cultural-identity"
+                                            type="radio" class="form-check-input" value="important" required>
+                                        <label class="form-check-label" for="heritage-important">B. Important</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="heritage-somewhat-important" name="heritage-and-cultural-identity"
+                                            type="radio" class="form-check-input" value="somewhat-important" required>
+                                        <label class="form-check-label" for="heritage-somewhat-important">C. Somewhat
+                                            Important</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="heritage-not-important" name="heritage-and-cultural-identity"
+                                            type="radio" class="form-check-input" value="not-important" required>
+                                        <label class="form-check-label" for="heritage-not-important">D. Not
+                                            Important</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="heritage-not-relevant" name="heritage-and-cultural-identity"
+                                            type="radio" class="form-check-input" value="not-relevant" required>
+                                        <label class="form-check-label" for="heritage-not-relevant">E. Not
+                                            Relevant</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 7th question -->
+                            <div class="row my-3 justify-content-center">
+                                <div class="col-md-5">
+                                    <label for="preserve-festival-spaces" class="form-label">7. How important do you
+                                        feel it is to preserve the festival spaces and religious gathering spaces in
+                                        town?</label>
+                                    <div class="form-check">
+                                        <input id="festival-preserve-very-important" name="preserve-festival-spaces"
+                                            type="radio" class="form-check-input" value="very-important" required>
+                                        <label class="form-check-label" for="festival-preserve-very-important">A. Very
+                                            Important</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="festival-preserve-important" name="preserve-festival-spaces"
+                                            type="radio" class="form-check-input" value="important" required>
+                                        <label class="form-check-label" for="festival-preserve-important">B.
+                                            Important</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="festival-preserve-somewhat-important" name="preserve-festival-spaces"
+                                            type="radio" class="form-check-input" value="somewhat-important" required>
+                                        <label class="form-check-label" for="festival-preserve-somewhat-important">C.
+                                            Somewhat Important</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="festival-preserve-not-important" name="preserve-festival-spaces"
+                                            type="radio" class="form-check-input" value="not-important" required>
+                                        <label class="form-check-label" for="festival-preserve-not-important">D. Not
+                                            Important</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="festival-preserve-not-relevant" name="preserve-festival-spaces"
+                                            type="radio" class="form-check-input" value="not-relevant" required>
+                                        <label class="form-check-label" for="festival-preserve-not-relevant">E. Not
+                                            Relevant</label>
+                                    </div>
+                                </div>
+
+                                <!-- 8th question -->
+                                <div class="col-md-5">
+                                    <label for="switching-to-solar-energy" class="form-label">8. Do you feel that
+                                        switching to solar energy could reduce the cost of living?</label>
+                                    <div class="form-check">
+                                        <input id="solar-energy-strongly-agree" name="switching-to-solar-energy"
+                                            type="radio" class="form-check-input" value="strongly-agree" required>
+                                        <label class="form-check-label" for="solar-energy-strongly-agree">A. Strongly
+                                            agree</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="solar-energy-agree" name="switching-to-solar-energy" type="radio"
+                                            class="form-check-input" value="agree" required>
+                                        <label class="form-check-label" for="solar-energy-agree">B. Agree</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="solar-energy-somewhat-agree" name="switching-to-solar-energy"
+                                            type="radio" class="form-check-input" value="somewhat-agree" required>
+                                        <label class="form-check-label" for="solar-energy-somewhat-agree">C. Somewhat
+                                            agree</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="solar-energy-disagree" name="switching-to-solar-energy" type="radio"
+                                            class="form-check-input" value="disagree" required>
+                                        <label class="form-check-label" for="solar-energy-disagree">D. Disagree</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="solar-energy-strongly-disagree" name="switching-to-solar-energy"
+                                            type="radio" class="form-check-input" value="strongly-disagree" required>
+                                        <label class="form-check-label" for="solar-energy-strongly-disagree">E. Strongly
+                                            Disagree</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 9th question -->
+                            <div class="row my-3 justify-content-center">
+                                <div class="col-md-5">
+                                    <label for="grid-connected-rooftop-solar" class="form-label">9. Do you feel that
+                                        grid connected rooftop solar is an alternative to UPS battery backup?</label>
+                                    <div class="form-check">
+                                        <input id="rooftop-solar-strongly-agree" name="grid-connected-rooftop-solar"
+                                            type="radio" class="form-check-input" value="strongly-agree" required>
+                                        <label class="form-check-label" for="rooftop-solar-strongly-agree">A. Strongly
+                                            agree</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="rooftop-solar-agree" name="grid-connected-rooftop-solar" type="radio"
+                                            class="form-check-input" value="agree" required>
+                                        <label class="form-check-label" for="rooftop-solar-agree">B. Agree</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="rooftop-solar-somewhat-agree" name="grid-connected-rooftop-solar"
+                                            type="radio" class="form-check-input" value="somewhat-agree" required>
+                                        <label class="form-check-label" for="rooftop-solar-somewhat-agree">C. Somewhat
+                                            agree</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="rooftop-solar-disagree" name="grid-connected-rooftop-solar"
+                                            type="radio" class="form-check-input" value="disagree" required>
+                                        <label class="form-check-label" for="rooftop-solar-disagree">D. Disagree</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="rooftop-solar-strongly-disagree" name="grid-connected-rooftop-solar"
+                                            type="radio" class="form-check-input" value="strongly-disagree" required>
+                                        <label class="form-check-label" for="rooftop-solar-strongly-disagree">E.
+                                            Strongly Disagree</label>
+                                    </div>
+                                </div>
+
+                                <!-- 10th question -->
+                                <div class="col-md-5">
+                                    <label for="land-pooling-for-planned-layouts" class="form-label">10. Will you be
+                                        willing to participate in pooling the land parcels in exchange for planned
+                                        layouts and better infrastructure?</label>
+                                    <div class="form-check">
+                                        <input id="land-pooling-yes" name="land-pooling-for-planned-layouts"
+                                            type="radio" class="form-check-input" value="yes" required>
+                                        <label class="form-check-label" for="land-pooling-yes">A. Yes</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="land-pooling-no" name="land-pooling-for-planned-layouts" type="radio"
+                                            class="form-check-input" value="no" required>
+                                        <label class="form-check-label" for="land-pooling-no">B. No</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 11th question -->
+                            <div class="row my-3 justify-content-center">
+                                <div class="col-md-5">
+                                    <label for="groundwater-recharge-conservation" class="form-label">11. Do you feel
+                                        that areas crucial for ground water recharge should be conserved with
+                                        appropriate rules and regulation?</label>
+                                    <div class="form-check">
+                                        <input id="groundwater-conservation-strongly-agree"
+                                            name="groundwater-recharge-conservation" type="radio"
+                                            class="form-check-input" value="strongly-agree" required>
+                                        <label class="form-check-label" for="groundwater-conservation-strongly-agree">A.
+                                            Strongly agree</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="groundwater-conservation-agree"
+                                            name="groundwater-recharge-conservation" type="radio"
+                                            class="form-check-input" value="agree" required>
+                                        <label class="form-check-label" for="groundwater-conservation-agree">B.
+                                            Agree</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="groundwater-conservation-somewhat-agree"
+                                            name="groundwater-recharge-conservation" type="radio"
+                                            class="form-check-input" value="somewhat-agree" required>
+                                        <label class="form-check-label" for="groundwater-conservation-somewhat-agree">C.
+                                            Somewhat agree</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="groundwater-conservation-disagree"
+                                            name="groundwater-recharge-conservation" type="radio"
+                                            class="form-check-input" value="disagree" required>
+                                        <label class="form-check-label" for="groundwater-conservation-disagree">D.
+                                            Disagree</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="groundwater-conservation-strongly-disagree"
+                                            name="groundwater-recharge-conservation" type="radio"
+                                            class="form-check-input" value="strongly-disagree" required>
+                                        <label class="form-check-label"
+                                            for="groundwater-conservation-strongly-disagree">E. Strongly
+                                            Disagree</label>
+                                    </div>
+                                </div>
+
+                                <!-- 12th question -->
+                                <div class="col-md-5">
+                                    <label for="priority-projects" class="form-label">12. What among the following
+                                        projects do you feel need to be prioritized the most to achieve the vision of
+                                        the town?</label>
+                                    <!-- Here you can provide checkboxes or a dropdown for project options -->
+                                    <!-- Example: -->
+                                    <div class="form-check">
+                                        <input id="project-option1" name="priority-projects[]" type="checkbox"
+                                            class="form-check-input" value="project1">
+                                        <label class="form-check-label" for="project-option1">Project 1</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="project-option2" name="priority-projects[]" type="checkbox"
+                                            class="form-check-input" value="project2">
+                                        <label class="form-check-label" for="project-option2">Project 2</label>
+                                    </div>
+                                    <!-- Add more project options as needed -->
+                                </div>
+                            </div>
+
+                            <!-- 13th question -->
+                            <div class="row my-3 justify-content-center">
+                                <div class="col-md-10">
+                                    <label for="feedback-comments" class="form-label">13. Any other thoughts and
+                                        feedback on the master plan? Please specify.</label>
+                                    <textarea id="feedback-comments" name="feedback-comments" class="form-control"
+                                        rows="4" required></textarea>
+                                </div>
+                                <hr class="my-4">
+                                <div class="col-md-10">
+
+                                    <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to
+                                        checkout</button>
+                                </div>
+                            </div>
+
+
+                        </form>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Contact Section -->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

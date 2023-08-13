@@ -111,12 +111,10 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
+  background: rgba(40, 58, 90, 0.9);
+
 }
 
-#header.header-scrolled,
-#header.header-inner-pages {
-  background: rgba(40, 58, 90, 0.9);
-}
 
 #header .logo {
   font-size: 30px;
@@ -520,7 +518,10 @@ section {
   background-color: #f3f5fa;
 }
 
-
+.Latest-section-title {
+  text-align: left;
+  padding-bottom: 30px;
+}
 .section-title {
   text-align: center;
   padding-bottom: 30px;
@@ -863,10 +864,6 @@ section {
   margin-top: 6px;
   border: 2px solid #47b2e4;
 }
-.social-media-title{
-
-}
-
 
 
 .services .icon-box {
@@ -875,6 +872,7 @@ section {
   transition: all ease-in-out 0.4s;
   background: #fff;
 }
+
 
 .services .icon-box .icon {
   margin-bottom: 10px;
@@ -1431,6 +1429,13 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact .form-control{
+    border: none;
+    border-bottom: 1px solid; /* Bottom border */
+    border-radius: 0; /* Remove rounded corners */
+    box-shadow: none; /* Remove any box shadow */
+    padding-bottom: 15px;
+}
 .contact .info {
   border-top: 3px solid #47b2e4;
   border-bottom: 3px solid #47b2e4;
@@ -1514,7 +1519,7 @@ section {
 }
 
 .contact .php-email-form .form-group {
-  padding-bottom: 8px;
+  padding-bottom: 2px;
 }
 
 .contact .php-email-form .validate {
@@ -1571,15 +1576,14 @@ section {
 }
 
 .contact .php-email-form label {
-  padding-bottom: 8px;
+  padding-bottom: 2px;
 }
 
-.contact .php-email-form input,
+/* .contact .php-email-form input, */
 .contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
-  border-radius: 4px;
 }
 
 .contact .php-email-form input:focus,
@@ -1587,9 +1591,9 @@ section {
   border-color: #47b2e4;
 }
 
-.contact .php-email-form input {
+/* .contact .php-email-form input {
   height: 44px;
-}
+} */
 
 .contact .php-email-form textarea {
   padding: 10px 12px;
