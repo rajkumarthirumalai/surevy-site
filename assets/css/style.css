@@ -393,12 +393,12 @@ h6 {
 }
 
 #hero .container {
-  padding-top: 72px;
+  padding-top: 62px;
 }
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
+  font-size: 41px;
   font-weight: 700;
   line-height: 56px;
   color: #fff;
@@ -479,9 +479,13 @@ h6 {
   }
 
   #hero h2 {
+    color: white;
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+  }
+  #hero h3{
+    color: white;
   }
 
   #hero .hero-img img {
@@ -1867,6 +1871,16 @@ section {
 /*--------------------------------------------------------------
 # profile Us
 --------------------------------------------------------------*/
+.profile{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.demography{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .profile .content h3 {
   font-weight: 600;
   font-size: 26px;
