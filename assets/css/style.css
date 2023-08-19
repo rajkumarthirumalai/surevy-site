@@ -257,6 +257,149 @@ h6 {
   visibility: visible;
 }
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border: 1px solid white;
+  padding: 8px;
+  text-align: center;
+}
+.industry th{
+  border: 1px solid #ff4d4d;
+}
+.industry td{
+  border: 1px solid #ff4d4d;
+}
+.td-values{
+  background-color: #ff4d4d;
+  font-weight: bold;
+}
+.buffer-tab th{
+  background-color: #cac1c1;
+}
+.td-title{
+  background-color: #cac1c1;
+}
+.td-head{
+  border: none;
+}
+.plan-2041 th, .plan-2041 td{
+  border: 1px solid white;
+}
+.plan-2041-td:last-child{
+  background-color: #7fa1dd;
+  color: white;
+}
+.plan-2041 tr:not(:last-child) td:nth-child(3){
+  background-color: rgb(202, 195, 195);
+}
+.plan-2041 tr:not(:last-child) td:nth-child(4){
+  background-color: rgb(163, 184, 226);
+}
+.plan-2041 tr:not(:last-child) td:nth-child(7){
+  background-color: rgb(197, 232, 182);
+}
+.plan-2041-head{
+  background-color: #7fa1dd;
+  color: white
+}
+.plan-2041-td:nth-child(even){
+  background-color: #c9d5e8;
+}
+.pp-head{
+  background-color: #7fa1dd;
+  color: white
+}
+.pp:nth-child(even){
+  background-color: #c9d5e8;
+}
+.pp-tab .req{
+  background-color: #f4cfcf;
+}
+.pp-tab th, .pp-tab td{
+  border: 1px solid white;
+
+}
+.sc-head{
+  background-color: #7fa1dd;
+  color: white
+}
+.sc-tab th, .sc-tab td {
+  border: 1px solid white;
+}
+.sc:nth-child(even){
+  background-color: #c9d5e8;
+}
+.industry tr:first-child{
+  background-color: #ff4d4d;
+  color: white;
+}
+.city-profile tr:nth-child(odd) {
+  background-color: pink;
+}
+.city-profile tr:nth-child(even) {
+  background-color: white;
+}
+.mind-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+}
+
+.center-circle {
+  width: 150px;
+  height: 150px;
+  background-color: pink;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.square {
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.top {
+  top: -100px;
+  left: 50%;
+}
+
+.right-top {
+  top: 20%;
+  left: 330px;
+}
+
+.right-bottom {
+  bottom: -135px;
+  left: 225%;
+}
+
+.bottom {
+  bottom: -185px;
+  left: 35%;
+}
+
+.left-bottom {
+  bottom: 60%;
+  right: 100px;
+}
+
+.left-top {
+  top: 60%;
+  right: 85px;
+}
+.font-weight-bold{
+  font-weight: bold;
+}
+
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
