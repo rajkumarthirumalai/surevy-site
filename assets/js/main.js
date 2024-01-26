@@ -287,3 +287,34 @@ $(function() {
     }
 
 })
+
+
+let translations;
+
+function loadLanguageFile(languageCode) {
+  console.log("codeee",languageCode);
+  return fetch(`assets/lng/${languageCode}.json`)
+    .then(response => response.json())
+    .then(data => {
+      translations = data;
+      updateUI();
+    })
+    .catch(error => console.error('Error loading language file', error));
+}
+
+function updateUI() {
+  const elements = document.querySelectorAll('[data-i18n]');
+  elements.forEach(element => {
+    const key = element.getAttribute('data-i18n');
+    element.textContent = translations[key] || key;
+  });
+}
+
+function changeLanguage(languageCode) {
+  loadLanguageFile(languageCode);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const defaultLanguage = 'en';
+  loadLanguageFile(defaultLanguage);
+});

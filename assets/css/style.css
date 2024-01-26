@@ -1077,7 +1077,7 @@ section {
 .cta {
   background: linear-gradient(rgba(40, 58, 90, 0.541), rgba(40, 58, 90, 0.678)), url("../img/maduraiCurrent/18.jpeg") fixed center center;
   background-size: cover;
-  padding: 120px 0;
+  padding: 150px 0;
 }
 
 .cta h1 {
@@ -2140,4 +2140,12 @@ a:hover {
 .owl-2-style .owl-dots .owl-dot:active,
 .owl-2-style .owl-dots .owl-dot:focus {
   outline: none;
+}
+.overflowScroller{
+  overflow: auto;
+  max-height: 18vh; /* You can adjust the max-height value as needed */
+}
+.overflowScroller2{
+  overflow: auto;
+  max-height: 25vh; /* You can adjust the max-height value as needed */
 }

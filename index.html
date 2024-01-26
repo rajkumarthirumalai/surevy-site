@@ -38,65 +38,80 @@
 
 <body>
 
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top ">
+    <!-- Header Section -->
+    <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
             <div class="me-auto">
-                <h1 class="logo"><a href="index.html">Madurai</a></h1>
-                <p style="color: white; font-size: 10px;">Transform sleepless city with enduring vision</p>
-
+                <h1 class="logo"><a href="index.html" data-i18n="madurai">Madurai</a></h1>
+                <p style="color: white; font-size: 10px;" data-i18n="transform_message">Transform sleepless city with
+                    enduring vision</p>
             </div>
+
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="#profile">Profile</a></li>
-                    <li class="dropdown"><a href="#"><span>Master Plan 2021 -2041</span> <i
-                                class="bi bi-chevron-down"></i></a>
+                    <!-- Menu Items -->
+                    <li><a class="nav-link scrollto active" href="#profile" data-i18n="profile">Profile</a></li>
+                    <li class="dropdown">
+                        <a href="#" data-i18n="master_plan">
+                            <span data-i18n="master_plan">Master Plan 2021-2041</span> <i
+                                class="bi bi-chevron-down"></i>
+                        </a>
                         <ul>
-                            <li><a href="#Master-plan">What is Master Plan</a></li>
-                            <li><a href="#planning-area">Planning Area</a></li>
-                            <li><a href="#demography">Demography</a></li>
-                            <li><a href="#spatial-growth">Spatial Growth</a></li>
-                            <li><a href="#vision">vision</a></li>
+                            <li><a href="#Master-plan" data-i18n="what_is_master_plan">What is Master Plan</a></li>
+                            <li><a href="#planning-area" data-i18n="planning_area">Planning Area</a></li>
+                            <li><a href="#demography" data-i18n="demography">Demography</a></li>
+                            <li><a href="#spatial-growth" data-i18n="spatial_growth">Spatial Growth</a></li>
+                            <li><a href="#vision" data-i18n="vision">Vision</a></li>
                         </ul>
                     </li>
-                    <li><a class="nav-link scrollto" href="#media">Media</a></li>
-                    <li><a class="nav-link scrollto" href="#project-proposal">Project Proposal</a></li>
-                    <li><a class="nav-link scrollto" href="#landuse-proposal">Land Use Proposal</a></li>
+                    <li><a class="nav-link scrollto" href="#media" data-i18n="media">Media</a></li>
+                    <li><a class="nav-link scrollto" href="#project-proposal" data-i18n="project_proposal">Project
+                            Proposal</a></li>
+                    <li><a class="nav-link scrollto" href="#landuse-proposal" data-i18n="landuse_proposal">Land Use
+                            Proposal</a></li>
+                    <li><a class="nav-link scrollto" href="#contact" data-i18n="feedback">Feedback</a></li>
+                    <li><a class="getstarted scrollto" href="survey-form.html" data-i18n="citizen_survey">Citizen
+                            Survey</a></li>
 
-                    <li><a class="nav-link scrollto" href="#contact">FeedBack</a></li>
-                    <li><a class="getstarted scrollto" href="survey-form.html">Citizen Survey</a></li>
+                    <!-- Language Selector -->
+                    <!-- <li>
+                        <select id="language-selector" class="form-select mx-4"
+                            style="border-radius: 25px; background-color: #37517e ;border:1px #47b2e4 solid; color: white;"
+                            onchange="changeLanguage(this.value)">
+                            <option value="en" data-i18n="english">English</option>
+                            <option value="ta" data-i18n="tamil">Tamil</option>
+                        </select>
+                    </li> -->
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
-
         </div>
     </header><!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center">
+    <section id="hero" class="d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
 
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
-                    data-aos="fade-up" data-aos-delay="200">
-                    <h1>Madurai Master Plan 2021-2041</h1>
-                    <h3 style="color: rgb(255, 255, 255); font-weight: bolder;">Transform sleepless city with enduring
-                        vision
-                    </h3>
+                <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1">
+                    <h1 data-i18n="madurai_master_plan">Madurai Master Plan 2021-2041</h1>
+                    <h3 style="color: rgb(255, 255, 255); font-weight: bolder;" data-i18n="transform_message">Transform
+                        sleepless city with enduring vision</h3>
                     <div class="d-flex justify-content-center justify-content-lg-start">
-                        <a href="survey-form.html" class="btn-get-started scrollto">Citizen Survey</a>
+                        <a href="survey-form.html" class="btn-get-started scrollto" data-i18n="citizen_survey">Citizen
+                            Survey</a>
                         <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i
-                                class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+                            class="bi bi-play-circle"></i><span data-i18n="watch_video">Watch Video</span></a> -->
                     </div>
                 </div>
             </div>
-
         </div>
 
     </section><!-- End Hero -->
+
 
     <main id="main">
         <!-- profile End  Section -->
@@ -104,209 +119,209 @@
         <section id="profile" class="profile about">
             <div class="container" data-aos="fade-up">
 
-                <div class="section-title">
-                    <h2>Profile</h2>
+                <!-- Section Title -->
+                <div class="section-title" data-aos="fade-up">
+                    <h2 data-i18n="profile">Profile</h2>
                 </div>
+
+                <!-- Container -->
                 <div class="container" data-aos="fade-up">
 
-                    <!-- <div class="section-title">
-                        <h2>About your LPA</h2>
-                    </div> -->
-
-                    <div class="row content ">
-                        <!-- <h4>
-                            Master Plan is a comprehensive document intended<br /> to guide the development of an urban
-                            area.
-                        </h4> -->
+                    <!-- Content Row -->
+                    <div class="row content">
+                        <!-- Sub-section Row -->
                         <div class="row">
-
-                            <div class="col-lg-6 ">
-                                <h4>About your LPA</h4>
+                            <!-- Left Column -->
+                            <div class="col-lg-6">
+                                <!-- About your LPA -->
+                                <h4 data-i18n="about_your_lpa">About your LPA</h4>
+                                <!-- LPA Statistics -->
                                 <div class="row p-3 mt-3 border border-warning rounded">
-                                    <div class="col-lg-6">
-                                        Total LPA Area<br>
-                                        <strong><label class="text-warning" for="|">1254.93</label> Sq.km
-                                        </strong>
+                                    <div class="col-lg-6" data-i18n="total_lpa_area">Total LPA Area<br>
+                                        <strong><label class="text-warning" for="|">1254.93</label> Sq.km</strong>
                                     </div>
-                                    <div class="col-lg-6">Total LPA Population<br>
-                                        <strong><label class="text-warning" for="|">22,63,115</label>
-                                        </strong>
+                                    <div class="col-lg-6" data-i18n="total_lpa_population">Total LPA Population<br>
+                                        <strong><label class="text-warning" for="|">22,63,115</label></strong>
                                     </div>
                                 </div>
+
+                                <!-- Municipality Statistics -->
                                 <div class="row p-3 my-3 mx-auto border border-warning rounded">
-                                    <h4>Municipality</h4>
-                                    <div class="row text-align-center align-items-center justify-content-center">
-                                        Area
+                                    <h4 data-i18n="municipality">Municipality</h4>
+                                    <!-- Thirumangalam -->
+                                    <div class="row text-align-center align-items-center justify-content-center pb-3">
+                                        <span data-i18n="area">Area</span> <strong><label class="text-warning"
+                                                for="|">25.95</label> Sq.km</strong>
                                     </div>
-                                    <strong><label class="text-warning" for="|">25.95</label> Sq.km
-                                    </strong>
                                     <div class="col-lg-6" style="border-right: 1px solid #ccc;">
+                                        <!-- Thirumangalam -->
                                         <div class="mt-2">
-                                            Thirumangalam Area<br>
-                                            <strong><label class="text-warning" for="|">25.95</label> Sq.km
-                                            </strong>
+                                            <span data-i18n="thirumangalam_area">Thirumangalam Area</span><br>
+                                            <strong><label class="text-warning" for="|">25.95</label> Sq.km</strong>
                                         </div>
                                         <div class="mt-2">
-                                            Thirumangalam Population<br>
-                                            <strong><label class="text-warning" for="|">51,194 </label>
-                                            </strong>
+                                            <span data-i18n="thirumangalam_population">Thirumangalam
+                                                Population</span><br>
+                                            <strong><label class="text-warning" for="|">51,194 </label></strong>
                                         </div>
                                     </div>
+                                    <!-- Melur -->
                                     <div class="col-lg-6">
                                         <div class="mt-2">
-                                            Melur Area<br>
-                                            <strong><label class="text-warning" for="|">91,211</label> Sq.km
-                                            </strong>
+                                            <span data-i18n="melur_area">Melur Area</span><br>
+                                            <strong><label class="text-warning" for="|">91,211</label> Sq.km</strong>
                                         </div>
                                         <div class="mt-2">
-                                            Melur Population<br>
-                                            <strong><label class="text-warning" for="|">40,017</label>
-                                            </strong>
+                                            <span data-i18n="melur_population">Melur Population</span><br>
+                                            <strong><label class="text-warning" for="|">40,017</label></strong>
                                         </div>
                                     </div>
                                 </div>
+
+                                <!-- Town Panchayat Statistics -->
                                 <div class="row p-3 my-3 mx-auto border border-warning rounded">
-                                    <h4>Town panchayat</h4>
-                                    <div class="col-lg-4"> Area <br>
-                                        <strong><label class="text-warning" for="|">76.11</label> Sq.km
-                                        </strong><br><br>
+                                    <h4 data-i18n="town_panchayat">Town Panchayat</h4>
+                                    <div class="col-lg-4">
+                                        <span data-i18n="area">Area</span> <br>
+                                        <strong><label class="text-warning" for="|">76.11</label> Sq.km</strong><br><br>
                                     </div>
                                     <div class="col-lg-4">
-                                        No of Town Panchayats <br>
-                                        <strong><label class="text-warning" for="|">5</label> <br><br>
-                                        </strong>
+                                        <span data-i18n="number_of_town_panchayats">No of Town Panchayats</span> <br>
+                                        <strong><label class="text-warning" for="|">5</label> <br><br></strong>
                                     </div>
-                                    <div class="col-lg-4"> Population<br>
-                                        <strong><label class="text-warning" for="|">22,63,115</label> <br><br>
-                                        </strong>
+                                    <div class="col-lg-4">
+                                        <span data-i18n="population">Population</span> <br>
+                                        <strong><label class="text-warning" for="|">22,63,115</label> <br><br></strong>
                                     </div>
                                 </div>
+
+                                <!-- Village Panchayat Statistics -->
                                 <div class="row p-3 my-3 mx-auto border border-warning rounded">
-                                    <h4>Village panchayat</h4>
-                                    <div class="col-lg-4"> Area <br>
-                                        <strong><label class="text-warning" for="|">1004.90</label> Sq.km<br><br>
-                                        </strong>
+                                    <h4 data-i18n="village_panchayat">Village Panchayat</h4>
+                                    <div class="col-lg-4" data-i18n="area">
+                                        Area <br>
+                                        <strong><label class="text-warning" for="|">1004.90</label>
+                                            Sq.km<br><br></strong>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-4" data-i18n="number_of_village_panchayats">
                                         No of Village Panchayats <br>
-                                        <strong><label class="text-warning" for="|">316</label> <br><br>
-                                        </strong>
+                                        <strong><label class="text-warning" for="|">316</label> <br><br></strong>
                                     </div>
-                                    <div class="col-lg-4"> Population<br>
-                                        <strong><label class="text-warning" for="|">22,63,115</label> <br><br>
-                                        </strong>
+                                    <div class="col-lg-4" data-i18n="population">
+                                        Population<br>
+                                        <strong><label class="text-warning" for="|">22,63,115</label> <br><br></strong>
                                     </div>
                                 </div>
-                                <a href="./knowmore.html" class="btn-get-started scrollto"></i><span>Know
-                                        more</span></a>
 
+                                <!-- Know More Button -->
+                                <a href="./knowmore.html" class="btn-get-started scrollto"
+                                    data-i18n="know_more"><span>Know more</span></a>
                             </div>
+
+                            <!-- Right Column -->
                             <div class="col-lg-6 mt-4">
-                                <img src="assets/img/webp/image1.webp" class="img-fluid" width="80%" alt="">
-                                <img src="assets/img/webp/image2.webp" class="img-fluid" width="80%" alt="">
-
+                                <!-- Images -->
+                                <img src="assets/img/webp/image1.webp" class="img-fluid" width="60%" alt="">
+                                <img src="assets/img/webp/image2.webp" class="img-fluid" width="60%" alt="">
                             </div>
-
                         </div>
-
                     </div>
 
-                </div>
-                <div class="row content mt-5">
-                    <h4 class="my-5">
-                        Master Plan is a comprehensive document intended<br /> to guide the development of an urban
-                        area.
+                    <!-- Master Plan Description -->
+                    <h4 class="mb-5 text-warning" data-i18n="master_plan_description">
+                        Master Plan is a comprehensive document intended to guide the development of an urban area.
                     </h4>
+
+                    <!-- Additional Content -->
                     <div class="row " style="padding-left: 30px;">
                         <div class="col-lg-6 " style="text-align: left; ">
                             <ul>
-                                <li><i class="ri-check-double-line"></i> <strong>1995 Master Plan –
-                                        Approved</strong>
-                                <li><i class="ri-check-double-line"></i> Total Area – <strong>720.97 Sq.km</strong></li>
+                                <li><i class="ri-check-double-line"></i> <strong data-i18n="1995_master_plan">1995
+                                        Master Plan – Approved</strong></li>
+                                <li><i class="ri-check-double-line"></i> <span data-i18n="total_area">Total Area –
+                                    </span><strong>720.97 Sq.km</strong></li>
                             </ul>
-
                         </div>
                         <div class="col-lg-6" style="text-align: left; ">
                             <ul>
-                                <li><i class="ri-check-double-line"></i><strong> Master Plan 2021 – 2041</strong>
-                                <li><i class="ri-check-double-line"></i> Total Area – <strong>1254.93 Sq.km</strong>
-                                </li>
+                                <li><i class="ri-check-double-line"></i><strong data-i18n="master_plan_2021_2041">Master
+                                        Plan 2021 – 2041</strong></li>
+                                <li><i class="ri-check-double-line"></i> <span data-i18n="total_area">Total Area –
+                                    </span><strong>1254.93 Sq.km</strong></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="row">
 
+                    <!-- Images -->
+                    <div class="row">
                         <div class="col-lg-6 ">
                             <img src="assets/img/masterplan/pink.png" class="img-fluid" width="80%" alt="">
                         </div>
                         <div class="col-lg-6">
                             <img src="assets/img/masterplan/violet.png" class="img-fluid" width="80%" alt="">
                         </div>
-
                     </div>
+
                 </div>
+
 
             </div>
         </section>
-        <!-- profile End  Section -->
-
-        <!-- =======planning-area  Section ======= -->
+        <!-- Planning Area Section -->
         <section id="planning-area" class="planning-area about">
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
-                    <h2>Planning Area</h2>
+                    <h2 data-i18n="planning_area">Planning Area</h2>
                 </div>
                 <div class="row justify-content-center align-content-center">
                     <div class="col-lg-10 text-center text-lg-start">
                         <img src="assets/img/masterplan/Planningarea.png" class="img-fluid" alt="">
                     </div>
                 </div>
+            </div>
         </section>
+        <!-- Planning Area Section End -->
 
-        <!--planning-area End  Section -->
-        <!-- =======demography  Section ======= -->
+        <!-- Demography Section -->
         <section id="demography" class="demography">
-
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
-                    <h2>demography</h2>
+                    <h2 data-i18n="demography">Demography</h2>
                 </div>
 
                 <div class="row justify-content-center align-content-center">
                     <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
                         <div class="icon-box">
-                            <h4 class="my-2"><a href="">Population Distribution </a></h4>
+                            <h4 class="my-2"><a href="" data-i18n="population_distribution">Population Distribution </a>
+                            </h4>
                             <img src="assets/img/masterplan/demo1.png" class="img-fluid" height="80vh" width="80%"
                                 alt="">
-
                         </div>
                     </div>
 
                     <div class="col-xl-4 col-md-6 mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
                         <div class="icon-box">
-                            <h4 class="my-2"><a href="">Growth Rate</a></h4>
+                            <h4 class="my-2"><a href="" data-i18n="growth_rate">Growth Rate</a></h4>
                             <img src="assets/img/masterplan/demo2.png" class="img-fluid" height="80vh" width="80%"
                                 alt="">
-
                         </div>
                     </div>
 
                     <div class="col-xl-4 col-md-6 mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
                         <div class="icon-box">
-                            <h4 class="my-2"><a href="">Density per Sq.km</a></h4>
+                            <h4 class="my-2"><a href="" data-i18n="density_per_sq_km">Density per Sq.km</a></h4>
                             <img src="assets/img/masterplan/demo3.png" class="img-fluid" height="80vh" width="80%"
                                 alt="">
-
                         </div>
                     </div>
 
                 </div>
-
             </div>
-
         </section>
+        <!-- Demography Section End -->
+
         <!--demography End  Section -->
         <!-- ======= spatial-growth Section ======= -->
         <section id="Master-plan" class="Master-plan why-us" style="background-color: #37517e;">
@@ -314,7 +329,7 @@
 
                 <div class="row">
                     <div class="col-lg-7 d-flex justify-content-center align-items-stretch  order-2 order-lg-1">
-                        
+
                         <div class="content">
                             <h3 class="mx-4 text-light"> <strong>What is Master plan</strong></h3><br>
 
@@ -366,8 +381,8 @@
 
                     <div class="col-lg-4 align-items-stretch order-1 order-lg-2 img-container d-flex flex-column align-items-center my-2 py-2"
                         data-aos="zoom-in" data-aos-delay="150">
-                        <img src="assets/img/masterplan/image-039.jpg" alt="Image 1" class="img-fluid  my-2 py-2 ">
-                        <img src="assets/img/masterplan/existingLanduse.jpg" alt="Image 2" class="img-fluid  my-2 py-2">
+                        <img src="assets/img/masterplan/image-039.jpg" alt="Image 1" width="80%" class="img-fluid  my-2 py-2 ">
+                        <img src="assets/img/masterplan/existingLanduse.jpg" alt="Image 2" width="80%" class="img-fluid  my-2 py-2">
                     </div>
 
                 </div>
@@ -457,52 +472,50 @@
     </section> -->
         <!--project-proposal End  Section -->
         <!-- ======= landuse-proposal Section ======= -->
-        <section id="landuse-proposal" class="landuse-proposal">
-            <section id="profile" class="profile about">
-                <div class="container" data-aos="fade-up">
+        <section id="landuse-proposal" class="profile ">
+            <div class="container" data-aos="fade-up">
 
-                    <div class="section-title">
-                        <h2>landuse-proposal</h2>
-                    </div>
-
-                    <div class="row content justify-content-center align-content-center">
-                        <div class="col-lg-6 justify-content-center align-content-center">
-                            <h4>
-                                Existing Land Use - 2021 </h4>
-                            <img src="assets/img/masterplan/lannduse2021.png" class="img-fluid" width="80%" alt="">
-                        </div>
-                        <div class="col-lg-6 pt-4 pt-lg-0">
-                            <h4>
-                                Proposed Land Use - 2041 </h4>
-                            <img src="assets/img/masterplan/landuse2041.png" class="img-fluid" width="80%" alt="">
-                        </div>
-                    </div>
-
+                <div class="section-title">
+                    <h2>landuse-proposal</h2>
                 </div>
-            </section>
+
+                <div class="row content justify-content-center align-content-center">
+                    <div class="col-lg-6 justify-content-center align-content-center">
+                        <h4>
+                            Existing Land Use - 2021 </h4>
+                        <img src="assets/img/masterplan/lannduse2021.png" class="img-fluid" width="80%" alt="">
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0">
+                        <h4>
+                            Proposed Land Use - 2041 </h4>
+                        <img src="assets/img/masterplan/landuse2041.png" class="img-fluid" width="80%" alt="">
+                    </div>
+                </div>
+
+            </div>
         </section>
 
         <!--Goverment Order End  Section -->
 
         <!-- ======= Goverment Order Section ======= -->
-        <section id="Goverment Order" class="landuse-proposal">
-                <div class="container" data-aos="fade-up">
-        
-                    <div class="section-title">
-                        <h2>Goverment Order</h2>
-                    </div>
-        
-                    <div class="row content justify-content-center align-content-center">
-                        <div class="col-lg-5 justify-content-center align-content-center">
-        
-        
-                            <h4>
-                                Goverment order
-                            </h4>
-                            <a href="assets/pdf/Madurai master plan G.O.pdf"><img src="assets/img/masterplan/govermentOrder.png"
-                                    class="img-fluid" width="80%" alt=""></a>
-        
-                            <!-- <div class="row my-4">
+        <section id="Goverment Order" class="profile section-bg">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Goverment Order</h2>
+                </div>
+
+                <div class="row justify-content-center align-content-center">
+                    <div class="col-lg-5 justify-content-center align-content-center">
+
+
+                        <h4>
+                            Goverment order
+                        </h4>
+                        <a href="assets/pdf/Madurai master plan G.O.pdf"><img
+                                src="assets/img/masterplan/govermentOrder.png" class="img-fluid" width="80%" alt=""></a>
+
+                        <!-- <div class="row my-4">
         
                                         <h4>
                                             Draft Master Plan Reports
@@ -512,34 +525,34 @@
                                         <img src="assets/img/masterplan/govermentOrder.png" class="img-fluid col-md-6"
                                             width="80%" alt="">
                                     </div> -->
-                        </div>
-                        <div class="col-lg-7 justify-content-center align-content-center">
-        
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <h4>LPA Land Use Maps</h4>
-                                    <div class="">
-                                        <a target="">
-                                            Existing Land Use Map – LPA
-                                        </a>
-                                        <a>
-                                            Proposed Land Use Map – LPA
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <h4>Municipal Land Use Maps</h4>
-                                    <div class="">
-                                        <a>
-                                            Existing Land Use Map – Municipal Area
-                                        </a>
-                                        <a>
-                                            Proposed Land Use Map – Municipal Area
-                                        </a>
-                                    </div>
+                    </div>
+                    <div class="col-lg-7 justify-content-center align-content-center">
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h4>LPA Land Use Maps</h4>
+                                <div class="">
+                                    <a target="">
+                                        Existing Land Use Map – LPA
+                                    </a>
+                                    <a>
+                                        Proposed Land Use Map – LPA
+                                    </a>
                                 </div>
                             </div>
-                            <!-- <div class="row">
+                            <div class="col-lg-6">
+                                <h4>Municipal Land Use Maps</h4>
+                                <div class="">
+                                    <a>
+                                        Existing Land Use Map – Municipal Area
+                                    </a>
+                                    <a>
+                                        Proposed Land Use Map – Municipal Area
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="row">
                                         <div class="col-lg-6">
                                             <h4>Village-wise Proposed Land Use Maps</h4>
                                             <div class="mt-2"><a></a></div>
@@ -550,9 +563,9 @@
                                             <div class="mt-2"><a></a></div>
                                         </div>
                                     </div> -->
-                        </div>
                     </div>
                 </div>
+            </div>
         </section>
 
         <!--Goverment Order End  Section -->
@@ -574,12 +587,6 @@
                 </ul>
 
                 <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/1.jpeg" class="img-fluid" alt="">
-                        </div>
-
-                    </div>
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                         <div class="portfolio-img"><img src="assets/img/maduraiCurrent/10.jpeg" class="img-fluid"
@@ -610,11 +617,6 @@
 
                     </div>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/4.jpeg" class="img-fluid" alt="">
-                        </div>
-
-                    </div>
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                         <div class="portfolio-img"><img src="assets/img/maduraiCurrent/13.jpeg" class="img-fluid"
@@ -656,36 +658,39 @@
                         <p>Economic Base</p>
                         <div class="square top">
                             <img src="assets/img/maduraiCurrent/agriculture.png" alt=""
-                                style="width: 250px; height: 100px;" />
+                                style="border-radius: 15px; width: 250px; height: 100px;" />
                         </div>
                         <div class="square right-top">
-                            <img src="assets/img/maduraiCurrent/ssi.png" alt="" style="width: 250px; height: 100px;" />
+                            <img src="assets/img/maduraiCurrent/ssi.png" alt=""
+                                style="border-radius: 15px; width: 250px; height: 100px;" />
 
                         </div>
                         <div class="square right-bottom">
                             <img src="assets/img/maduraiCurrent/large-ins.png" alt=""
-                                style="width: 250px; height: 100px;" />
+                                style="border-radius: 15px; width: 250px; height: 100px;" />
 
                         </div>
                         <div class="square bottom">
                             <img src="assets/img/maduraiCurrent/temple.jpg" alt=""
-                                style="width: 250px; height: 100px;" />
+                                style="border-radius: 15px; width: 250px; height: 100px;" />
                         </div>
                         <div class="square left-bottom">
-                            <img src="assets/img/maduraiCurrent/tour.png" alt="" style="width: 250px; height: 100px;" />
+                            <img src="assets/img/maduraiCurrent/tour.png" alt=""
+                                style="border-radius: 15px; width: 250px; height: 100px;" />
                         </div>
                         <div class="square left-top">
                             <img src="assets/img/maduraiCurrent/education.png" alt=""
-                                style="width: 250px; height: 100px;" />
+                                style="border-radius: 15px; width: 250px; height: 100px;" />
 
                         </div>
                     </div>
                 </div>
 
             </div>
-        </section><!-- End mindmap Section -->
+        </section>
+        <!-- End mindmap Section -->
         <!-- ======= City Profile ======= -->
-        <section id="city-profile" class="why-us section-bg">
+        <!-- <section id="city-profile" class="why-us ">
             <div class="container" data-aos="fade-up">
                 <div class="section-title text-left">
                     <h2 class="text-default">City Profile</h2>
@@ -696,7 +701,7 @@
                         <img src="assets/img/maduraiCurrent/city-profile.png" class="img-fluid" width="80%" alt="">
                     </div>
                     <div class="col-lg-6 justify-content-center align-content-center">
-                        <table class="city-profile">
+                        <table class="city-profile mt-5">
                             <tr>
                                 <th>Location</th>
                                 <th>78°1188"E Long.
@@ -749,11 +754,12 @@
                 </div>
 
             </div>
-        </section><!-- End City Profile Section -->
+        </section> -->
+        <!-- End City Profile Section -->
 
 
         <!-- ======= growth center Section ======= -->
-        <section id="growth-center" class="why-us section-bg">
+        <!-- <section id="growth-center" class="why-us section-bg">
             <div class="container" data-aos="fade-up">
                 <div class="section-title text-left">
                     <h2 class="text-default">Growth Center and Nodes</h2>
@@ -796,7 +802,8 @@
                 </div>
 
             </div>
-        </section><!-- End growth center Section -->
+        </section> -->
+        <!-- End growth center Section -->
 
         <!-- ======= potential development Section ======= -->
         <section id="potential-development" class="why-us section-bg">
@@ -842,7 +849,7 @@
             </div>
         </section><!-- End potential Section -->
         <!-- ======= plan 2041 table section ======= -->
-        <section id="plan-2041" class="why-us section-bg">
+        <!-- <section id="plan-2041" class="why-us section-bg">
             <div class="container" data-aos="fade-up">
                 <div class="section-title text-left">
                     <h2 class="text-default">Proposed Land Use 2041 – Planning Area</h2>
@@ -1020,9 +1027,10 @@
                 </div>
 
             </div>
-        </section><!-- End plan 2041 table Section -->
+        </section> -->
+        <!-- End plan 2041 table Section -->
         <!-- ======= pp table section ======= -->
-        <section id="project-proposal" class="why-us section-bg">
+        <!-- <section id="project-proposal" class="why-us section-bg">
             <div class="container" data-aos="fade-up">
                 <div class="section-title text-left">
                     <h2 class="text-default">Project Proposals</h2>
@@ -1165,9 +1173,10 @@
                 </div>
 
             </div>
-        </section><!-- End pp table Section -->
+        </section> -->
+        <!-- End pp table Section -->
         <!-- ======= sc table section ======= -->
-        <section id="smart-city" class="why-us section-bg">
+        <!-- <section id="smart-city" class="why-us section-bg">
             <div class="container" data-aos="fade-up">
                 <div class="section-title text-left">
                     <h2 class="text-default">Smart City Projects</h2>
@@ -1312,11 +1321,12 @@
                 </div>
 
             </div>
-        </section><!-- End sc table Section -->
+        </section> -->
+        <!-- End sc table Section -->
 
 
         <!-- ======= sc table section ======= -->
-        <section id="smart-city" class="why-us section-bg">
+        <section id="smart-city" class="why-us">
             <div class="container" data-aos="fade-up">
                 <div class="section-title text-left">
                     <h2 class="text-default">project Proposal</h2>
@@ -1328,7 +1338,8 @@
                             <div class="site-section  mb-5">
                                 <div class="container owl-2-style">
                                     <div class="owl-carousel owl-2">
-                                        <div class="card ">
+                                        <div class="card " style="height: 60vh ;overflow-y: auto;">
+                                            <h4 class="mx-auto mt-3">Proposal For Economy</h4>
                                             <img class="card-img-top img-fluid" src="assets/img/webp/image34.webp"
                                                 alt="Card image cap">
                                             <div class="card-body ">
@@ -1358,8 +1369,9 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <div class="card ">
+                                        <div class="card " style="height: 60vh  ;overflow-y: auto;">
                                             <div class="card-body ">
+                                                <h4 class="mx-auto m-3">Proposal For Transportation</h4>
                                                 <div class="row p-2 m-2 border border-warning rounded ">
                                                     <strong>NHAI Proposal-</strong>
                                                     <small>
@@ -1391,15 +1403,59 @@
 
                                             </div>
                                         </div>
-                                        <div class="card ">
-                                            <h6 class="mx-auto mt-2">Transport Proposal</h6>
+                                        <div class="card " style="height: 60vh ;">
+                                            <h4 class="mx-auto mt-3">Transport Proposal</h4>
                                             <img class="card-img-top img-fluid" src="assets/img/webp/image42.webp"
                                                 alt="Card image cap">
                                             <div class="card-body ">
 
                                                 <div class="container">
-                                                    <div class="row">
+                                                    <div class="row ">
                                                         <p><b>Bus Schedule:</b></p>
+                                                        <ul class="overflowScroller">
+                                                            <li class="border border-bottom p-2"><b>Mattuthavanai-
+                                                                    Thiruparankundram-Mattuthavani:</b> Distance: 56 km,
+                                                                Headway: 10 mins, Frequency: 6 buses/hr, Avg Speed: 30
+                                                                km/hr, Trips per Bus: 7, Trips Generated: 91</li>
+                                                            <li class="border border-bottom p-2">
+                                                                <b>Thiruparangundram-Thirumangalam-Thiruparangundram:</b>
+                                                                Distance: 30 km, Headway: 15 mins, Frequency: 4
+                                                                buses/hr, Avg Speed: 30 km/hr, Trips per Bus: 12, Trips
+                                                                Generated: 60
+                                                            </li>
+                                                            <li class="border border-bottom p-2">
+                                                                <b>Thirumangalam-Chekanurani-Thirumangalam:</b>
+                                                                Distance: 37 km, Headway: 20 mins, Frequency: 3
+                                                                buses/hr, Avg Speed: 40 km/hr, Trips per Bus: 13, Trips
+                                                                Generated: 52
+                                                            </li>
+                                                            <li class="border border-bottom p-2"><b>South East Loop:</b>
+                                                                Distance: 42 km, Headway: 20 mins, Frequency: 3
+                                                                buses/hr, Avg Speed: 40 km/hr, Trips per Bus: 12, Trips
+                                                                Generated: 48</li>
+                                                            <li class="border border-bottom p-2"><b>Paravai-
+                                                                    Vadipatti-Alanganallur-Paravai:</b> Distance: 52 km,
+                                                                Headway: 20 mins, Frequency: 3 buses/hr, Avg Speed: 40
+                                                                km/hr, Trips per Bus: 10, Trips Generated: 50</li>
+                                                            <li class="border border-bottom p-2">
+                                                                <b>Chekanurani-Sholavandhan-vadipatti-Chekanurani:</b>
+                                                                Distance: 58 km, Headway: 20 mins, Frequency: 3
+                                                                buses/hr, Avg Speed: 40 km/hr, Trips per Bus: 9, Trips
+                                                                Generated: 45
+                                                            </li>
+                                                            <li class="border border-bottom p-2">
+                                                                <b>Mattuthavani-pudur-A.Vallalapatti-melur-Mattuthavani:</b>
+                                                                Distance: 61 km, Headway: 20 mins, Frequency: 3
+                                                                buses/hr, Avg Speed: 40 km/hr, Trips per Bus: 9, Trips
+                                                                Generated: 54
+                                                            </li>
+                                                            <li class="border border-bottom p-2">
+                                                                <b>Mattuthavani-melur-thirupuvanam-Mattuthavani:</b>
+                                                                Distance: 65 km, Headway: 20 mins, Frequency: 3
+                                                                buses/hr, Avg Speed: 40 km/hr, Trips per Bus: 8, Trips
+                                                                Generated: 48
+                                                            </li>
+                                                        </ul>
 
                                                     </div>
                                                 </div>
@@ -1407,42 +1463,215 @@
                                             </div>
                                         </div>
 
-                                        <div class="card ">
+                                        <div class="card " style="height: 60vh ;overflow-y: auto;">
                                             <div class="card-body ">
-                                                <div class="row">
+
+                                                <div class="row mb-2">
                                                     <div class="col-md-6"><img class="img-fluid"
                                                             src="assets/img/webp/image39.webp" alt=""></div>
                                                     <div class="col-md-6 mt-2">
-                                                        <small>Improve Pedesterain Infrastructure-along with road section or rerouting.</small>
+                                                        <small><b>Improve Pedesterain Infrastructure</b>-along with road
+                                                            section or rerouting.</small>
                                                     </div>
                                                 </div>
-                                                <div class="row">
+                                                <div class="row mb-2">
                                                     <div class="col-md-6 mt-2">
-                                                        <small>Parking- Smart City Proposals On- Street Parking, Proposed cars and all.</small>
+                                                        <small><b>Ola/ Uber Zone</b> in Airport and Railway
+                                                            Station</small>
                                                     </div>
+                                                    <div class="col-md-6"><img class="img-fluid"
+                                                            src="assets/img/webp/image40.webp" alt=""></div>
+                                                </div>
+                                                <div class="row mb-2">
                                                     <div class="col-md-6"><img class="img-fluid"
                                                             src="assets/img/webp/image41.webp" alt="">
                                                     </div>
+                                                    <div class="col-md-6 mt-2">
+                                                        <small><b>Parking- Smart City Proposals On</b>- Street Parking,
+                                                            Proposed cars and all.</small>
+                                                    </div>
                                                 </div>
-                                                <div class="row">
-                                                    <div class="col-md-6"><img class="img-fluid"
-                                                        src="assets/img/webp/image40.webp" alt=""></div>
-                                                        <div class="col-md-6 mt-2">
-                                                            <small>Ola/ Uber Zone in Airport and Railway Station</small>
-                                                        </div>
-                                                </div>
+
                                             </div>
                                         </div>
 
+                                        <div class="card " style="height: 60vh ;overflow-y: auto;">
+                                            <div class="card-body ">
+                                                <h6 class="p-2">PROPOSALS FOR BLUE & GREEN </h6>
+                                                <img class="card-img-top img-fluid" src="assets/img/webp/image47.webp"
+                                                    alt="Card image cap">
+                                                <div class="overflowScroller2">
+
+                                                    <div class="row p-2 m-2 border border-success rounded"
+                                                        style="background-color:#c8de9f ;">
+                                                        <small>
+                                                            Rich Eco-Sensitive Characteristics (R. Vaigai, Biodiversity
+                                                            Site, Prioritised Wetlands
+                                                        </small>
+
+                                                    </div>
+                                                    <div class="row p-2 m-2 border border-success rounded"
+                                                        style="background-color:#c8de9f ;">
+                                                        <small>
+                                                            River Vaigai’s Cultural Link - Chittirai Thiruvizha
+
+                                                        </small>
+
+                                                    </div>
+                                                    <div class="row p-2 m-2 border border-danger rounded"
+                                                        style="background-color:#ffa4a4 ;">
+                                                        <small>
+                                                            Rich Eco-Sensitive Characteristics (R. Vaigai, Biodiversity
+                                                            Site, Prioritised Wetlands
+                                                        </small>
+
+                                                    </div>
+                                                    <div class="row p-2 m-2 border border-danger rounded"
+                                                        style="background-color:#ffa4a4 ;">
+                                                        <small>
+                                                            River Vaigai’s Cultural Link - Chittirai Thiruvizha
+
+                                                        </small>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card " style="height: 60vh ;overflow-y: auto;">
+                                            <div class="card-body ">
+                                                <h3 class="text-success" style="font-weight: bolder;">1</h3>
+                                                <img class="card-img-top img-fluid" src="assets/img/webp/image48.webp"
+                                                    alt="Card image cap">
+
+                                                <img class="card-img-top" src="assets/img/webp/image53.webp"
+                                                    alt="Card image cap">
+
+                                                <img class="card-img-top" src="assets/img/webp/image54.webp"
+                                                    alt="Card image cap">
+
+                                                <div class="overflowScroller2 ">
+                                                    <h6>Conservation of Eco-sensitive Region
+                                                    </h6>
+                                                    <p>Existing Proposal : Prioritized Wetlands: Vandiyur </p>
+                                                    <h6 style="color: #c8de9f;">T.Kunnathur Wetland Redevelopment is
+                                                        proposed ( Area: 0.99 sqkm)
+                                                        Eco-park of 98100 sqm area near Aritapatti Biodiversity site is
+                                                        proposed
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card " style="height: 60vh ;overflow-y: auto;">
+                                            <div class="card-body ">
+                                                <h3 class="text-success" style="font-weight: bolder;">2</h3>
+                                                <h6>Integrating Blue-Green Infrastructure.</h6>
+                                                <p>Vaigai Front : River + Parks + NMT Pathways</p>
+                                                <img class="card-img-top img-fluid" src="assets/img/webp/image55.webp"
+                                                    alt="Card image cap">
+                                                <div>
+                                                    <h6 class="text-success pt-2">Channel + Parks+Jogging cycling
+                                                        Tracks,
+                                                        Activity area
+                                                        For a stretch of 7 km.
+                                                    </h6>
+                                                    <img class="card-img-top img-fluid"
+                                                        src="assets/img/webp/image56.webp" alt="Card image cap">
+                                                </div>
+
+                                                <div>
+                                                    <img class="card-img-top img-fluid"
+                                                        src="assets/img/webp/image49.webp" alt="Card image cap">
+                                                    <h6 style="color: #c8de9f;">Ghats development
+                                                    </h6>
+                                                    <p>near Kalazhagar ritual spot ( Area: 8316 sqkm) </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card " style="height: 60vh ;overflow-y: auto;">
+                                            <div class="card-body ">
+                                                <h3 class="text-success" style="font-weight: bolder;">3</h3>
+                                                <h6>Treating Vulnerable zones
+                                                    in LPA
+                                                </h6>
+                                                <p>Increasing Ground water recharge </p>
+                                                <img class="card-img-top img-fluid" src="assets/img/webp/image57.webp"
+                                                    alt="Card image cap">
+                                                <div>
+                                                    <h6 class="text-success pt-2">Land reclamation near
+                                                        vacant lands near
+                                                        Pudukullam water body ( 0.494 sqkm)
+
+                                                    </h6>
+                                                    <div class="row p-2 m-2 border border-primary rounded"
+                                                        style="background-color:#9fbade ;">
+                                                        <small>
+                                                            Flood Prone Zone
+
+                                                        </small>
+                                                    </div>
+                                                    <div class="row p-2 m-2 border border-primary rounded"
+                                                        style="background-color:#9fbade ;">
+                                                        <small>
+                                                            Connecting Water Channel and vacant land reclamation
+
+
+                                                        </small>
+                                                    </div>
+                                                    <div class="row p-2 m-2 border border-warning rounded"
+                                                        style="background-color:#ded49f ;">
+                                                        <small>
+                                                            Drought Zone
+
+
+                                                        </small>
+                                                    </div>
+                                                    <div class="row p-2 m-2 border border-warning rounded"
+                                                        style="background-color:#ded49f ;">
+                                                        <small>
+                                                            Watershed Management
+                                                            (Protecting the land use, Agroforestry )- Separate DPR can
+                                                            be proposed
+
+
+                                                        </small>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card " style="height: 60vh ;overflow-y: auto;">
+                                            <div class="card-body ">
+                                                <h3 class="text-success" style="font-weight: bolder;">4</h3>
+                                                <h6>Enhancement of existing green and blue cover in LPA
+
+                                                </h6>
+                                                <img class="card-img-top img-fluid" src="assets/img/webp/image51.webp"
+                                                    alt="Card image cap">
+                                                <p>Urban Forestry in - Ambalathadi -9 pt
+                                                    1.00 acre.</p>
+                                                <img class="card-img-top img-fluid" src="assets/img/webp/image52.webp"
+                                                    alt="Card image cap">
+                                                <p>Reclamation of Abandoned quarries at
+                                                    Vandiyur (2.63 ha)
+                                                    Katchaikatti (6.62 ha)
+                                                    Virelipatti (1.94 ha)
+                                                    Kulasekaran Kottai (0.25 ha)
+                                                    Urban Forestry
+
+                                                </p>
+
+                                            </div>
+                                        </div>
                                     </div>
-
                                 </div>
+
                             </div>
-
                         </div>
-                    </div>
 
+                    </div>
                 </div>
+
+            </div>
 
             </div>
         </section><!-- End sc table Section -->
