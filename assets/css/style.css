@@ -121,7 +121,7 @@ h6 {
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-weight: 500;
+  font-weight: 500; 
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -552,7 +552,7 @@ th, td {
   font-size: 24px;
 }
 
-#hero .btn-get-started {
+ .btn-get-started {
   font-family: "Jost", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -566,7 +566,7 @@ th, td {
   background: #47b2e4;
 }
 
-#hero .btn-get-started:hover {
+ .btn-get-started:hover {
   background: #209dd8;
 }
 
@@ -1591,7 +1591,7 @@ section {
 .contact .form-control{
     border: none;
     border: 1px solid; /* Bottom border */
-    border-radius: 10px; /* Remove rounded corners */
+    border-radius: 0; /* Remove rounded corners */
     box-shadow: none; /* Remove any box shadow */
     padding: 5px;
 }
