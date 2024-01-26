@@ -188,6 +188,9 @@
 
                             <hr class="my-4">
 
+                            
+                            
+                            
                             <div class="row my-3 justify-content-center">
                                 <!-- 1st question -->
                                 <div class="col-md-5 my-2">
@@ -207,8 +210,8 @@
 
                                 <!-- 2nd question -->
                                 <div class="col-md-5 my-2">
-                                    <label for="travel-mode" class="form-label">2. Do you feel that
-                                        Daily travel Mode?</label>
+                                    <label for="travel-mode" class="form-label">2. Your Daily mode of transport
+                                        ?</label>
                                     <div class="form-check">
                                         <input id="twoWheeler" name="travel-mode" type="radio" class="form-check-input"
                                             value="twoWheeler" required>
@@ -232,13 +235,16 @@
 
                                 </div>
                             </div>
+                            
+                            
+                            
                             <div class="row my-3 justify-content-center">
                                 <!-- 3rd question -->
                                 <div class="col-md-5 my-2">
                                     <label for="DailyTravel" class="form-label">3. Daily Travel Distance in km?</label>
-                                    <div class="col-md-5">
+                                    <div class="col-md">
                                         <input type="number" class="form-control" id="travelInkm" placeholder=""
-                                            value="" required="">
+                                            value="" required="" min="0">
                                         <div class="invalid-feedback">
                                             Valid distance is required.
                                         </div>
@@ -248,15 +254,18 @@
                                 <!-- 4th question -->
                                 <div class="col-md-5 my-2">
                                     <label for="ownedVehicles" class="form-label">4. No.of Vehicles Owned?</label>
-                                    <div class="col-md-5">
+                                    <div class="col-md">
                                         <input type="number" class="form-control" id="ownedVehicles" placeholder=""
-                                            value="" required="">
+                                            value="" required="" min="0">
                                         <div class="invalid-feedback">
                                             Valid Numbers is required.
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            
+                            
+                            
                             <div class="row my-3 justify-content-center">
                                 <!-- 5th question -->
                                 <div class="col-md-5 my-2">
@@ -295,6 +304,9 @@
                                 </div>
 
                             </div>
+                            
+                            
+                            
                             <div class="row my-3 justify-content-center">
                                 <!-- 7th question -->
                                 <div class="col-md-5 my-2">
@@ -328,6 +340,9 @@
                                     </div>
                                 </div>
                             </div>
+                            
+                            
+                            
                             <div class="row my-3 justify-content-center">
                                 <!-- 9th question -->
                                 <div class="col-md-5 my-2">
@@ -352,6 +367,9 @@
                                     </div>
                                 </div>
                             </div>
+                            
+                            
+                            
                             <div class="row my-3 justify-content-center">
                                 <!-- 11th question -->
                                 <div class="col-md-5 my-2">
@@ -385,17 +403,20 @@
                                     </div>
                                 </div>
                             </div>
+                            
+                            
+                            
                             <div class="row my-3 justify-content-center">
                                 <!-- 13th question -->
                                 <div class="col-md-5 my-2">
                                     <label for="CycleTrackPreference" class="form-label">13. If there's a dedicated
                                         Cycle Track around water bodies, which day and time would you prefer?</label>
-                                    <div class="col-md-5">
+                                    <div class="col-md">
                                         <label for="cycleTrackDay" class="form-label">Day:</label>
                                         <input type="text" class="form-control" id="cycleTrackDay"
                                             placeholder="E.g. Saturdays" required>
                                     </div>
-                                    <div class="col-md-5">
+                                    <div class="col-md">
                                         <label for="cycleTrackTime" class="form-label">Time:</label>
                                         <input type="text" class="form-control" id="cycleTrackTime"
                                             placeholder="E.g. 7:00 AM - 9:00 AM" required>
@@ -403,7 +424,7 @@
                                 </div>
 
                                 <!-- 14th question -->
-                                <div class="col-md-5 my-2">
+                                <!-- <div class="col-md-5 my-2">
                                     <label for="SkyWalkOpinion" class="form-label">14. What is your opinion on a skywalk
                                         for the Mattutavani area?</label>
                                     <div class="form-check">
@@ -417,12 +438,11 @@
                                         <label class="form-check-label" for="skywalkNotPrioritized">B. Not prioritized
                                             now</label>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="row my-3 justify-content-center">
-                                <!-- 15th question -->
+                                </div> -->
+                         
+                                <!-- 14th question -->
                                 <div class="col-md-5 my-2">
-                                    <label for="PedestrianWalkOpinion" class="form-label">15. What is your opinion on
+                                    <label for="PedestrianWalkOpinion" class="form-label">14. What is your opinion on
                                         improvising pedestrian walkways in the Mattuthavani area?</label>
                                     <div class="form-check">
                                         <input id="walkwayNecessary" name="PedestrianWalkOpinion" type="radio"
@@ -437,9 +457,14 @@
                                     </div>
                                 </div>
 
-                                <!-- 16th question -->
+                            </div>
+                            
+                            
+                            
+                            <div class="row my-3 justify-content-center">
+                                                                <!-- 15th question -->
                                 <div class="col-md-5 my-2">
-                                    <label for="TrafficJunctionOpinion" class="form-label">16. What is your opinion on
+                                    <label for="TrafficJunctionOpinion" class="form-label">15. What is your opinion on
                                         improvising traffic junctions in the Simmakkal, Vadamalayan, and Goripalayam
                                         areas?</label>
                                     <div class="form-check">
@@ -454,11 +479,10 @@
                                             necessary</label>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row my-3 justify-content-center">
-                                <!-- 17th question -->
+
+                                <!-- 16th question -->
                                 <div class="col-md-5 my-2">
-                                    <label for="DailyWaterSupply" class="form-label">17. Do you have access to daily
+                                    <label for="DailyWaterSupply" class="form-label">16. Do you have access to daily
                                         water supply at your residence?</label>
                                     <div class="form-check">
                                         <input id="waterSupplyYes" name="DailyWaterSupply" type="radio"
@@ -470,20 +494,49 @@
                                             class="form-check-input" value="no" required>
                                         <label class="form-check-label" for="waterSupplyNo">B. No</label>
                                     </div>
-                                    <div class="col-md-5">
+                                    <div class="col-md">
                                         <label for="waterSupplyFrequency" class="form-label">Frequency:</label>
                                         <input type="text" class="form-control" id="waterSupplyFrequency"
                                             placeholder="E.g. Once a week" required>
                                     </div>
                                 </div>
-
-                                <!-- 18th question -->
+                            </div>
+                            
+                            
+                            
+                            <div class="row my-3 justify-content-center">
+                                <!-- 17th question -->
                                 <div class="col-md-5 my-2">
-                                    <label for="WaterTable" class="form-label">18. What is the water table situation in
-                                        your area?</label>
-                                    <textarea class="form-control" id="WaterTable" rows="3" required></textarea>
+                                    <label class="form-label">17.Opinion on Para transit junction in LPA area to ensure last mile connectivity.</label>
+                                    <div class="form-check">
+                                        <input id="Necessary" name="HouseType" type="radio" class="form-check-input"
+                                            value="Necessary" required>
+                                        <label class="form-check-label" for="Necessary">Necessary</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="Not Necessary" name="HouseType" type="radio" class="form-check-input"
+                                            value="Not Necessary" required>
+                                        <label class="form-check-label" for="Not Necessary">Not Necessary</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 my-2">
+                                    <label class="form-label">18.Proposal of new sub-arterial road from Therkutheru to Idiyappatti and sholavanthan to
+                                        narasingam.</label>
+                                    <div class="form-check">
+                                        <input id="Necessary" name="HouseType" type="radio" class="form-check-input"
+                                            value="Necessary" required>
+                                        <label class="form-check-label" for="Necessary">Necessary</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="Not Necessary" name="HouseType" type="radio" class="form-check-input"
+                                            value="Not Necessary" required>
+                                        <label class="form-check-label" for="Not Necessary">Not Necessary</label>
+                                    </div>
                                 </div>
                             </div>
+                            
+                            
+                            
                             <div class="row my-3 justify-content-center">
                                 <!-- 19th question -->
                                 <div class="col-md-5 my-2">
@@ -500,10 +553,28 @@
                                         <label class="form-check-label" for="drainFacilityNo">B. No</label>
                                     </div>
                                 </div>
-
-                                <!-- 20th question -->
                                 <div class="col-md-5 my-2">
-                                    <label for="WaterStagnation" class="form-label">20. Do you experience water
+                                    <label class="form-label">20.Proposal of Tourism circuit connecting historical monuments,cultural hotspots,natural landscape and
+                                        its importance on cutural identity</label>
+                                    <div class="form-check">
+                                        <input id="Necessary" name="HouseType" type="radio" class="form-check-input"
+                                            value="Necessary" required>
+                                        <label class="form-check-label" for="Necessary">Necessary</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="Not Necessary" name="HouseType" type="radio" class="form-check-input"
+                                            value="Not Necessary" required>
+                                        <label class="form-check-label" for="Not Necessary">Not Necessary</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            <div class="row my-3 justify-content-center">
+                                <!-- 21th question -->
+                                <div class="col-md-5 my-2">
+                                    <label for="WaterStagnation" class="form-label">21. Do you experience water
                                         stagnation issues during rain in your area?</label>
                                     <div class="form-check">
                                         <input id="waterStagnationYes" name="WaterStagnation" type="radio"
@@ -516,11 +587,10 @@
                                         <label class="form-check-label" for="waterStagnationNo">B. No</label>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row my-3 justify-content-center">
-                                <!-- 21st question -->
+     
+                                <!-- 22st question -->
                                 <div class="col-md-5 my-2">
-                                    <label for="WasteCategorization" class="form-label">21. Are you categorizing wet and
+                                    <label for="WasteCategorization" class="form-label">22. Are you categorizing wet and
                                         dry waste while disposing from home?</label>
                                     <div class="form-check">
                                         <input id="wasteCategorizationYes" name="WasteCategorization" type="radio"
@@ -534,34 +604,116 @@
                                     </div>
                                 </div>
 
-                                <!-- 22nd question -->
+                            </div>
+                            
+                            
+                            
+                            <div class="row my-3 justify-content-center">
+                                <!-- 23nd question -->
                                 <div class="col-md-5 my-2">
-                                    <label for="WasteCategorizationSuggestions" class="form-label">22. Do you have any
+                                    <label for="WasteCategorizationSuggestions" class="form-label">23. Do you have any
                                         suggestions for improving waste categorization and disposal?</label>
                                     <textarea class="form-control" id="WasteCategorizationSuggestions" rows="3"
                                         required></textarea>
                                 </div>
-                            </div>
-                            <div class="row my-3 justify-content-center">
                                 <!-- 23rd question -->
-                                <div class="col-md-5 my-2">
+                                <!-- <div class="col-md-5 my-2">
                                     <label for="NearestParkName" class="form-label">23. What is the name of the nearest
                                         park from your home?</label>
                                     <input type="text" class="form-control" id="NearestParkName"
                                         placeholder="Enter park name" required>
-                                </div>
-
-                                <!-- 24th question -->
+                                </div> -->
                                 <div class="col-md-5 my-2">
-                                    <label for="NearestParkDistance" class="form-label">24. What is the distance (in km)
-                                        from your home to the nearest park?</label>
-                                    <input type="number" class="form-control" id="NearestParkDistance"
-                                        placeholder="Enter distance in km" required>
+                                    <label class="form-label">24.Utilization of Abandoned Quarry as potential water
+                                        storage reserviors to mitigate water scarcity?</label>
+                                    <div class="form-check">
+                                        <input id="Required" name="HouseType" type="radio" class="form-check-input"
+                                            value="Required" required>
+                                        <label class="form-check-label" for="Required">Required</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="Not required" name="HouseType" type="radio" class="form-check-input"
+                                            value="Not required" required>
+                                        <label class="form-check-label" for="Not required">Not required</label>
+                                    </div>
                                 </div>
                             </div>
+                            
+                            
+                            
                             <div class="row my-3 justify-content-center">
-                                <!-- 25th question -->
                                 <div class="col-md-5 my-2">
+                                    <label class="form-label">25.Your opinion on Revamping of existing water bodies like
+                                        Mudakkathan, ilanthaikulam,Angamalpuram
+                                        and few others.</label>
+                                    <div class="form-check">
+                                        <input id="Necessary" name="HouseType" type="radio" class="form-check-input"
+                                            value="Necessary" required>
+                                        <label class="form-check-label" for="Necessary">Necessary</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="Not Necessary" name="HouseType" type="radio" class="form-check-input"
+                                            value="Not Necessary" required>
+                                        <label class="form-check-label" for="Not Necessary">Not Necessary</label>
+                                    </div>
+                                </div>
+
+                      
+
+
+                                <div class="col-md-5 my-2">
+                                    <label class="form-label">26.Impementation of Sewage treatment facility at town and
+                                        village panchayat level</label>
+                                    <div class="form-check">
+                                        <input id="Necessary" name="HouseType" type="radio" class="form-check-input"
+                                            value="Necessary" required>
+                                        <label class="form-check-label" for="Necessary">Necessary</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="Not Necessary" name="HouseType" type="radio" class="form-check-input"
+                                            value="Not Necessary" required>
+                                        <label class="form-check-label" for="Not Necessary">Not Necessary</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            <div class="row my-3 justify-content-center">
+                                <div class="col-md-5 my-2">
+                                    <label class="form-label">27. Opinion on Decentralization of Solid waste involving
+                                        localized waste collection points in corporation
+                                        and municipalities?</label>
+                                    <div class="form-check">
+                                        <input id="Agree" name="HouseType" type="radio" class="form-check-input"
+                                            value="Agree" required>
+                                        <label class="form-check-label" for="Agree">Agree</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="Disagree" name="HouseType" type="radio" class="form-check-input"
+                                            value="Disagree" required>
+                                        <label class="form-check-label" for="Disagree">Disagree</label>
+                                    </div>
+                                </div>
+      
+
+                                <div class="col-md-5 my-2">
+                                    <label class="form-label">28.Your opinion on desilting and cleaning of natural drain
+                                        channels across Kirudhumal, avaniapuram,and
+                                        periyar channel</label>
+                                    <div class="form-check">
+                                        <input id="Necessary" name="HouseType" type="radio" class="form-check-input"
+                                            value="Necessary" required>
+                                        <label class="form-check-label" for="Necessary">Necessary</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="Not Necessary" name="HouseType" type="radio" class="form-check-input"
+                                            value="Not Necessary" required>
+                                        <label class="form-check-label" for="Not Necessary">Not Necessary</label>
+                                    </div>
+                                </div>
+                                <!-- 25th question -->
+                                <!-- <div class="col-md-5 my-2">
                                     <label class="form-label">25. What facilities are available in the nearest park?
                                         (Select all that apply)</label>
                                     <div class="form-check">
@@ -584,72 +736,122 @@
                                             class="form-check-input" value="openGym">
                                         <label class="form-check-label" for="openGym">Open Gym</label>
                                     </div>
-                                </div>
+                                </div> -->
 
                                 <!-- 26th question -->
-                                <div class="col-md-5 my-2">
+                                <!-- <div class="col-md-5 my-2">
                                     <label for="AdditionalParkFacilities" class="form-label">26. What facilities would
                                         you like to see added in the park?</label>
                                     <textarea class="form-control" id="AdditionalParkFacilities" rows="3"
                                         required></textarea>
-                                </div>
+                                </div> -->
+
+                                <!-- 24th question -->
                             </div>
+                            
+                            
+                            
                             <div class="row my-3 justify-content-center">
-                                <!-- 27th question -->
                                 <div class="col-md-5 my-2">
-                                    <label for="KidSportsActivities" class="form-label">27. Would you like to provide
+                                    <label for="NearestParkDistance" class="form-label">29. What is the distance (in km)
+                                        from your home to the nearest park?</label>
+                                    <input type="number" min="0" class="form-control" id="NearestParkDistance"
+                                        placeholder="Enter distance in km" required>
+                                </div>
+                                <!-- 30th question -->
+                                <div class="col-md-5 my-2">
+                                    <label for="KidSportsActivities" class="form-label">30. Would you like to provide
                                         your child with sports activities? If yes, name the activity.</label>
                                     <input type="text" class="form-control" id="KidSportsActivities"
                                         placeholder="Enter activity name" required>
                                 </div>
 
                                 <!-- 28th question -->
-                                <div class="col-md-5 my-2">
+                                <!-- <div class="col-md-5 my-2">
                                     <label for="PollutionReductionContribution" class="form-label">28. What
                                         contributions are you making to reduce pollution in the Kirudumal River?</label>
                                     <textarea class="form-control" id="PollutionReductionContribution" rows="3"
                                         required></textarea>
+                                </div> -->
+                            </div>
+                            
+                            
+                            
+                            <div class="row my-3 justify-content-center">
+                                <div class="col-md-5 my-2">
+                                    <label class="form-label">31. Your opinion on Integrated cold storage and value
+                                        addition for agricuture and perishable goods?</label>
+                                    <div class="form-check">
+                                        <input id="Necessary" name="HouseType" type="radio" class="form-check-input"
+                                            value="Necessary" required>
+                                        <label class="form-check-label" for="Necessary">Necessary</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="Not Necessary" name="HouseType" type="radio" class="form-check-input"
+                                            value="Not Necessary" required>
+                                        <label class="form-check-label" for="Not Necessary">Not Necessary</label>
+                                    </div>
+                                </div>
+                       
+                                <div class="col-md-5 my-2">
+                                    <label class="form-label">32. Suggestion regarding proposed multimodal logistic hub
+                                        along the NH-38 alignment?</label>
+                                    <div class="form-check">
+                                        <input id="Necessary" name="HouseType" type="radio" class="form-check-input"
+                                            value="Necessary" required>
+                                        <label class="form-check-label" for="Necessary">Necessary</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="Not Necessary" name="HouseType" type="radio" class="form-check-input"
+                                            value="Not Necessary" required>
+                                        <label class="form-check-label" for="Not Necessary">Not Necessary</label>
+                                    </div>
                                 </div>
                             </div>
+                            
+                            
+                            
                             <div class="row my-3 justify-content-center">
-                                <!-- 29th question -->
                                 <div class="col-md-5 my-2">
-                                    <label for="AdditionalSuggestions" class="form-label">29. Do you have any additional
+                                    <label class="form-label">33.Proposal of Eco- park at Meenakshipuram near Aritapatti Bio-Diversity to encourage floura and fauna
+                                        species?</label>
+                                    <div class="form-check">
+                                        <input id="Necessary" name="HouseType" type="radio" class="form-check-input"
+                                            value="Necessary" required>
+                                        <label class="form-check-label" for="Necessary">Necessary</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="Not Necessary" name="HouseType" type="radio" class="form-check-input"
+                                            value="Not Necessary" required>
+                                        <label class="form-check-label" for="Not Necessary">Not Necessary</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 my-2">
+                                    <label class="form-label">34.Opinion on revitalization and redevelopment of existing Vandiyur and T.kunnathur wetland for a
+                                        sustainable ecosystem?</label>
+                                    <div class="form-check">
+                                        <input id="Necessary" name="HouseType" type="radio" class="form-check-input"
+                                            value="Necessary" required>
+                                        <label class="form-check-label" for="Necessary">Necessary</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="Not Necessary" name="HouseType" type="radio" class="form-check-input"
+                                            value="Not Necessary" required>
+                                        <label class="form-check-label" for="Not Necessary">Not Necessary</label>
+                                    </div>
+                                </div>
+                                <!-- 29th question -->
+                                
+                            </div>
+                            
+                            
+                            
+                            <div class="row my-3 justify-content-center">
+                                <div class="col-md-8 my-2">
+                                    <label for="AdditionalSuggestions" class="form-label">35. Do you have any additional
                                         suggestions or comments?</label>
                                     <textarea class="form-control" id="AdditionalSuggestions" rows="3"
                                         required></textarea>
-                                </div>
-                            </div>
-                            <div class="row my-3 justify-content-center">
-                                <!-- 30th question -->
-                                <div class="col-md-5 my-2">
-                                    <label class="form-label">30. What type of house do you currently live in?</label>
-                                    <div class="form-check">
-                                        <input id="houseRental" name="HouseType" type="radio" class="form-check-input"
-                                            value="rental" required>
-                                        <label class="form-check-label" for="houseRental">Rental</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input id="houseOwned" name="HouseType" type="radio" class="form-check-input"
-                                            value="owned" required>
-                                        <label class="form-check-label" for="houseOwned">Owned</label>
-                                    </div>
-                                </div>
-
-                                <!-- 31st question -->
-                                <div class="col-md-5 my-2">
-                                    <label for="RentAffordability" class="form-label">31. If you live in a rental house,
-                                        is the rent affordable?</label>
-                                    <div class="form-check">
-                                        <input id="rentAffordableYes" name="RentAffordability" type="radio"
-                                            class="form-check-input" value="yes">
-                                        <label class="form-check-label" for="rentAffordableYes">A. Yes</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input id="rentAffordableNo" name="RentAffordability" type="radio"
-                                            class="form-check-input" value="no">
-                                        <label class="form-check-label" for="rentAffordableNo">B. No</label>
-                                    </div>
                                 </div>
                             </div>
 

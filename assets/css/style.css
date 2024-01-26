@@ -1590,10 +1590,10 @@ section {
 --------------------------------------------------------------*/
 .contact .form-control{
     border: none;
-    border-bottom: 1px solid; /* Bottom border */
-    border-radius: 0; /* Remove rounded corners */
+    border: 1px solid; /* Bottom border */
+    border-radius: 10px; /* Remove rounded corners */
     box-shadow: none; /* Remove any box shadow */
-    padding-bottom: 15px;
+    padding: 5px;
 }
 .contact .info {
   border-top: 3px solid #47b2e4;
