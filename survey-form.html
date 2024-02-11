@@ -89,20 +89,18 @@
                         <form class="needs-validation was-validated" novalidate="">
                             <div class="row g-3">
                                 <div class="row mt-5 justify-content-center">
-
+                            
                                     <div class="col-sm-5">
                                         <label for="name" class="form-label">Name</label>
-                                        <input type="text" class="form-control" id="name" placeholder="" value=""
-                                            required="">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="" value="" required>
                                         <div class="invalid-feedback">
                                             Valid name is required.
                                         </div>
                                     </div>
-
+                            
                                     <div class="col-sm-5">
                                         <label for="age" class="form-label">Age</label>
-                                        <input type="text" class="form-control" id="age" placeholder="" value=""
-                                            required="">
+                                        <input type="text" class="form-control" id="age" name="age" placeholder="" value="" required>
                                         <div class="invalid-feedback">
                                             Valid Age is required.
                                         </div>
@@ -111,7 +109,7 @@
                                 <div class="row mt-3 justify-content-center">
                                     <div class="col-md-3">
                                         <label for="sex" class="form-label">Sex</label>
-                                        <select class="form-select" id="sex" required="">
+                                        <select class="form-select" id="sex" name="sex" required>
                                             <option value="">Select</option>
                                             <option value="male">Male</option>
                                             <option value="female">Female</option>
@@ -123,249 +121,217 @@
                                     </div>
                                     <div class="col-md-7">
                                         <label for="address" class="form-label">Address</label>
-                                        <input type="text" class="form-control" id="address" placeholder="" required="">
+                                        <input type="text" class="form-control" id="address" name="address" placeholder="" required>
                                         <div class="invalid-feedback">
                                             Address is required.
                                         </div>
                                     </div>
-
+                            
                                 </div>
                                 <div class="row mt-3 justify-content-center">
                                     <div class="col-md-3">
                                         <label for="phone" class="form-label">Phone</label>
-                                        <input type="text" class="form-control" id="phone" placeholder="" value=""
-                                            required="">
+                                        <input type="text" class="form-control" id="phone" name="phone" placeholder="" value="" required>
                                         <div class="invalid-feedback">
                                             Valid Phone Number is required.
                                         </div>
                                     </div>
                                     <div class="col-sm-4">
-                                        <label for="user-name" class="form-label">Email</label>
-                                        <input type="text" class="form-control" id="email" placeholder="" value=""
-                                            required="">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="text" class="form-control" id="email" name="email" placeholder="" value="" required>
                                         <div class="invalid-feedback">
                                             Valid Email is required.
                                         </div>
                                     </div>
                                     <div class="col-sm-3">
-                                        <label for="user-name" class="form-label">Educational</label>
-                                        <input type="text" class="form-control" id="educational" placeholder="" value=""
-                                            required="">
+                                        <label for="educational" class="form-label">Educational</label>
+                                        <input type="text" class="form-control" id="educational" name="educational" placeholder="" value=""
+                                            required>
                                         <div class="invalid-feedback">
                                             Valid Educational is required.
                                         </div>
                                     </div>
-
+                            
                                 </div>
                                 <div class="row mt-5 justify-content-center">
-
+                            
                                     <div class="col-sm-4">
-                                        <label for="user-name" class="form-label">Occupation</label>
-                                        <input type="text" class="form-control" id="occupation" placeholder="" value=""
-                                            required="">
+                                        <label for="occupation" class="form-label">Occupation</label>
+                                        <input type="text" class="form-control" id="occupation" name="occupation" placeholder="" value=""
+                                            required>
                                         <div class="invalid-feedback">
                                             Valid Occupation is required.
                                         </div>
                                     </div>
                                     <div class="col-md-4 ">
-                                        <label for="country" class="form-label">Physically Challenged</label>
-
+                                        <label class="form-label">Physically Challenged</label>
+                            
                                         <div class="form-check ">
-                                            <input id="credit" name="phyChall" type="radio" class="form-check-input"
-                                                value="yes" checked="" required="">
-                                            <label class="form-check-label" for="credit">yes</label>
+                                            <input id="phyChall_yes" name="phyChall" type="radio" class="form-check-input" value="yes" checked
+                                                required>
+                                            <label class="form-check-label" for="phyChall_yes">yes</label>
                                         </div>
                                         <div class="form-check">
-                                            <input id="debit" name="phyChall" type="radio" class="form-check-input"
-                                                value="No" required="">
-                                            <label class="form-check-label" for="debit">No</label>
+                                            <input id="phyChall_no" name="phyChall" type="radio" class="form-check-input" value="no" required>
+                                            <label class="form-check-label" for="phyChall_no">No</label>
                                         </div>
                                     </div>
                                 </div>
-
+                            
                             </div>
+                            
 
                             <hr class="my-4">
 
                             
                             
                             
-                            <div class="row my-3 justify-content-center">
-                                <!-- 1st question -->
-                                <div class="col-md-5 my-2">
-                                    <label for="KnowaboutMasterPlan" class="form-label">1. Know about Master
-                                        Plan?</label>
-                                    <div class="form-check">
-                                        <input id="yes" name="KnowaboutMasterPlan" type="radio" class="form-check-input"
-                                            value="yes" required>
-                                        <label class="form-check-label" for="yes">A. Yes</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input id="somewhat-agree" name="KnowaboutMasterPlan" type="radio"
-                                            class="form-check-input" value="no" required>
-                                        <label class="form-check-label" for="somewhat-agree">B. No</label>
-                                    </div>
-                                </div>
+                <div class="row my-3 justify-content-center">
+                    <!-- 1st question -->
+                    <div class="col-md-5 my-2">
+                        <label for="KnowaboutMasterPlan" class="form-label">1. Know about Master Plan?</label>
+                        <div class="form-check">
+                            <input id="KnowaboutMasterPlan_yes" name="KnowaboutMasterPlan" type="radio" class="form-check-input" value="yes" required>
+                            <label class="form-check-label" for="KnowaboutMasterPlan_yes">A. Yes</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="KnowaboutMasterPlan_no" name="KnowaboutMasterPlan" type="radio" class="form-check-input" value="no" required>
+                            <label class="form-check-label" for="KnowaboutMasterPlan_no">B. No</label>
+                        </div>
+                    </div>
 
-                                <!-- 2nd question -->
-                                <div class="col-md-5 my-2">
-                                    <label for="travel-mode" class="form-label">2. Your Daily mode of transport
-                                        ?</label>
-                                    <div class="form-check">
-                                        <input id="twoWheeler" name="travel-mode" type="radio" class="form-check-input"
-                                            value="twoWheeler" required>
-                                        <label class="form-check-label" for="">A. 2 wheeler </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input id="fourWheeler" name="travel-mode" type="radio" class="form-check-input"
-                                            value="fourWheeler" required>
-                                        <label class="form-check-label" for="fourWheeler">B. 4 wheeler </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input id="bus" name="travel-mode" type="radio" class="form-check-input"
-                                            value="bus" required>
-                                        <label class="form-check-label" for="bus">C. Bus</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input id="others" name="travel-mode" type="radio" class="form-check-input"
-                                            value="others" required>
-                                        <label class="form-check-label" for="others">D. others</label>
-                                    </div>
+                    <!-- 2nd question -->
+                    <div class="col-md-5 my-2">
+                        <label for="travel-mode" class="form-label">2. Your Daily mode of transport?</label>
+                        <div class="form-check">
+                            <input id="travel-mode_twoWheeler" name="travel-mode" type="radio" class="form-check-input" value="twoWheeler" required>
+                            <label class="form-check-label" for="travel-mode_twoWheeler">A. 2 wheeler</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="travel-mode_fourWheeler" name="travel-mode" type="radio" class="form-check-input" value="fourWheeler" required>
+                            <label class="form-check-label" for="travel-mode_fourWheeler">B. 4 wheeler</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="travel-mode_bus" name="travel-mode" type="radio" class="form-check-input" value="bus" required>
+                            <label class="form-check-label" for="travel-mode_bus">C. Bus</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="travel-mode_others" name="travel-mode" type="radio" class="form-check-input" value="others" required>
+                            <label class="form-check-label" for="travel-mode_others">D. others</label>
+                        </div>
+                    </div>
+                </div>
 
-                                </div>
+                            
+                            
+                            
+                <div class="row my-3 justify-content-center">
+                    <!-- 3rd question -->
+                    <div class="col-md-5 my-2">
+                        <label for="DailyTravel" class="form-label">3. Daily Travel Distance in km?</label>
+                        <div class="col-md">
+                            <input type="number" class="form-control" id="dailyTravelDistance" name="dailyTravelDistance" placeholder="" value="" required min="0">
+                            <div class="invalid-feedback">
+                                Valid distance is required.
                             </div>
-                            
-                            
-                            
-                            <div class="row my-3 justify-content-center">
-                                <!-- 3rd question -->
-                                <div class="col-md-5 my-2">
-                                    <label for="DailyTravel" class="form-label">3. Daily Travel Distance in km?</label>
-                                    <div class="col-md">
-                                        <input type="number" class="form-control" id="travelInkm" placeholder=""
-                                            value="" required="" min="0">
-                                        <div class="invalid-feedback">
-                                            Valid distance is required.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- 4th question -->
-                                <div class="col-md-5 my-2">
-                                    <label for="ownedVehicles" class="form-label">4. No.of Vehicles Owned?</label>
-                                    <div class="col-md">
-                                        <input type="number" class="form-control" id="ownedVehicles" placeholder=""
-                                            value="" required="" min="0">
-                                        <div class="invalid-feedback">
-                                            Valid Numbers is required.
-                                        </div>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                
+                    <!-- 4th question -->
+                    <div class="col-md-5 my-2">
+                        <label for="ownedVehicles" class="form-label">4. No. of Vehicles Owned?</label>
+                        <div class="col-md">
+                            <input type="number" class="form-control" id="ownedVehicles" name="ownedVehicles" placeholder="" value="" required min="0">
+                            <div class="invalid-feedback">
+                                Valid Numbers is required.
                             </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row my-3 justify-content-center">
+                    <!-- 5th question -->
+                    <div class="col-md-5 my-2">
+                        <label for="Preferable-mode-to-commute" class="form-label">5. Preferable mode to commute?</label>
+                        <div class="form-check">
+                            <input id="bus" name="preferredCommuteMode" type="radio" class="form-check-input" value="Bus" required>
+                            <label class="form-check-label" for="bus">A. Bus</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="train" name="preferredCommuteMode" type="radio" class="form-check-input" value="Train" required>
+                            <label class="form-check-label" for="train">B. Train</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="others" name="preferredCommuteMode" type="radio" class="form-check-input" value="Others" required>
+                            <label class="form-check-label" for="others">C. Others</label>
+                        </div>
+                    </div>
+                    <!-- 6th question -->
+                    <div class="col-md-5 my-2">
+                        <label for="ParkingFacility" class="form-label">6. Is there a Parking Facility at your Home?</label>
+                        <div class="form-check">
+                            <input id="parkingYes" name="parkingFacility" type="radio" class="form-check-input" value="yes" required>
+                            <label class="form-check-label" for="parkingYes">A. Yes</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="parkingNo" name="parkingFacility" type="radio" class="form-check-input" value="no" required>
+                            <label class="form-check-label" for="parkingNo">B. No</label>
+                        </div>
+                    </div>
+                </div>
+                
                             
                             
                             
-                            <div class="row my-3 justify-content-center">
-                                <!-- 5th question -->
-                                <div class="col-md-5 my-2">
-                                    <label for="Preferable-mode-to-commute" class="form-label">5. Preferable mode to
-                                        commute?</label>
-                                    <div class="form-check">
-                                        <input id="Bus" name="Preferable-mode-to-commute" type="radio"
-                                            class="form-check-input" value="Bus" required>
-                                        <label class="form-check-label" for="Bus">A. Bus</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input id="Train" name="Preferable-mode-to-commute" type="radio"
-                                            class="form-check-input" value="Train" required>
-                                        <label class="form-check-label" for="Train">B. Train</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input id="Others" name="Preferable-mode-to-commute" type="radio"
-                                            class="form-check-input" value="Others" required>
-                                        <label class="form-check-label" for="Others">B. Others</label>
-                                    </div>
-                                </div>
-                                <!-- 6th question -->
-                                <div class="col-md-5 my-2">
-                                    <label for="ParkingFacility" class="form-label">6. Is there a Parking Facility
-                                        at your Home?</label>
-                                    <div class="form-check">
-                                        <input id="parkingYes" name="ParkingFacility" type="radio"
-                                            class="form-check-input" value="yes" required>
-                                        <label class="form-check-label" for="parkingYes">A. Yes</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input id="parkingNo" name="ParkingFacility" type="radio"
-                                            class="form-check-input" value="no" required>
-                                        <label class="form-check-label" for="parkingNo">B. No</label>
-                                    </div>
-                                </div>
-
-                            </div>
-                            
-                            
-                            
-                            <div class="row my-3 justify-content-center">
-                                <!-- 7th question -->
-                                <div class="col-md-5 my-2">
-                                    <label for="ParkingFacilityPublic" class="form-label">7. Is there Parking Facility
-                                        in Public Places?</label>
-                                    <div class="form-check">
-                                        <input id="parkingPublicYes" name="ParkingFacilityPublic" type="radio"
-                                            class="form-check-input" value="yes" required>
-                                        <label class="form-check-label" for="parkingPublicYes">A. Yes</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input id="parkingPublicNo" name="ParkingFacilityPublic" type="radio"
-                                            class="form-check-input" value="no" required>
-                                        <label class="form-check-label" for="parkingPublicNo">B. No</label>
-                                    </div>
-                                </div>
-
-                                <!-- 8th question -->
-                                <div class="col-md-5 my-2">
-                                    <label for="ElectricVehicle" class="form-label">8. Are you using Electric Vehicle
-                                        (EV)?</label>
-                                    <div class="form-check">
-                                        <input id="evYes" name="ElectricVehicle" type="radio" class="form-check-input"
-                                            value="yes" required>
-                                        <label class="form-check-label" for="evYes">A. Yes</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input id="evNo" name="ElectricVehicle" type="radio" class="form-check-input"
-                                            value="no" required>
-                                        <label class="form-check-label" for="evNo">B. No</label>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-                            
-                            <div class="row my-3 justify-content-center">
-                                <!-- 9th question -->
-                                <div class="col-md-5 my-2">
-                                    <label for="EVUsageReason" class="form-label">9. If you're using Electric Vehicle
-                                        (EV), why?</label>
-                                    <textarea class="form-control" id="EVUsageReason" rows="3" required></textarea>
-                                </div>
-
-                                <!-- 10th question -->
-                                <div class="col-md-5 my-2">
-                                    <label for="ChargingFacilityPublic" class="form-label">10. Is there Charging
-                                        Facility in Public Places?</label>
-                                    <div class="form-check">
-                                        <input id="chargingPublicYes" name="ChargingFacilityPublic" type="radio"
-                                            class="form-check-input" value="yes" required>
-                                        <label class="form-check-label" for="chargingPublicYes">A. Yes</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input id="chargingPublicNo" name="ChargingFacilityPublic" type="radio"
-                                            class="form-check-input" value="no" required>
-                                        <label class="form-check-label" for="chargingPublicNo">B. No</label>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="row my-3 justify-content-center">
+                    <!-- 7th question -->
+                    <div class="col-md-5 my-2">
+                        <label for="ParkingFacilityPublic" class="form-label">7. Is there Parking Facility in Public Places?</label>
+                        <div class="form-check">
+                            <input id="parkingPublicYes" name="ParkingFacilityPublic" type="radio" class="form-check-input" value="yes" required>
+                            <label class="form-check-label" for="parkingPublicYes">A. Yes</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="parkingPublicNo" name="ParkingFacilityPublic" type="radio" class="form-check-input" value="no" required>
+                            <label class="form-check-label" for="parkingPublicNo">B. No</label>
+                        </div>
+                    </div>
+                
+                    <!-- 8th question -->
+                    <div class="col-md-5 my-2">
+                        <label for="ElectricVehicle" class="form-label">8. Are you using Electric Vehicle (EV)?</label>
+                        <div class="form-check">
+                            <input id="evYes" name="ElectricVehicle" type="radio" class="form-check-input" value="yes" required>
+                            <label class="form-check-label" for="evYes">A. Yes</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="evNo" name="ElectricVehicle" type="radio" class="form-check-input" value="no" required>
+                            <label class="form-check-label" for="evNo">B. No</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row my-3 justify-content-center">
+                    <!-- 9th question -->
+                    <div class="col-md-5 my-2">
+                        <label for="EVUsageReason" class="form-label">9. If you're using Electric Vehicle (EV), why?</label>
+                        <textarea class="form-control" id="EVUsageReason" name="EVUsageReason" rows="3" required></textarea>
+                    </div>
+                
+                    <!-- 10th question -->
+                    <div class="col-md-5 my-2">
+                        <label for="ChargingFacilityPublic" class="form-label">10. Is there Charging Facility in Public Places?</label>
+                        <div class="form-check">
+                            <input id="chargingPublicYes" name="ChargingFacilityPublic" type="radio" class="form-check-input" value="yes" required>
+                            <label class="form-check-label" for="chargingPublicYes">A. Yes</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="chargingPublicNo" name="ChargingFacilityPublic" type="radio" class="form-check-input" value="no" required>
+                            <label class="form-check-label" for="chargingPublicNo">B. No</label>
+                        </div>
+                    </div>
+                </div>
+                
                             
                             
                             
@@ -422,23 +388,7 @@
                                     </div>
                                 </div>
 
-                                <!-- 14th question -->
-                                <!-- <div class="col-md-5 my-2">
-                                    <label for="SkyWalkOpinion" class="form-label">14. What is your opinion on a skywalk
-                                        for the Mattutavani area?</label>
-                                    <div class="form-check">
-                                        <input id="skywalkNecessary" name="SkyWalkOpinion" type="radio"
-                                            class="form-check-input" value="necessary" required>
-                                        <label class="form-check-label" for="skywalkNecessary">A. Necessary</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input id="skywalkNotPrioritized" name="SkyWalkOpinion" type="radio"
-                                            class="form-check-input" value="notPrioritized" required>
-                                        <label class="form-check-label" for="skywalkNotPrioritized">B. Not prioritized
-                                            now</label>
-                                    </div>
-                                </div> -->
-                         
+                                                      
                                 <!-- 14th question -->
                                 <div class="col-md-5 my-2">
                                     <label for="PedestrianWalkOpinion" class="form-label">14. What is your opinion on

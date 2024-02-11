@@ -38,4 +38,41 @@
   $contact->add_message( $_POST['message'], 'Message', 10);
 
   echo $contact->send();
+// Check if the form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Retrieve the form data
+    $name = $_POST['name'];
+    $age = $_POST['age'];
+    $sex = $_POST['sex'];
+    $address = $_POST['address'];
+    $phone = $_POST['phone'];
+    $email = $_POST['email'];
+    $educational = $_POST['educational'];
+    $occupation = $_POST['occupation'];
+    $phyChall = $_POST['phyChall'];
+    $knowAboutMasterPlan = $_POST['KnowaboutMasterPlan'];
+    $travelMode = $_POST['travel-mode'];
+    $dailyTravelDistance = $_POST['dailyTravelDistance'];
+    $ownedVehicles = $_POST['ownedVehicles'];
+    $preferredCommuteMode = $_POST['preferredCommuteMode'];
+    $parkingFacility = $_POST['parkingFacility'];
+    $parkingFacilityPublic = $_POST['ParkingFacilityPublic'];
+    $electricVehicle = $_POST['ElectricVehicle'];
+    $EVUsageReason = $_POST['EVUsageReason'];
+    $chargingFacilityPublic = $_POST['ChargingFacilityPublic'];
+    // Display the submitted data
+    echo "Name: " . $name . "<br>";
+    echo "Age: " . $age . "<br>";
+    echo "Sex: " . $sex . "<br>";
+    echo "Address: " . $address . "<br>";
+    echo "Phone: " . $phone . "<br>";
+    echo "Email: " . $email . "<br>";
+    echo "Educational: " . $educational . "<br>";
+    echo "Occupation: " . $occupation . "<br>";
+    echo "Physically Challenged: " . $phyChall;
+    
+} else {
+    // If the form is not submitted, display an error message
+    echo "Error: Form not submitted.";
+}
 ?>
