@@ -75,7 +75,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $wasteSegregation = $_POST["waste_segregation"];
   $decentralizationSolidWaste = $_POST["decentralization_solid_waste"];
   $solidWasteSuggestions = $_POST["solid_waste_suggestions"];
-  
+  $neighborhood_safety_night = $_POST['neighborhood_safety_night'];
+  $emergency_services_satisfaction = $_POST['emergency_services_satisfaction'];
+  $police_services_satisfaction = $_POST['police_services_satisfaction'];
+  $fire_services_satisfaction = $_POST['fire_services_satisfaction'];
+     $medical_services_satisfaction = $_POST['medical_services_satisfaction'];
+    $educational_cultural_opportunities = $_POST['educational_cultural_opportunities'];
+    $parks_satisfaction = $_POST['parks_satisfaction'];
+    $distance_to_park = $_POST['distance_to_park'];
+     $recreational_facilities = $_POST['recreational_facilities'];
+    $climate_change_concern = $_POST['climate_change_concern'];
+    $utilization_abandoned_quarry = $_POST['utilization_abandoned_quarry'];
+    $revamping_water_bodies = $_POST['revamping_water_bodies'];
+     $desilting_drain_channels = $_POST['desilting_drain_channels'];
+    $revitalization_wetlands = $_POST['revitalization_wetlands'];
+    $eco_park = $_POST['eco_park'];
+    $others = $_POST['others'];
+    $tourism_circuit = $_POST['tourism_circuit'];
+    $local_business_initiatives = $_POST['local_business_initiatives'];
+    $additional_suggestions = $_POST['additional_suggestions'];
 } else {
   // If the form is not submitted, display an error message
   echo "Error: Form not submitted.";
