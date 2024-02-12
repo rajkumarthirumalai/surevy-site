@@ -10,29 +10,6 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
-
-
-
-    <!-- Favicons -->
     <link href="assets/img/tnlogo.png" rel="icon">
     <link href="assets/img/tnlogo.png" rel="apple-touch-icon">
 
@@ -49,6 +26,7 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
@@ -60,13 +38,16 @@
 </head>
 
 <body>
-    <header id="header" class="fixed-top header-scrolled">
+
+    <!-- Header Section -->
+    <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
-
-            <div class=" me-auto">
-                <h1 class="logo"><a href="index.html">Madurai</a></h1>
-
+            <div class="me-auto">
+                <h1 class="logo"><a href="index.html" data-i18n="madurai">Madurai</a></h1>
+                <p style="color: white; font-size: 10px;" data-i18n="transform_message">Transform sleepless city with
+                    enduring vision</p>
             </div>
+
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -106,10 +87,10 @@
                         </select>
                     </li>
                 </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
-
         </div>
-    </header>
+    </header><!-- End Header -->
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact mt-5">
         <div class="container justify-content-center " data-aos="fade-up">
@@ -126,53 +107,54 @@
                             <div class="row g-3">
                                 <div class="row mt-5 justify-content-center">
                                     <div class="col-sm-5">
-                                        <label for="age" class="form-label">Age</label>
-                                        <input type="text" class="form-control" id="age" name="age" placeholder=""
-                                            value="" required>
-                                        <div class="invalid-feedback">Valid Age is required.</div>
+                                        <label for="age" class="form-label" data-i18n="age">Age</label>
+                                        <input type="text" class="form-control" id="age" name="age" placeholder="" value="" required>
+                                        <div class="invalid-feedback" data-i18n="valid_age_required">Valid Age is required.</div>
                                     </div>
-
+                        
                                     <div class="col-md-3">
-                                        <label for="sex" class="form-label">Gender</label>
+                                        <label for="sex" class="form-label" data-i18n="gender">Gender</label>
                                         <select class="form-select" id="sex" name="sex" required>
-                                            <option value="">Select</option>
-                                            <option value="male">Male</option>
-                                            <option value="female">Female</option>
-                                            <option value="other">Other</option>
+                                            <option value="" data-i18n="select">Select</option>
+                                            <option value="male" data-i18n="male">Male</option>
+                                            <option value="female" data-i18n="female">Female</option>
+                                            <option value="other" data-i18n="other">Other</option>
                                         </select>
-                                        <div class="invalid-feedback">Please select a gender.</div>
+                                        <div class="invalid-feedback" data-i18n="select_gender">Please select a gender.</div>
                                     </div>
-
+                        
                                     <div class="col-sm-4">
-                                        <label for="locality" class="form-label">Locality</label>
-                                        <input type="text" class="form-control" id="locality" name="locality"
-                                            placeholder="" required>
-                                        <div class="invalid-feedback">Locality is required.</div>
+                                        <label for="locality" class="form-label" data-i18n="locality">Locality</label>
+                                        <input type="text" class="form-control" id="locality" name="locality" placeholder="" required>
+                                        <div class="invalid-feedback" data-i18n="locality_required">Locality is required.</div>
                                     </div>
                                 </div>
-
+                        
                                 <div class="row mt-3 justify-content-center">
                                     <div class="col-sm-4">
-                                        <label for="occupation" class="form-label">Occupation</label>
-                                        <input type="text" class="form-control" id="occupation" name="occupation"
-                                            placeholder="" value="" required>
-                                        <div class="invalid-feedback">Valid Occupation is required.</div>
+                                        <label for="occupation" class="form-label" data-i18n="occupation">Occupation</label>
+                                        <input type="text" class="form-control" id="occupation" name="occupation" placeholder="" value="" required>
+                                        <div class="invalid-feedback" data-i18n="valid_occupation_required">Valid Occupation is required.</div>
                                     </div>
-
+                        
                                     <div class="col-md-4">
                                         <label for="income" class="form-label">Scale of Annual Income (INR)</label>
                                         <select class="form-select" id="income" name="income" required>
-                                            <option value="">Select</option>
+                                            <option value="" data-i18n="select">Select</option>
                                             <option value="0-100000">&#8377;0-&#8377;100,000</option>
                                             <option value="100001-300000">&#8377;100,001-&#8377;300,000</option>
                                             <option value="300001-600000">&#8377;300,001-&#8377;600,000</option>
                                             <option value="600001+">&#8377;600,000+</option>
                                         </select>
-                                        <div class="invalid-feedback">Please select a scale of annual income.</div>
+                                        <div class="invalid-feedback" data-i18n="select_annual_income">Please select a scale of annual income.</div>
                                     </div>
                                 </div>
                             </div>
 
+
+
+
+                                                        
 
 
                             <hr class="my-4">
@@ -181,71 +163,61 @@
 
 
                             <!-- Economy -->
-                            <h3>Economy</h3>
+                            <h3 data-i18n="economy">Economy</h3>
 
                             <div class="row my-3 justify-content-center">
                                 <!-- 1st question -->
                                 <div class="col-md-5 my-2">
-                                    <label for="KnowaboutMasterPlan" class="form-label">1. Are you aware about the
-                                        Master Plan and the previous initiatives undertaken in our area?
-                                        ?</label>
+                                    <label for="KnowaboutMasterPlan" class="form-label" data-i18n="aware_master_plan">1. Are you aware about the Master Plan and the previous initiatives undertaken in our area?</label>
                                     <div class="form-check">
-                                        <input id="KnowaboutMasterPlan_yes" name="KnowaboutMasterPlan" type="radio"
-                                            class="form-check-input" value="yes" required>
-                                        <label class="form-check-label" for="KnowaboutMasterPlan_yes">A. Yes</label>
+                                        <input id="KnowaboutMasterPlan_yes" name="KnowaboutMasterPlan" type="radio" class="form-check-input" value="yes" required>
+                                        <label class="form-check-label" for="KnowaboutMasterPlan_yes" data-i18n="yes">A. Yes</label>
                                     </div>
                                     <div class="form-check">
-                                        <input id="KnowaboutMasterPlan_no" name="KnowaboutMasterPlan" type="radio"
-                                            class="form-check-input" value="no" required>
-                                        <label class="form-check-label" for="KnowaboutMasterPlan_no">B. No</label>
+                                        <input id="KnowaboutMasterPlan_no" name="KnowaboutMasterPlan" type="radio" class="form-check-input" value="no" required>
+                                        <label class="form-check-label" for="KnowaboutMasterPlan_no" data-i18n="no">B. No</label>
                                     </div>
                                 </div>
                                 <!-- 2nd question -->
                                 <div class="col-md-5 my-2">
-                                    <label for="ColdStorage" class="form-label">2. Integrated cold storage and value
-                                        addition for agriculture and perishable goods?</label>
+                                    <label for="ColdStorage" class="form-label" data-i18n="cold_storage">2. Integrated cold storage and value addition for agriculture and perishable goods?</label>
                                     <div class="form-check">
-                                        <input id="ColdStorage_yes" name="ColdStorage" type="radio"
-                                            class="form-check-input" value="necessary" required>
-                                        <label class="form-check-label" for="ColdStorage_yes">A. Necessary</label>
+                                        <input id="ColdStorage_yes" name="ColdStorage" type="radio" class="form-check-input" value="necessary" required>
+                                        <label class="form-check-label" for="ColdStorage_yes" data-i18n="necessary">A. Necessary</label>
                                     </div>
                                     <div class="form-check">
-                                        <input id="ColdStorage_no" name="ColdStorage" type="radio"
-                                            class="form-check-input" value="not_necessary" required>
-                                        <label class="form-check-label" for="ColdStorage_no">B. Not Necessary</label>
+                                        <input id="ColdStorage_no" name="ColdStorage" type="radio" class="form-check-input" value="not_necessary" required>
+                                        <label class="form-check-label" for="ColdStorage_no" data-i18n="not_necessary">B. Not Necessary</label>
                                     </div>
                                 </div>
                             </div>
 
+
+
+
+                            
 
 
                             <div class="row my-3 justify-content-center">
                                 <!-- 3rd question -->
                                 <div class="col-md-5 my-2">
-                                    <label for="LogisticHub" class="form-label">3. Multi-modal logistic hub along the
-                                        NH-38
-                                        alignment?</label>
+                                    <label for="LogisticHub" class="form-label" data-i18n="logistic_hub">3. Multi-modal logistic hub along the NH-38 alignment?</label>
                                     <div class="form-check">
-                                        <input id="LogisticHub_yes" name="LogisticHub" type="radio"
-                                            class="form-check-input" value="necessary" required>
-                                        <label class="form-check-label" for="LogisticHub_yes">A. Necessary</label>
+                                        <input id="LogisticHub_yes" name="LogisticHub" type="radio" class="form-check-input" value="necessary" required>
+                                        <label class="form-check-label" for="LogisticHub_yes" data-i18n="necessary">A. Necessary</label>
                                     </div>
                                     <div class="form-check">
-                                        <input id="LogisticHub_no" name="LogisticHub" type="radio"
-                                            class="form-check-input" value="not_necessary" required>
-                                        <label class="form-check-label" for="LogisticHub_no">B. Not
-                                            Necessary</label>
+                                        <input id="LogisticHub_no" name="LogisticHub" type="radio" class="form-check-input" value="not_necessary" required>
+                                        <label class="form-check-label" for="LogisticHub_no" data-i18n="not_necessary">B. Not Necessary</label>
                                     </div>
                                 </div>
                                 <!-- 4th question -->
                                 <div class="col-md-5 my-2">
-                                    <label for="EconomySatisfaction" class="form-label">4. How satisfied are you with
-                                        the Economy Sector within Madurai on a scale of 1 to 5?</label>
-                                    <input type="range" id="EconomySatisfaction" name="EconomySatisfaction"
-                                        class="form-range" min="1" max="5" required>
+                                    <label for="EconomySatisfaction" class="form-label" data-i18n="economy_satisfaction">4. How satisfied are you with the Economy Sector within Madurai on a scale of 1 to 5?</label>
+                                    <input type="range" id="EconomySatisfaction" name="EconomySatisfaction" class="form-range range-slider" min="1" max="5" required>
                                 </div>
-
                             </div>
+                            
 
 
                             <!-- transportation -->
@@ -537,14 +509,14 @@
                                         you with the current public transportation system (buses, trains, etc.) on a
                                         scale of 1 to 5?</label>
                                     <input type="range" id="PublicTransportSatisfaction"
-                                        name="PublicTransportSatisfaction" class="form-range" min="1" max="5" required>
+                                        name="PublicTransportSatisfaction" class="form-range range-slider" min="1" max="5" required>
                                 </div>
                             </div>
 
                             <div class="row my-3 justify-content-center">
                                 <h3>Physical Infrastructure - Water Supply, Sewerage and Solid waste
                                 </h3>
-                                    <!-- 20th question -->
+                                <!-- 20th question -->
                                 <div class="col-md-5 my-2">
                                     <label for="WaterSupply" class="form-label">20. Do you have access to daily water
                                         supply
@@ -560,7 +532,7 @@
                                         <label class="form-check-label" for="WaterSupply_No">B. No</label>
                                     </div>
                                 </div>
-                                    <!-- 21th question -->
+                                <!-- 21th question -->
                                 <div class="col-md-5 my-2">
                                     <label class="form-label">21. Frequency (per day/two days once/etc):</label>
                                     <div class="form-check">
@@ -585,7 +557,7 @@
                             </div>
 
                             <div class="row my-3 justify-content-center">
-                                    <!-- 22th question -->
+                                <!-- 22th question -->
 
                                 <div class="col-md-5 my-2">
                                     <label for="WaterStagnation" class="form-label">22. Do you experience water
@@ -602,7 +574,7 @@
                                         <label class="form-check-label" for="WaterStagnation_No">B. No</label>
                                     </div>
                                 </div>
-                                    <!-- 23th question -->
+                                <!-- 23th question -->
 
                                 <div class="col-md-5 my-2">
                                     <label for="SewageTreatment" class="form-label">23. Opinion on implementation of
@@ -624,7 +596,7 @@
 
                             </div>
                             <div class="row my-3 justify-content-center">
-                                    <!-- 24th question -->
+                                <!-- 24th question -->
 
                                 <div class="col-md-5 my-2">
                                     <label for="WasteSegregation" class="form-label">24. Do you practice segregation of
@@ -641,7 +613,7 @@
                                         <label class="form-check-label" for="WasteSegregation_No">B. No</label>
                                     </div>
                                 </div>
-                                    <!-- 25th question -->
+                                <!-- 25th question -->
 
                                 <div class="col-md-5 my-2">
                                     <label for="DecentralizationSolidWaste" class="form-label">25. Opinion on
@@ -662,7 +634,7 @@
                                             Disagree</label>
                                     </div>
                                 </div>
-                                    <!-- 26th question -->
+                                <!-- 26th question -->
 
                                 <div class="col-md-10 my-2">
                                     <label for="SolidWasteSuggestions" class="form-label">26. Any other suggestions for
@@ -679,22 +651,22 @@
 
                             <div class="row my-3 justify-content-center">
                                 <h3>Social Infrastructure - Safety and Community Services</h3>
-                                    <!-- 27th question -->
+                                <!-- 27th question -->
 
                                 <div class="col-md-5 my-2">
                                     <label for="NeighborhoodSafetyNight" class="form-label">27. On a scale of 1 to 5,
                                         How safe do you feel in your neighborhood at night?</label>
                                     <input type="range" id="NeighborhoodSafetyNight" name="NeighborhoodSafetyNight"
-                                        class="form-range" min="1" max="5" required>
+                                        class="form-range range-slider" min="1" max="5" required>
                                 </div>
-                                    <!-- 28th question -->
+                                <!-- 28th question -->
 
                                 <div class="col-md-5 my-2">
                                     <label for="EmergencyServicesSatisfaction" class="form-label">28. Are you satisfied
                                         with the accessibility of emergency services (police, fire, medical) in our
                                         city? (Scale 1 to 5)</label>
                                     <input type="range" id="EmergencyServicesSatisfaction"
-                                        name="EmergencyServicesSatisfaction" class="form-range" min="1" max="5"
+                                        name="EmergencyServicesSatisfaction" class="form-range range-slider" min="1" max="5"
                                         required>
                                 </div>
 
@@ -706,21 +678,23 @@
 
 
                             <div class="row my-3 justify-content-center">
-                                    <!-- 29th question -->
+                                <!-- 29th question -->
 
                                 <div class="col-md-5 my-2">
-                                    <label for="PoliceServicesSatisfaction" class="form-label">29. Are you satisfied with
+                                    <label for="PoliceServicesSatisfaction" class="form-label">29. Are you satisfied
+                                        with
                                         the accessibility of police services in our city? (Scale 1 to 5)</label>
                                     <input type="range" id="PoliceServicesSatisfaction"
-                                        name="PoliceServicesSatisfaction" class="form-range" min="1" max="5" required>
+                                        name="PoliceServicesSatisfaction" class="form-range range-slider" min="1" max="5" required>
                                 </div>
-                                    <!-- 30th question -->
+                                <!-- 30th question -->
 
                                 <div class="col-md-5 my-2">
-                                    <label for="FireServicesSatisfaction" class="form-label">30. Are you satisfied with the
+                                    <label for="FireServicesSatisfaction" class="form-label">30. Are you satisfied with
+                                        the
                                         accessibility of fire services in our city? (Scale 1 to 5)</label>
                                     <input type="range" id="FireServicesSatisfaction" name="FireServicesSatisfaction"
-                                        class="form-range" min="1" max="5" required>
+                                        class="form-range range-slider" min="1" max="5" required>
                                 </div>
 
                             </div>
@@ -730,16 +704,18 @@
 
 
                             <div class="row my-3 justify-content-center">
-                                    <!-- 31th question -->
+                                <!-- 31th question -->
                                 <div class="col-md-5 my-2">
-                                    <label for="MedicalServicesSatisfaction" class="form-label">31. Are you satisfied with
+                                    <label for="MedicalServicesSatisfaction" class="form-label">31. Are you satisfied
+                                        with
                                         the accessibility of medical services in our city? (Scale 1 to 5)</label>
                                     <input type="range" id="MedicalServicesSatisfaction"
-                                        name="MedicalServicesSatisfaction" class="form-range" min="1" max="5" required>
+                                        name="MedicalServicesSatisfaction" class="form-range range-slider" min="1" max="5" required>
                                 </div>
-                                    <!-- 32th question -->
+                                <!-- 32th question -->
                                 <div class="col-md-5 my-2">
-                                    <label for="EducationalCulturalOpportunities" class="form-label">32. What measures could
+                                    <label for="EducationalCulturalOpportunities" class="form-label">32. What measures
+                                        could
                                         be taken to improve access to educational and cultural opportunities for all age
                                         groups? (E.g., community centers, libraries, day care, etc.)</label>
                                     <textarea id="EducationalCulturalOpportunities"
@@ -755,22 +731,23 @@
 
                             <div class="row my-3 justify-content-center">
                                 <h3> Recreation, and Environment</h3>
+                                <!-- 33th question -->
                                 <div class="col-md-5 my-2">
-                                    <label for="ParksSatisfaction" class="form-label">On a scale of 1 to 5, how
+                                    <label for="ParksSatisfaction" class="form-label">33. On a scale of 1 to 5, how
                                         satisfied are you with the accessibility and quality of parks and green spaces
                                         in our city?</label>
                                     <input type="range" id="ParksSatisfaction" name="ParksSatisfaction"
-                                        class="form-range" min="1" max="5" required>
+                                        class="form-range range-slider" min="1" max="5" required>
                                 </div>
 
-
+                                <!-- 34th question -->
                                 <div class="col-md-5 my-2">
-                                    <label for="DistanceToPark" class="form-label">Distance (in km) from your home to
+                                    <label for="DistanceToPark" class="form-label">34. Distance (in km) from your home
+                                        to
                                         the nearest park:</label>
                                     <input type="number" id="DistanceToPark" name="DistanceToPark" class="form-control"
                                         min="0" max="30" step="0.1" required>
                                 </div>
-
                             </div>
 
 
@@ -778,16 +755,18 @@
 
 
                             <div class="row my-3 justify-content-center">
-
+                                <!-- 35th question -->
                                 <div class="col-md-5 my-2">
-                                    <label for="RecreationalFacilities" class="form-label">What additional recreational
+                                    <label for="RecreationalFacilities" class="form-label">35. What additional
+                                        recreational
                                         facilities or programs would you like to see in your neighborhood? (E.g., sport
                                         activities such as Badminton court, Gymnasium etc.)</label>
                                     <textarea id="RecreationalFacilities" name="RecreationalFacilities"
                                         class="form-control" rows="4"></textarea>
                                 </div>
+                                <!-- 36th question -->
                                 <div class="col-md-5 my-2">
-                                    <label for="ClimateChangeConcern" class="form-label">How concerned are you about
+                                    <label for="ClimateChangeConcern" class="form-label">36. How concerned are you about
                                         climate change, and what actions do you think the city should take to address
                                         it?</label>
                                     <textarea id="ClimateChangeConcern" name="ClimateChangeConcern" class="form-control"
@@ -803,9 +782,9 @@
                             <div class="row my-3 justify-content-center">
                                 <h5>Of the below mentioned, What initiatives could be undertaken to protect natural
                                     habitats, improve air and water quality? </h5>
-
+                                <!-- 37th question -->
                                 <div class="col-md-5 my-2">
-                                    <label for="UtilizationAbandonedQuarry" class="form-label">Utilization of
+                                    <label for="UtilizationAbandonedQuarry" class="form-label">37. Utilization of
                                         Abandoned
                                         Quarry as potential water storage reservoirs to mitigate water
                                         scarcity?</label>
@@ -824,8 +803,10 @@
                                             Not Necessary</label>
                                     </div>
                                 </div>
+                                <!-- 38th question -->
+
                                 <div class="col-md-5 my-2">
-                                    <label for="RevampingWaterBodies" class="form-label">Revamping of existing water
+                                    <label for="RevampingWaterBodies" class="form-label">38. Revamping of existing water
                                         bodies like Mudakkathan, Ilanthaikulam, Angamalpuram and few others.</label>
                                     <div class="form-check">
                                         <input id="RevampingWaterBodies_Necessary" name="RevampingWaterBodies"
@@ -848,9 +829,10 @@
 
 
                             <div class="row my-3 justify-content-center">
+                                <!-- 39th question -->
 
                                 <div class="col-md-5 my-2">
-                                    <label for="DesiltingDrainChannels" class="form-label">Desilting and cleaning of
+                                    <label for="DesiltingDrainChannels" class="form-label">39. Desilting and cleaning of
                                         natural drain channels across Kirudhumal, Avaniapuram, and Periyar
                                         channel.</label>
                                     <div class="form-check">
@@ -867,8 +849,10 @@
                                             Necessary</label>
                                     </div>
                                 </div>
+                                <!-- 40th question -->
+
                                 <div class="col-md-5 my-2">
-                                    <label for="RevitalizationWetlands" class="form-label">Revitalization and
+                                    <label for="RevitalizationWetlands" class="form-label">40. Revitalization and
                                         redevelopment of existing Vandiyur and T.kunnathur wetland for a sustainable
                                         ecosystem?</label>
                                     <div class="form-check">
@@ -892,9 +876,10 @@
 
 
                             <div class="row my-3 justify-content-center">
+                                <!-- 41th question -->
 
                                 <div class="col-md-5 my-2">
-                                    <label for="EcoPark" class="form-label">Eco-park at Meenakshipuram near
+                                    <label for="EcoPark" class="form-label">41. Eco-park at Meenakshipuram near
                                         Aritapatti
                                         Bio-Diversity to encourage flora and fauna species?</label>
                                     <div class="form-check">
@@ -909,8 +894,10 @@
                                             Necessary</label>
                                     </div>
                                 </div>
+                                <!-- 42th question -->
+
                                 <div class="col-md-5 my-2">
-                                    <label for="Others" class="form-label">Others, Specify:</label>
+                                    <label for="Others" class="form-label">42. Others, Specify:</label>
                                     <input type="text" id="Others" name="Others" class="form-control">
                                 </div>
                             </div>
@@ -927,8 +914,10 @@
                                     trade and economic growth ?
 
                                 </h5>
+                                <!-- 43rd question -->
+
                                 <div class="col-md-5 my-2">
-                                    <label for="TourismCircuit" class="form-label">Tourism circuit connecting
+                                    <label for="TourismCircuit" class="form-label">43. Tourism circuit connecting
                                         historical
                                         monuments, cultural hotspots, natural landscape and its importance on
                                         cultural
@@ -946,8 +935,10 @@
                                             Necessary</label>
                                     </div>
                                 </div>
+                                <!-- 44th question -->
+
                                 <div class="col-md-5 my-2">
-                                    <label for="LocalBusinessInitiatives" class="form-label">Initiatives to support
+                                    <label for="LocalBusinessInitiatives" class="form-label">44. Initiatives to support
                                         local businesses / products.</label>
                                     <div class="form-check">
                                         <input id="LocalBusinessInitiatives_Necessary" name="LocalBusinessInitiatives"
@@ -972,7 +963,7 @@
                             <div class="row my-3 justify-content-center">
 
                                 <div class="col-md-10 my-2">
-                                    <label for="AdditionalSuggestions" class="form-label">Do you have any additional
+                                    <label for="AdditionalSuggestions" class="form-label">45. Do you have any additional
                                         suggestions? Specify:</label>
                                     <textarea id="AdditionalSuggestions" name="AdditionalSuggestions"
                                         class="form-control" rows="4"></textarea>

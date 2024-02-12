@@ -140,5 +140,30 @@
   "watershed_management": "Watershed Management (Protecting the land use, Agroforestry) - Separate DPR can be proposed",
   "enhancement_of_existing_green_and_blue_cover_in_lpa": "Enhancement of existing green and blue cover in LPA",
   "urban_forestry_in_ambalathadi": "Urban Forestry in - Ambalathadi - 9 pt 1.00 acre.",
-  "reclamation_of_abandoned_quarries": "Reclamation of Abandoned quarries at Vandiyur (2.63 ha) Katchaikatti (6.62 ha) Virelipatti (1.94 ha) Kulasekaran Kottai (0.25 ha) Urban Forestry"
+  "reclamation_of_abandoned_quarries": "Reclamation of Abandoned quarries at Vandiyur (2.63 ha) Katchaikatti (6.62 ha) Virelipatti (1.94 ha) Kulasekaran Kottai (0.25 ha) Urban Forestry",
+
+
+  "age": "Age",
+  "gender": "Gender",
+  "select": "Select",
+  "male": "Male",
+  "female": "Female",
+  "other": "Other",
+  "locality": "Locality",
+  "occupation": "Occupation",
+  "valid_age_required": "Valid Age is required.",
+  "select_gender": "Please select a gender.",
+  "locality_required": "Locality is required.",
+  "valid_occupation_required": "Valid Occupation is required.",
+  "select_annual_income": "Please select a scale of annual income.",
+  "submit": "Submit",
+  "economy": "Economy",
+  "aware_master_plan": "1. Are you aware about the Master Plan and the previous initiatives undertaken in our area?",
+  "yes": "A. Yes",
+  "no": "B. No",
+  "cold_storage": "2. Integrated cold storage and value addition for agriculture and perishable goods?",
+  "necessary": "A. Necessary",
+  "not_necessary": "B. Not Necessary",
+  "logistic_hub": "3. Multi-modal logistic hub along the NH-38 alignment?",
+  "economy_satisfaction": "4. How satisfied are you with the Economy Sector within Madurai on a scale of 1 to 5?"
 }

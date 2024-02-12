@@ -289,13 +289,14 @@ $(function() {
 })
 
 
-let translations;
 
+let translations;
 function loadLanguageFile(languageCode) {
   console.log("codeee",languageCode);
   return fetch(`assets/lng/${languageCode}.json`)
     .then(response => response.json())
     .then(data => {
+      console.log("the data",data);
       translations = data;
       updateUI();
     })
@@ -303,6 +304,7 @@ function loadLanguageFile(languageCode) {
 }
 
 function updateUI() {
+  console.log("survery form enga vara varuthu");
   const elements = document.querySelectorAll('[data-i18n]');
   elements.forEach(element => {
     const key = element.getAttribute('data-i18n');
