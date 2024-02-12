@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Citizen Engagement Portal</title>
+    <title>Madurailpa</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -77,14 +77,14 @@
                             Survey</a></li>
 
                     <!-- Language Selector -->
-                     <li>
+                    <li>
                         <select id="language-selector" class="form-select mx-3"
                             style="border-radius: 25px; background-color: #37517e ;border:1px #47b2e4 solid; color: white;"
                             onchange="changeLanguage(this.value)">
                             <option value="en" data-i18n="english">English</option>
                             <option value="ta" data-i18n="tamil">Tamil</option>
                         </select>
-                    </li> 
+                    </li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -117,51 +117,58 @@
         <!-- profile End  Section -->
         <!-- ======= profile Section ======= -->
         <section id="profile" class="profile about">
+
+            <!-- Section Title -->
+            <div class="section-title" data-aos="fade-up">
+                <h2 data-i18n="profile">Profile</h2>
+            </div>
+
+            <!-- Container -->
             <div class="container" data-aos="fade-up">
 
-                <!-- Section Title -->
-                <div class="section-title" data-aos="fade-up">
-                    <h2 data-i18n="profile">Profile</h2>
-                </div>
+                <!-- Content Row -->
+                <div class="row content justify-content-center align-items-center">
+                    <!-- Left Column -->
+                    <div class="col-lg-6">
 
-                <!-- Container -->
-                <div class="container" data-aos="fade-up">
+                        <!-- About your LPA -->
+                        <h4 data-i18n="about_your_lpa">About your LPA</h4>
+                        <!-- LPA Statistics -->
+                        <div class="row p-3 mt-3 mx-auto border border-warning rounded">
+                            <div class="col-lg-6"><span data-i18n="total_lpa_area">Total LPA Area</span><br>
+                                <strong><label class="text-warning">1254.93</label> Sq.km</strong>
+                            </div>
+                            <div class="col-lg-6"><span data-i18n="total_lpa_population">Total LPA Population</span><br>
+                                <strong><label class="text-warning">22,63,115</label></strong>
+                            </div>
+                        </div>
+                        <!-- Municipality Statistics -->
+                        <div class="municipality-info-container row p-3 my-3 mx-auto border border-warning rounded accordion"
+                            id="accordionExample">
+                            <h2 class="accordion-header" id="headingOne">
 
-                    <!-- Content Row -->
-                    <div class="row content">
-                        <!-- Sub-section Row -->
-                        <div class="row">
-                            <!-- Left Column -->
-                            <div class="col-lg-6">
-                                <!-- About your LPA -->
-                                <h4 data-i18n="about_your_lpa">About your LPA</h4>
-                                <!-- LPA Statistics -->
-                                <div class="row p-3 mt-3 border border-warning rounded">
-                                    <div class="col-lg-6" data-i18n="total_lpa_area">Total LPA Area<br>
-                                        <strong><label class="text-warning" for="|">1254.93</label> Sq.km</strong>
-                                    </div>
-                                    <div class="col-lg-6" data-i18n="total_lpa_population">Total LPA Population<br>
-                                        <strong><label class="text-warning" for="|">22,63,115</label></strong>
-                                    </div>
-                                </div>
+                                <h4 data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne" data-i18n="municipality">Municipality</h4>
 
-                                <!-- Municipality Statistics -->
-                                <div class="row p-3 my-3 mx-auto border border-warning rounded">
-                                    <h4 data-i18n="municipality">Municipality</h4>
-                                    <!-- Thirumangalam -->
-                                    <div class="row text-align-center align-items-center justify-content-center pb-3">
-                                        <span data-i18n="area">Area</span> <strong><label class="text-warning"
-                                                for="|">25.95</label> Sq.km</strong>
-                                    </div>
-                                    <div class="col-lg-6" style="border-right: 1px solid #ccc;">
+                                <span class="ms-auto">
+                                    <span data-i18n="area">Area</span>
+                                    <strong><label class="text-warning" for="|">25.95</label> Sq.km</strong>
+                                </span>
+                            </h2>
+
+                            <div id="collapseOne" class="row accordion-collapse collapse show mx-auto"
+                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <!-- Thirumangalam -->
+                                <div class="row mx-auto">
+                                
+                                    <div class="col-lg-6 mobile-hide-border " style="border-right: 1px solid #ccc;">
                                         <!-- Thirumangalam -->
                                         <div class="mt-2">
                                             <span data-i18n="thirumangalam_area">Thirumangalam Area</span><br>
                                             <strong><label class="text-warning" for="|">13.64</label> Sq.km</strong>
                                         </div>
                                         <div class="mt-2">
-                                            <span data-i18n="thirumangalam_population">Thirumangalam
-                                                Population</span><br>
+                                            <span data-i18n="thirumangalam_population">Thirumangalam Population</span><br>
                                             <strong><label class="text-warning" for="|">51,194 </label></strong>
                                         </div>
                                     </div>
@@ -178,94 +185,98 @@
                                     </div>
                                 </div>
 
-                                <!-- Town Panchayat Statistics -->
-                                <div class="row p-3 my-3 mx-auto border border-warning rounded">
-                                    <h4 data-i18n="town_panchayat">Town Panchayat</h4>
-                                    <div class="col-lg-4">
-                                        <span data-i18n="area">Area</span> <br>
-                                        <strong><label class="text-warning" for="|">76.11</label> Sq.km</strong><br><br>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <span data-i18n="number_of_town_panchayats">No of Town Panchayats</span> <br>
-                                        <strong><label class="text-warning" for="|">5</label> <br><br></strong>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <span data-i18n="population">Population</span> <br>
-                                        <strong><label class="text-warning" for="|">22,63,115</label> <br><br></strong>
-                                    </div>
-                                </div>
-
-                                <!-- Village Panchayat Statistics -->
-                                <div class="row p-3 my-3 mx-auto border border-warning rounded">
-                                    <h4 data-i18n="village_panchayat">Village Panchayat</h4>
-                                    <div class="col-lg-4" >
-                                        <span  data-i18n="area">Area</span> <br>
-                                        <strong><label class="text-warning" for="|">1004.90</label>
-                                            Sq.km<br><br></strong>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <span  data-i18n="number_of_village_panchayats">No of Village Panchayats</span> <br>
-                                        <strong><label class="text-warning" for="|">316</label> <br><br></strong>
-                                    </div>
-                                    <div class="col-lg-4" >
-                                        <span  data-i18n="population">Population</span><br>
-                                        <strong><label class="text-warning" for="|">22,63,115</label> <br><br></strong>
-                                    </div>
-                                </div>
-
-                                <!-- Know More Button -->
-                                <a href="./knowmore.html" class="btn-get-started scrollto"
-                                    data-i18n="know_more"><span>Know more</span></a>
-                            </div>
-
-                            <!-- Right Column -->
-                            <div class="col-lg-6 mt-4">
-                                <!-- Images -->
-                                <img src="assets/img/webp/image1.webp" class="img-fluid" width="60%" alt="">
-                                <img src="assets/img/webp/image2.webp" class="img-fluid" width="60%" alt="">
                             </div>
                         </div>
+
+
+                        <!-- Town Panchayat Statistics -->
+                        <div class="row p-3 my-3 mx-auto border border-warning rounded">
+                            <h4 data-i18n="town_panchayat">Town Panchayat</h4>
+                            <div class="col-lg-4">
+                                <span data-i18n="area">Area</span> <br>
+                                <strong><label class="text-warning" for="|">76.11</label> Sq.km</strong><br><br>
+                            </div>
+                            <div class="col-lg-4">
+                                <span data-i18n="number_of_town_panchayats">No of Town Panchayats</span> <br>
+                                <strong><label class="text-warning" for="|">5</label> <br><br></strong>
+                            </div>
+                            <div class="col-lg-4">
+                                <span data-i18n="population">Population</span> <br>
+                                <strong><label class="text-warning" for="|">22,63,115</label> <br><br></strong>
+                            </div>
+                        </div>
+
+                        <!-- Village Panchayat Statistics -->
+                        <div class="row p-3 my-3 mx-auto border border-warning rounded">
+                            <h4 data-i18n="village_panchayat">Village Panchayat</h4>
+                            <div class="col-lg-4">
+                                <span data-i18n="area">Area</span> <br>
+                                <strong><label class="text-warning" for="|">1004.90</label>
+                                    Sq.km<br><br></strong>
+                            </div>
+                            <div class="col-lg-4">
+                                <span data-i18n="number_of_village_panchayats">No of Village Panchayats</span> <br>
+                                <strong><label class="text-warning" for="|">316</label> <br><br></strong>
+                            </div>
+                            <div class="col-lg-4">
+                                <span data-i18n="population">Population</span><br>
+                                <strong><label class="text-warning" for="|">22,63,115</label> <br><br></strong>
+                            </div>
+                        </div>
+
+                        <!-- Know More Button -->
+                        <a href="./knowmore.html" class="btn-get-started scrollto" data-i18n="know_more"><span>Know
+                                more</span></a>
                     </div>
 
-                    <!-- Master Plan Description -->
-                    <h4 class="mb-5 text-warning" data-i18n="master_plan_description">
-                        Master Plan is a comprehensive document intended to guide the development of an urban area.
-                    </h4>
-
-                    <!-- Additional Content -->
-                    <div class="row " style="padding-left: 30px;">
-                        <div class="col-lg-6 " style="text-align: left; ">
-                            <ul>
-                                <li><i class="ri-check-double-line"></i> <strong data-i18n="1995_master_plan">1995
-                                        Master Plan – Approved</strong></li>
-                                <li><i class="ri-check-double-line"></i> <span data-i18n="total_area">Total Area –
-                                    </span><strong>720.97 Sq.km</strong></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-6" style="text-align: left; ">
-                            <ul>
-                                <li><i class="ri-check-double-line"></i><strong data-i18n="master_plan_2021_2041">Master
-                                        Plan 2021 – 2041</strong></li>
-                                <li><i class="ri-check-double-line"></i> <span data-i18n="total_area">Total Area –
-                                    </span><strong>1254.93 Sq.km</strong></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Images -->
-                    <div class="row">
-                        <div class="col-lg-6 ">
-                            <img src="assets/img/masterplan/pink.png" class="img-fluid" width="80%" alt="">
-                        </div>
-                        <div class="col-lg-6">
-                            <img src="assets/img/masterplan/violet.png" class="img-fluid" width="80%" alt="">
-                        </div>
+                    <!-- Right Column -->
+                    <div class="col-lg-6 mt-4">
+                        <!-- Images -->
+                        <img src="assets/img/webp/image1.webp" class="img-fluid" width="60%" alt="">
+                        <img src="assets/img/webp/image2.webp" class="img-fluid" width="60%" alt="">
                     </div>
 
                 </div>
 
+                <!-- Master Plan Description -->
+                <h4 class="mb-5 text-warning" data-i18n="master_plan_description">
+                    Master Plan is a comprehensive document intended to guide the development of an urban area.
+                </h4>
+
+                <!-- Additional Content -->
+                <div class="row " style="padding-left: 30px;">
+                    <div class="col-lg-6 " style="text-align: left; ">
+                        <ul>
+                            <li><i class="ri-check-double-line"></i> <strong data-i18n="1995_master_plan">1995
+                                    Master Plan – Approved</strong></li>
+                            <li><i class="ri-check-double-line"></i> <span data-i18n="total_area">Total Area –
+                                </span><strong>720.97 Sq.km</strong></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6" style="text-align: left; ">
+                        <ul>
+                            <li><i class="ri-check-double-line"></i><strong data-i18n="master_plan_2021_2041">Master
+                                    Plan 2021 – 2041</strong></li>
+                            <li><i class="ri-check-double-line"></i> <span data-i18n="total_area">Total Area –
+                                </span><strong>1254.93 Sq.km</strong></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Images -->
+                <div class="row">
+                    <div class="col-lg-6 ">
+                        <img src="assets/img/masterplan/pink.png" class="img-fluid" width="80%" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="assets/img/masterplan/violet.png" class="img-fluid" width="80%" alt="">
+                    </div>
+                </div>
 
             </div>
+
+
+
         </section>
         <!-- Planning Area Section -->
         <section id="planning-area" class="planning-area about">
@@ -323,1411 +334,559 @@
         <!-- Demography Section End -->
 
         <!--demography End  Section -->
+          <!--demography End  Section -->
         <!-- ======= spatial-growth Section ======= -->
+        <!-- Master Plan Section -->
         <section id="Master-plan" class="Master-plan why-us" style="background-color: #37517e;">
             <div class="container-fluid" data-aos="fade-up">
-
                 <div class="row">
                     <div class="col-lg-7 d-flex justify-content-center align-items-stretch  order-2 order-lg-1">
-
                         <div class="content">
-                            <h3 class="mx-4 text-light"> <strong>What is Master plan</strong></h3><br>
-
-
+                            <h3 class="mx-4 text-light" data-i18n="what_is_master_plan"><strong>What is Master
+                                    plan</strong></h3><br>
                             <ul>
-                                <li class="pt-2 text-light">The manner in which the land in the planning area shall be
-                                    used;</li>
-                                <li class="pt-2 text-dark">The allotment or reservation of land for residential,
-                                    commercial, industrial and
-                                    agricultural purposes and
-                                    for parks, play-fields and open spaces;</li>
-                                <li class="pt-2 text-light">The allotment and reservation of land for public buildings,
-                                    institutions and for civic
+                                <li class="pt-2 text-light" data-i18n="land_usage">The manner in which the land in the
+                                    planning area shall be used;</li>
+                                <li class="pt-2 text-dark" data-i18n="allotment_reservation">The allotment or
+                                    reservation of land for residential, commercial, industrial and agricultural
+                                    purposes and for parks, play-fields and open spaces;</li>
+                                <li class="pt-2 text-light" data-i18n="allotment_reservation_public_buildings">The
+                                    allotment and reservation of land for public buildings, institutions and for civic
                                     amenities;</li>
-                                <li class="pt-2 text-dark">The making of provision for national highways, arterial
-                                    roads, ring roads, major streets,
-                                    lines of
+                                <li class="pt-2 text-dark" data-i18n="provision_national_highways">The making of
+                                    provision for national highways, arterial roads, ring roads, major streets, lines of
                                     communication including railways, airports and canals;</li>
-                                <li class="pt-2 text-light">The traffic and transportation pattern and traffic
-                                    circulation pattern;</li>
-                                <li class="pt-2 text-dark">The major road and street improvements;</li>
-                                <li class="pt-2 text-light">The areas reserved for future development, expansion and for
-                                    new housing;</li>
-                                <li class="pt-2 text-dark">The provision for the improvement of areas of bad layout or
-                                    obsolete development and slum
-                                    areas and for
+                                <li class="pt-2 text-light" data-i18n="traffic_transportation_pattern">The traffic and
+                                    transportation pattern and traffic circulation pattern;</li>
+                                <li class="pt-2 text-dark" data-i18n="major_road_street_improvements">The major road and
+                                    street improvements;</li>
+                                <li class="pt-2 text-light" data-i18n="areas_reserved_future_development">The areas
+                                    reserved for future development, expansion and for new housing;</li>
+                                <li class="pt-2 text-dark" data-i18n="provision_improvement_areas">The provision for the
+                                    improvement of areas of bad layout or obsolete development and slum areas and for
                                     relocation of population;</li>
-                                <li class="pt-2 text-light">The amenities, services, and utilities;</li>
-                                <li class="pt-2 text-dark">The provision for detailed development of specific areas for
-                                    housing, shopping, industries
-                                    and civic
+                                <li class="pt-2 text-light" data-i18n="amenities_services_utilities">The amenities,
+                                    services, and utilities;</li>
+                                <li class="pt-2 text-dark" data-i18n="provision_detailed_development">The provision for
+                                    detailed development of specific areas for housing, shopping, industries and civic
                                     amenities and educational and cultural facilities;</li>
-                                <li class="pt-2 text-light">The control of architectural features, elevation and
-                                    frontage of buildings and structures;
-                                </li>
-                                <li class="pt-2 text-dark">The provision for regulating the zone, the location, height,
-                                    number of storeys and size of
-                                    buildings and
-                                    other structures, the size of the yards and other open spaces and the use of
-                                    buildings,
-                                    structures and land;
-                                </li>
-                                <li class="pt-2 text-light">The stages by which the Master Plan shall be carried out;
-                                    and such other matters as may be
-                                    prescribed.</li>
+                                <li class="pt-2 text-light" data-i18n="control_architectural_features">The control of
+                                    architectural features, elevation and frontage of buildings and structures;</li>
+                                <li class="pt-2 text-dark" data-i18n="provision_regulating_zone">The provision for
+                                    regulating the zone, the location, height, number of storeys and size of buildings
+                                    and other structures, the size of the yards and other open spaces and the use of
+                                    buildings, structures and land;</li>
+                                <li class="pt-2 text-light" data-i18n="stages_master_plan">The stages by which the
+                                    Master Plan shall be carried out; and such other matters as may be prescribed.</li>
                             </ul>
                         </div>
                     </div>
-
                     <div class="col-lg-4 align-items-stretch order-1 order-lg-2 img-container d-flex flex-column align-items-center my-2 py-2"
                         data-aos="zoom-in" data-aos-delay="150">
-                        <img src="assets/img/masterplan/image-039.jpg" alt="Image 1" width="80%" class="img-fluid  my-2 py-2 ">
-                        <img src="assets/img/masterplan/existingLanduse.jpg" alt="Image 2" width="80%" class="img-fluid  my-2 py-2">
+                        <img src="assets/img/masterplan/image-039.webp" alt="Image 1" class="img-fluid  my-2 py-2 ">
+                        <img src="assets/img/masterplan/existingLanduse.webp" alt="Image 2" class="img-fluid  my-2 py-2">
                     </div>
-
                 </div>
-
             </div>
         </section>
+        <!-- Master Plan Section End -->
         <!--Master-plan End  Section -->
         <!-- ======= spatial-growth Section ======= -->
         <section id="spatial-growth" class="spatial-growth why-us">
             <div class="container-fluid" data-aos="fade-up">
-
                 <div class="row">
-
                     <div
                         class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
-
                         <div class="content">
-                            <h3> <strong>Spatial Development</strong></h3>
+                            <h3> <strong data-i18n="spatial_growth_title">Spatial Development</strong></h3>
                         </div>
-
                         <div class="accordion-list">
                             <ul>
                                 <li>
                                     <p>
-                                        <span>01</span> Satellite images captured on 2005, 2010 and 2017 are compared to
-                                        find the growth
-                                        direction.
+                                        <span>01</span> <span data-i18n="satellite_images_comparison">
+                                            Satellite images captured on 2005, 2010 and 2017 are compared to
+                                            find the growth
+                                            direction.
+                                        </span>
                                     </p>
                                 </li>
-
                                 <li>
                                     <p>
                                         <span>02</span>
-                                        The development of the city is more towards West, North and South direction more
-                                        than East as shown
-
+                                        <span data-i18n="city_development_direction">
+                                            The development of the city is more towards West, North and South direction
+                                            more
+                                            than East as shown
+                                        </span>
                                     </p>
                                 </li>
-
                                 <li>
                                     <p>
                                         <span>03</span>
-                                        Prominent road network and commercial establishments are inducted the
-                                        development towards western
-                                        and southern direction
-
+                                        <span data-i18n="prominent_road_and_commercial">
+                                            Prominent road network and commercial establishments are inducted the
+                                            development towards western
+                                            and southern direction
+                                        </span>
                                     </p>
                                 </li>
-
                             </ul>
                         </div>
-
                     </div>
-
                     <div class="col-lg-4 align-items-stretch order-1 order-lg-2 img "
-                        style='background-image: url("assets/img/masterplan/spatial.png");' data-aos="zoom-in"
+                        style='background-image: url("assets/img/masterplan/spatial.webp");' data-aos="zoom-in"
                         data-aos-delay="150">
                         &nbsp;</div>
                 </div>
-
             </div>
         </section>
         <!--spatial-growth End  Section -->
         <!-- =======vision  Section ======= -->
         <div class="section-title">
-            <h2>Vision</h2>
+            <h2 data-i18n="vision_section_title">Vision</h2>
         </div>
         <section id="vision" class="vision cta">
-
             <div class="container" data-aos="zoom-in">
-
                 <div class="row justify-content-center">
                     <div class="col-lg-9 text-center text-lg-start">
-                        <h1>“To Develop as a Tourism, Educational hub and Sustainable city”</h1>
-
+                        <h1 data-i18n="vision_content">“To Develop as a Tourism, Educational hub and Sustainable city”
+                        </h1>
                     </div>
-
                 </div>
-
             </div>
         </section>
         <!--vision End  Section -->
-
         <!-- =======project-proposal  Section ======= -->
         <!-- <section id="project-proposal" class="project-proposal">
-
     </section> -->
         <!--project-proposal End  Section -->
-        <!-- ======= landuse-proposal Section ======= -->
-        <section id="landuse-proposal" class="profile ">
-            <div class="container" data-aos="fade-up">
-
+        <!-- ======= Land Use Proposal Section ======= -->
+        <section id="landuse-proposal" class="profile" data-aos="fade-up">
+            <div class="container">
                 <div class="section-title">
-                    <h2>landuse-proposal</h2>
+                    <h2 data-i18n="landuse_proposal_section_title">Land Use Proposal</h2>
                 </div>
-
                 <div class="row content justify-content-center align-content-center">
                     <div class="col-lg-6 justify-content-center align-content-center">
-                        <h4>
-                            Existing Land Use - 2021 </h4>
-                        <img src="assets/img/masterplan/lannduse2021.png" class="img-fluid" width="80%" alt="">
+                        <h4 data-i18n="existing_land_use">Existing Land Use - 2021</h4>
+                        <img src="assets/img/masterplan/lannduse2021.webp" class="img-fluid" width="80%" alt="">
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0">
-                        <h4>
-                            Proposed Land Use - 2041 </h4>
-                        <!-- <img src="assets/img/masterplan/landuse2041.png" class="img-fluid" width="80%" alt=""> -->
+                        <h4 data-i18n="proposed_land_use">Proposed Land Use - 2041</h4>
+                        <!-- <img src="assets/img/masterplan/landuse2041.webp" class="img-fluid" width="80%" alt=""> -->
                     </div>
                 </div>
-
             </div>
         </section>
-
-        <!--Goverment Order End  Section -->
-
-        <!-- ======= Goverment Order Section ======= -->
-        <section id="Goverment Order" class="profile section-bg">
-            <div class="container" data-aos="fade-up">
-
+        <!-- ======= Government Order Section ======= -->
+        <section id="Goverment Order" class="profile section-bg" data-aos="fade-up">
+            <div class="container">
                 <div class="section-title">
-                    <h2>Goverment Order</h2>
+                    <h2 data-i18n="government_order_section_title">Government Order</h2>
                 </div>
-
                 <div class="row justify-content-center align-content-center">
                     <div class="col-lg-5 justify-content-center align-content-center">
-
-
-                        <h4>
-                            Goverment order
-                        </h4>
-                        <a href="assets/pdf/Madurai master plan G.O.pdf"><img
-                                src="assets/img/masterplan/govermentOrder.png" class="img-fluid" width="80%" alt=""></a>
-
-                        <!-- <div class="row my-4">
-        
-                                        <h4>
-                                            Draft Master Plan Reports
-                                        </h4>
-                                        <img src="assets/img/masterplan/govermentOrder.png" class="img-fluid col-md-6"
-                                            width="80%" alt="">
-                                        <img src="assets/img/masterplan/govermentOrder.png" class="img-fluid col-md-6"
-                                            width="80%" alt="">
-                                    </div> -->
+                        <h4 data-i18n="government_order">Government Order</h4>
+                        <a href="assets/pdf/Madurai master plan G.O.pdf">
+                            <img src="assets/img/masterplan/govermentOrder.webp" class="img-fluid" width="80%" alt="">
+                        </a>
                     </div>
                     <div class="col-lg-7 justify-content-center align-content-center">
-
                         <div class="row">
                             <div class="col-lg-6">
-                                <h4>LPA Land Use Maps</h4>
+                                <h4 data-i18n="lpa_land_use_maps">LPA Land Use Maps</h4>
                                 <div class="">
-                                    <a target="">
+                                    <a target="" data-i18n="existing_land_use_map_lpa">
                                         Existing Land Use Map – LPA
                                     </a>
-                                    <a>
+                                    <a data-i18n="proposed_land_use_map_lpa">
                                         Proposed Land Use Map – LPA
                                     </a>
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <h4>Municipal Land Use Maps</h4>
+                                <h4 data-i18n="municipal_land_use_maps">Municipal Land Use Maps</h4>
                                 <div class="">
-                                    <a>
+                                    <a data-i18n="existing_land_use_map_municipal">
                                         Existing Land Use Map – Municipal Area
                                     </a>
-                                    <a>
+                                    <a data-i18n="proposed_land_use_map_municipal">
                                         Proposed Land Use Map – Municipal Area
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="row">
-                                        <div class="col-lg-6">
-                                            <h4>Village-wise Proposed Land Use Maps</h4>
-                                            <div class="mt-2"><a></a></div>
-        
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <h4>Ward-wise Proposed Land Use Maps</h4>
-                                            <div class="mt-2"><a></a></div>
-                                        </div>
-                                    </div> -->
                     </div>
                 </div>
             </div>
         </section>
-
         <!--Goverment Order End  Section -->
-        <!-- =======media  Section ======= -->
-        <section id="media" class="media portfolio">
-            <div class="container" data-aos="fade-up">
-
+        <!-- ======= Media Section ======= -->
+        <section id="media" class="media portfolio" data-aos="fade-up">
+            <div class="container">
                 <div class="section-title">
-                    <h2>MEDIA</h2>
-                    <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-              consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-              in iste officiis commodi quidem hic quas.</p> -->
+                    <h2  data-i18n="media_section_title">MEDIA</h2>
                 </div>
-
                 <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-                    <li data-filter="*" class="filter-active">All</li>
-                    <li data-filter=".filter-app">StakeHolder</li>
-                    <li data-filter=".filter-card">Area</li>
+                    <li data-filter="*" class="filter-active" data-i18n="media_filter_all">All</li>
+                    <li data-filter=".filter-app" data-i18n="media_filter_stakeholder">StakeHolder</li>
+                    <li data-filter=".filter-card" data-i18n="media_filter_area">Area</li>
                 </ul>
-
                 <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/10.jpeg" class="img-fluid"
+                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/10.webp" class="img-fluid"
                                 alt=""></div>
-
                     </div>
-
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/2.jpeg" class="img-fluid" alt="">
+                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/2.webp" class="img-fluid" alt="">
                         </div>
-
                     </div>
-
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/11.jpeg" class="img-fluid"
+                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/11.webp" class="img-fluid"
                                 alt=""></div>
-
                     </div>
-
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/3.jpeg" class="img-fluid" alt="">
+                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/3.webp" class="img-fluid" alt="">
                         </div>
-
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/12.jpeg" class="img-fluid"
+                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/12.webp" class="img-fluid"
                                 alt=""></div>
-
                     </div>
-
-
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/13.jpeg" class="img-fluid"
+                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/13.webp" class="img-fluid"
                                 alt=""></div>
-
                     </div>
-
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/5.jpeg" class="img-fluid" alt="">
+                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/5.webp" class="img-fluid" alt="">
                         </div>
-
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/14.jpeg" class="img-fluid"
+                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/14.webp" class="img-fluid"
                                 alt=""></div>
-
                     </div>
-
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/15.jpeg" class="img-fluid"
+                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/15.webp" class="img-fluid"
                                 alt=""></div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
-        <!--media End  Section -->
-        <!-- ======= mindmap Section ======= -->
-        <section id="economic" class="why-us section-bg">
-            <div class="container" data-aos="fade-up">
+        <!-- ======= Economic Activities Section ======= -->
+        <section id="economic" class="why-us section-bg" data-aos="fade-up">
+            <div class="container">
                 <div class="section-title text-left">
-                    <h2 class="text-default">Economic Activities</h2>
+                    <h2 class="text-default" data-i18n="economic_activities_section_title">Economic Activities</h2>
                 </div>
                 <div class="mind-map">
                     <div class="center-circle">
                         <p>Economic Base</p>
                         <div class="square top">
-                            <img src="assets/img/maduraiCurrent/agriculture.png" alt=""
+                            <img src="assets/img/maduraiCurrent/agriculture.webp" alt=""
                                 style="border-radius: 15px; width: 250px; height: 100px;" />
                         </div>
                         <div class="square right-top">
-                            <img src="assets/img/maduraiCurrent/ssi.png" alt=""
+                            <img src="assets/img/maduraiCurrent/ssi.webp" alt=""
                                 style="border-radius: 15px; width: 250px; height: 100px;" />
-
                         </div>
                         <div class="square right-bottom">
-                            <img src="assets/img/maduraiCurrent/large-ins.png" alt=""
+                            <img src="assets/img/maduraiCurrent/large-ins.webp" alt=""
                                 style="border-radius: 15px; width: 250px; height: 100px;" />
-
                         </div>
                         <div class="square bottom">
-                            <img src="assets/img/maduraiCurrent/temple.jpg" alt=""
+                            <img src="assets/img/maduraiCurrent/temple.webp" alt=""
                                 style="border-radius: 15px; width: 250px; height: 100px;" />
                         </div>
                         <div class="square left-bottom">
-                            <img src="assets/img/maduraiCurrent/tour.png" alt=""
+                            <img src="assets/img/maduraiCurrent/tour.webp" alt=""
                                 style="border-radius: 15px; width: 250px; height: 100px;" />
                         </div>
                         <div class="square left-top">
-                            <img src="assets/img/maduraiCurrent/education.png" alt=""
+                            <img src="assets/img/maduraiCurrent/education.webp" alt=""
                                 style="border-radius: 15px; width: 250px; height: 100px;" />
-
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
-        <!-- End mindmap Section -->
-        <!-- ======= City Profile ======= -->
-        <!-- <section id="city-profile" class="why-us ">
-            <div class="container" data-aos="fade-up">
-                <div class="section-title text-left">
-                    <h2 class="text-default">City Profile</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 justify-content-center align-content-center">
-
-                        <img src="assets/img/maduraiCurrent/city-profile.png" class="img-fluid" width="80%" alt="">
-                    </div>
-                    <div class="col-lg-6 justify-content-center align-content-center">
-                        <table class="city-profile mt-5">
-                            <tr>
-                                <th>Location</th>
-                                <th>78°1188"E Long.
-                                    9°91959"N Lat.
-                                </th>
-                            </tr>
-                            <tr>
-                                <td>District Headquarters
-                                </td>
-                                <td>Madurai</td>
-                            </tr>
-                            <tr>
-                                <td>Population (2011)
-                                </td>
-                                <td>14,49,662
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Area
-                                </td>
-                                <td>147.97 sq.km.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Density (persons per sq.km.)
-                                </td>
-                                <td>9797</td>
-                            </tr>
-                            <tr>
-                                <td>Sex Ratio
-                                </td>
-                                <td>997</td>
-                            </tr>
-                            <tr>
-                                <td>Literacy Rate
-                                </td>
-                                <td>90.58%
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Workforce Participation Rate
-                                </td>
-                                <td>38.84%
-                                </td>
-                            </tr>
-                        </table>
-
-                    </div>
-
-                </div>
-
-            </div>
-        </section> -->
-        <!-- End City Profile Section -->
-
-
-        <!-- ======= growth center Section ======= -->
-        <!-- <section id="growth-center" class="why-us section-bg">
-            <div class="container" data-aos="fade-up">
-                <div class="section-title text-left">
-                    <h2 class="text-default">Growth Center and Nodes</h2>
-
-                </div>
-                <div class="row">
-
-                    <div class="col-lg-6 justify-content-center align-content-center">
-
-                        <div class="content">
-                            <p>
-                            <ul>
-                                <li>
-                                    <h4>Growth Centre in Madurai
-                                    </h4>
-                                </li>
-                                <li>
-                                    <h4>Nodes</h4>
-                                </li>
-                                <li>
-                                    <h4>PRIMARY NODES (Thirumangalam and Melur Municipality)
-                                    </h4>
-                                </li>
-                                <li>
-                                    <h4>SECONDARY NODES ( Vadipatti Town Panchayat)
-
-                                    </h4>
-                                </li>
-                            </ul>
-                            </p>
-                        </div>
-
-
-
-                    </div>
-                    <div class="col-lg-6 justify-content-center align-content-center">
-                        <img src="assets/img/maduraiCurrent/node.png" alt="" style="width: 80%;" />
-                    </div>
-
-                </div>
-
-            </div>
-        </section> -->
-        <!-- End growth center Section -->
-
         <!-- ======= potential development Section ======= -->
-        <section id="potential-development" class="why-us section-bg">
-            <div class="container" data-aos="fade-up">
+        <section id="potential-development" class="why-us section-bg" data-aos="fade-up">
+            <div class="container">
                 <div class="section-title text-left">
-                    <h2 class="text-default">Potential Development Zone</h2>
-
+                    <h2 class="text-default" data-i18n="potential_development_zone_title">Potential Development Zone</h2>
                 </div>
                 <div class="row">
-
                     <div class="col-lg-7 d-flex flex-column pt-4">
-
-
                         <ul>
                             <li>
-                                <h4>Potential zone around corporation
-                                </h4>
+                                <h4 data-i18n="potential_zone_around_corporation">Potential zone around corporation</h4>
                             </li>
                             <li>
-                                <h4>Tirumangalam closer proximity to Corporation – attract more development
-                                </h4>
+                                <h4 data-i18n="tirumangalam_closer_proximity">Tirumangalam closer proximity to Corporation – attract more development</h4>
                             </li>
                             <li>
-                                <h4>Towards Alagar Kovil
-                                </h4>
+                                <h4 data-i18n="towards_alagar_kovil">Towards Alagar Kovil</h4>
                             </li>
                             <li>
-                                <h4>Melur Municipality and Vadipatti TP
-                                </h4>
+                                <h4 data-i18n="melur_municipality_and_vadipatti_tp">Melur Municipality and Vadipatti TP</h4>
                             </li>
                         </ul>
-
-
-
-
                     </div>
                     <div class="col-lg-5">
-                        <img src="assets/img/maduraiCurrent/d-zone.png" alt="" class="img-fluid" width="80%" />
+                        <img src="assets/img/maduraiCurrent/d-zone.webp" alt="" class="img-fluid" width="80%" />
                     </div>
-
                 </div>
-
             </div>
-        </section><!-- End potential Section -->
-        <!-- ======= plan 2041 table section ======= -->
-        <!-- <section id="plan-2041" class="why-us section-bg">
-            <div class="container" data-aos="fade-up">
-                <div class="section-title text-left">
-                    <h2 class="text-default">Proposed Land Use 2041 – Planning Area</h2>
-                </div>
-                <div class="row">
-
-                    <div class="col-md-12 ">
-                        <table class="plan-2041">
-
-                            <tr class="plan-2041-head">
-                                <th>S.no
-                                </th>
-                                <th>Proposed Land use
-                                </th>
-                                <th>Existing Landuse-2021 (Sq.km)
-                                </th>
-                                <th>Proposed Landuse-2041 (Sq.km)
-                                </th>
-                                <th>% to Developed area (Prop LU)
-                                </th>
-                                <th>% to Total area (Prop LU)
-                                </th>
-                                <th>Change in Area (Sq.km)
-                                </th>
-                                <th>URDPFI Guidelines
-                                </th>
-                            </tr>
-
-                            <tr class="plan-2041-td">
-                                <td>1</td>
-                                <td>Residential</td>
-                                <td>168.32</td>
-                                <td>460.17</td>
-                                <td>71.08</td>
-                                <td>36.67</td>
-                                <td>291.85</td>
-                                <td>36 - 39</td>
-                            </tr>
-                            <tr class="plan-2041-td">
-                                <td>2</td>
-                                <td>Commercial</td>
-                                <td>12.52</td>
-                                <td>46.02</td>
-                                <td>7.11</td>
-                                <td>3.67</td>
-                                <td>33.5</td>
-                                <td>5 - 6</td>
-                            </tr>
-                            <tr class="plan-2041-td">
-                                <td>3</td>
-                                <td>Industrial</td>
-                                <td>17.47</td>
-                                <td>60.39</td>
-                                <td>9.33</td>
-                                <td>4.81</td>
-                                <td>42.92</td>
-                                <td>7 - 8</td>
-                            </tr>
-                            <tr class="plan-2041-td">
-                                <td>4</td>
-                                <td>Institutional</td>
-                                <td>31.41</td>
-                                <td>40.60</td>
-                                <td>6.27</td>
-                                <td>3.23</td>
-                                <td>9.19</td>
-                                <td>10 - 12</td>
-                            </tr>
-                            <tr class="plan-2041-td">
-                                <td>5</td>
-                                <td>Transportation</td>
-                                <td>34.92</td>
-                                <td>40.20</td>
-                                <td>6.21</td>
-                                <td>3.20</td>
-                                <td>5.28</td>
-                                <td>12 - 14</td>
-                            </tr>
-                            <tr class="plan-2041-td font-weight-bold">
-                                <td></td>
-                                <td>Total Developed Area
-                                </td>
-                                <td>265.68</td>
-                                <td>647.37</td>
-                                <td>100</td>
-                                <td>50.01</td>
-                                <td>381.69</td>
-                                <td>10 - 12</td>
-                            </tr>
-                            <tr class="plan-2041-td">
-                                <td>6</td>
-                                <td>Agricultural</td>
-                                <td>757.02</td>
-                                <td>375.33</td>
-                                <td></td>
-                                <td>29.92
-                                </td>
-                                <td>-381.69
-                                </td>
-                                <td></td>
-                            </tr>
-
-                            <tr class="plan-2041-td">
-                                <td>7</td>
-                                <td>Water body
-                                </td>
-                                <td>201.30
-                                </td>
-                                <td>201.30
-                                </td>
-                                <td></td>
-                                <td>15.92
-                                </td>
-                                <td>0
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr class="plan-2041-td">
-                                <td>8</td>
-                                <td>Reserved Forest (RF)
-                                </td>
-                                <td>11.30
-                                </td>
-                                <td>11.30
-                                </td>
-                                <td></td>
-                                <td>0.90
-                                </td>
-                                <td>0
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr class="plan-2041-td">
-                                <td>9</td>
-                                <td>Hill
-                                </td>
-                                <td>19.63
-                                </td>
-                                <td>19.63
-                                </td>
-                                <td></td>
-                                <td>1.56
-                                </td>
-                                <td>0
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr class="plan-2041-td font-weight-bold ">
-                                <td></td>
-                                <td>Total Undeveloped Area
-                                </td>
-                                <td>989.25</td>
-                                <td>607.56</td>
-                                <td></td>
-                                <td>49.99</td>
-                                <td>-381.69</td>
-                                <td></td>
-                            </tr>
-                            <tr class="plan-2041-td font-weight-bold">
-                                <td></td>
-                                <td>TOTAL
-                                </td>
-                                <td>1254.93
-                                </td>
-                                <td>1254.93</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>100</td>
-                            </tr>
-                        </table>
-
-                    </div>
-
-                </div>
-
-            </div>
-        </section> -->
-        <!-- End plan 2041 table Section -->
-        <!-- ======= pp table section ======= -->
-        <!-- <section id="project-proposal" class="why-us section-bg">
-            <div class="container" data-aos="fade-up">
-                <div class="section-title text-left">
-                    <h2 class="text-default">Project Proposals</h2>
-                </div>
-                <div class="row">
-
-                    <div class="col-md-12 ">
-                        <table class="pp-tab">
-
-                            <tr class="pp-head">
-                                <th>Sector
-                                </th>
-                                <th>Projects
-                                </th>
-                                <th>Implementing agency
-                                </th>
-                            </tr>
-
-                            <tr class="pp">
-                                <td>Water Supply
-                                </td>
-                                <td>Source Augmentation from Mullai periyar Dam
-                                </td>
-                                <td>Madurai Corporation/ TWAD
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>Effective Rain water Harvesting & Ground Water table monitoring
-                                </td>
-                                <td>Madurai Corporation
-                                </td>
-                            </tr>
-                            <tr class="pp">
-                                <td>Sewerage</td>
-                                <td>FSTP (Faecal Sludge Treatment Plant)
-                                </td>
-                                <td>ULB</td>
-
-                            </tr>
-                            <tr class="pp">
-                                <td>Storm Water Drain
-                                </td>
-                                <td>Interlinking Channel and Restoration of upstream water bodies
-                                </td>
-                                <td>Madurai Corporation
-                                </td>
-                            </tr>
-                            <tr class="pp">
-                                <td>Solid Waste Management
-                                </td>
-                                <td>Bio-Mining Waste process management
-                                </td>
-                                <td>Madurai Corporation
-                                </td>
-                            </tr>
-                            <tr class="pp">
-                                <td>Heritage and Tourism
-                                </td>
-                                <td>Zero Emission vehicle shuttle services between tourist spot inside corporation
-                                </td>
-                                <td>Madurai Corporation
-                                </td>
-                            </tr>
-                            <tr class="pp">
-                                <td>Environment
-                                </td>
-                                <td>Tree Plantation around waterbody Embankment
-                                </td>
-                                <td>Dept. of Environment and Climate Change, GoTN/ Madurai Corporation
-                                </td>
-                            </tr>
-                            <tr class="pp font-weight-bold req">
-                                <td>Transport and Mobility
-                                </td>
-                                <td>
-                                    <p>Feasibility Study for Metro – Rapid Transit System</p>
-                                    <p>New Bus Terminal </p>
-                                    <p>BRTS (Proposed by Madurai - CMP 2019)</p>
-                                    <p>Densification on Rapid Transit Route Alignment</p>
-                                    <p>(A1) – New Alignment from Vadipatti to Thirumangalam -- NH-744 near Thirumangalam
-                                    </p>
-                                    <p>(A2) – New Alignment from Melur Bye Pass to Navinipatti </p>
-                                    <p>(A3) - New Alignment from road SH 72A to NH38 at Melur</p>
-                                    <p>(B1) - Widening existing road SH72 Thirumangalam Bye-pass to Nachikulam</p>
-                                    <p>(B2)-SH72A 100 feet widening proposed from Sholavandan to Kattakulam</p>
-                                    <p>(B3)- Widening existing road From SH 72 Chatthirathondaimanpatti to Melur</p>
-                                    <p>(B4) – NH-785 - Partly Elevated corridor towards Natham (SH 72)</p>
-                                    <p>(B5) -Widening existing road to corporation to Azhagarkovil (SH 72A)</p>
-                                    <p>(B6) – Widening of Avaniyapuram Bye-pass to Airport Entrance</p>
-                                </td>
-                                <td>Madurai Corporation, GoTN,
-NHAI/State Highways
-                                </td>
-                            </tr>
-                            <tr class="pp font-weight-bold req">
-                                <td>Recreational
-                                </td>
-                                <td>Annual Food Festival
-                                </td>
-                                <td>Madurai Corporation/ TTDC
-                                </td>
-                            </tr>
-                            <tr class="pp">
-                                <td>
-                                </td>
-                                <td>Muthamizh Arignar Kalaignar Memorial Library at Natham Road
-                                </td>
-                                <td>GoTN
-                                </td>
-                            </tr>
-                            <tr class="pp font-weight-bold req">
-                                <td>Commercial Complex
-                                </td>
-                                <td> Shopping Complex at Jhansi Rani Park
-                                </td>
-                                <td>Madurai Corporation
-                                </td>
-                            </tr>
-                            <tr class="pp">
-                                <td>
-                                </td>
-                                <td>Convention Centre at Thamukam
-                                </td>
-                                <td>Madurai Corporation
-                                </td>
-                            </tr>
-                            <tr class="pp font-weight-bold req">
-                                <td>Tourism
-                                </td>
-                                <td>Revitalisation of Madurai Region (Focus: Chithirai Festival)
-                                </td>
-                                <td>Madurai Corporation
-                                </td>
-                            </tr>
-                        </table>
-
-                    </div>
-
-                </div>
-
-            </div>
-        </section> -->
-        <!-- End pp table Section -->
-        <!-- ======= sc table section ======= -->
-        <!-- <section id="smart-city" class="why-us section-bg">
-            <div class="container" data-aos="fade-up">
-                <div class="section-title text-left">
-                    <h2 class="text-default">Smart City Projects
-</h2>
-                </div>
-                <div class="row">
-
-                    <div class="col-md-12 ">
-                        <table class="sc-tab">
-
-                            <tr class="sc-head">
-                                <th>No
-                                </th>
-                                <th>Project Name
-                                </th>
-                                <th>Cost in Crores
-                                </th>
-                                <th>Status
-                                </th>
-                            </tr>
-
-                            <tr class="sc">
-                                <td>1</td>
-                                <td>Infrastructure and Basic Amenities at Fruit Market
-                                </td>
-                                <td>12</td>
-                                <td>Completed</td>
-                            </tr>
-                            <tr class="sc">
-                                <td>2</td>
-                                <td>Tourist Plaza
-                                </td>
-                                <td>2.75</td>
-                                <td>Completed</td>
-                            </tr>
-                            <tr class="sc">
-                                <td>3</td>
-                                <td>Street Light – LED
-                                </td>
-                                <td>30.25</td>
-                                <td>Completed</td>
-                            </tr>
-                            <tr class="sc">
-                                <td>4</td>
-                                <td>Redevelopment of Periyar Bus Stand
-                                </td>
-                                <td>167.06
-                                </td>
-                                <td>80%</td>
-                            </tr>
-                            <tr class="sc">
-                                <td>5</td>
-                                <td>Vaigai River Front Development
-                                </td>
-                                <td>84.12
-                                </td>
-                                <td>85%</td>
-                            </tr>
-                            <tr class="sc">
-                                <td>6</td>
-                                <td>Multi-level Car Parking
-                                </td>
-                                <td>41.96</td>
-                                <td>98%</td>
-                            </tr>
-                            <tr class="sc">
-                                <td>7</td>
-                                <td>Heritage Development
-                                </td>
-                                <td>42.65
-                                </td>
-                                <td>85%
-                                </td>
-                            </tr>
-                            <tr class="sc">
-                                <td>8</td>
-                                <td>Solid Waste Management
-                                </td>
-                                <td>25.22</td>
-                                <td>95%</td>
-                            </tr>
-                            <tr class="sc">
-                                <td>9</td>
-                                <td>Water Supply Distribution System
-                                </td>
-                                <td>80.79</td>
-                                <td>60%</td>
-                            </tr>
-                            <tr class="sc">
-                                <td>10</td>
-                                <td>Street Scape redesign – Pedestrian pathways
-                                </td>
-                                <td>50.21
-                                </td>
-                                <td>50%</td>
-                            </tr>
-                            <tr class="sc">
-                                <td>11</td>
-                                <td>Underground Sewerage System
-                                </td>
-                                <td>275.82</td>
-                                <td>17%</td>
-                            </tr>
-                            <tr class="sc">
-                                <td>12</td>
-                                <td>Water Supply Source Augmentation
-                                </td>
-                                <td>102
-                                </td>
-                                <td>ULB Contribution
-                                </td>
-                            </tr>
-                            <tr class="sc">
-                                <td>13</td>
-                                <td>Convention Centre at Tamukkam
-                                </td>
-                                <td>47.7
-                                </td>
-                                <td>65%
-                                </td>
-                            </tr>
-                            <tr class="sc">
-                                <td>14</td>
-                                <td>Integrated Command and Control Centre
-                                </td>
-                                <td>11.83
-                                </td>
-                                <td>30%</td>
-                            </tr>
-                            <tr class="sc">
-                                <td>15</td>
-                                <td>Eco-restoration of Vandiyur Lake
-                                </td>
-                                <td>63.00
-                                </td>
-                                <td>In Progress
-                                </td>
-                            </tr>
-                        </table>
-
-                    </div>
-
-                </div>
-
-            </div>
-        </section> -->
-        <!-- End sc table Section -->
-
-
+        </section>
+        
+        <!-- End potential Section -->
         <!-- ======= sc table section ======= -->
         <section id="smart-city" class="why-us">
             <div class="container" data-aos="fade-up">
                 <div class="section-title text-left">
-                    <h2 class="text-default">project Proposal</h2>
+                    <h2 class="text-default" data-i18n="project_proposal">project Proposal</h2>
                 </div>
                 <div class="row">
-
                     <div class="col-md-12 ">
                         <div class="content">
                             <div class="site-section  mb-5">
                                 <div class="container owl-2-style">
                                     <div class="owl-carousel owl-2">
-                                        <div class="card " style="height: 60vh ;overflow-y: auto;">
-                                            <h4 class="mx-auto mt-3">Proposal For Economy</h4>
-                                            <img class="card-img-top img-fluid" src="assets/img/webp/image34.webp"
-                                                alt="Card image cap">
-                                            <div class="card-body ">
+                                        <div class="card" style="height: 60vh; overflow-y: auto;">
+                                            <h4 class="mx-auto mt-3" data-i18n="economy_proposal_title">Proposal For Economy</h4>
+                                            <img class="card-img-top img-fluid" src="assets/img/webp/image34.webp" alt="Card image cap">
+                                            <div class="card-body">
                                                 <ul>
                                                     <li>
-                                                        <p class="card-text">Integrated cold storage and
-                                                            value addition process for
-                                                            jasmine
-                                                        </p>
+                                                        <p class="card-text" data-i18n="integrated_cold_storage">Integrated cold storage and value addition process for jasmine</p>
                                                     </li>
                                                     <li>
-                                                        <p class="card-text">Proposed SIDCO Near Natham</p>
+                                                        <p class="card-text" data-i18n="proposed_sidco_near_natham">Proposed SIDCO Near Natham</p>
                                                     </li>
                                                     <li>
-                                                        <p class="card-text">Multimodal logistic park and Warehouse
-                                                            clusters</p>
+                                                        <p class="card-text" data-i18n="multimodal_logistic_park">Multimodal logistic park and Warehouse clusters</p>
                                                     </li>
                                                     <li>
-                                                        <p class="card-text">MAADITSSIA-Trade center at Kappalur </p>
+                                                        <p class="card-text" data-i18n="maaditssia_trade_center">MAADITSSIA-Trade center at Kappalur</p>
                                                     </li>
                                                     <li>
-                                                        <p class="card-text">TIDEL Park,Matuthavani</p>
+                                                        <p class="card-text" data-i18n="tidel_park_matuthavani">TIDEL Park, Matuthavani</p>
                                                     </li>
                                                     <li>
-                                                        <p class="card-text"> SIDCO, Sakkimangalam</p>
+                                                        <p class="card-text" data-i18n="sidco_sakkimangalam">SIDCO, Sakkimangalam</p>
                                                     </li>
                                                 </ul>
                                             </div>
-                                        </div>
-                                        <div class="card " style="height: 60vh  ;overflow-y: auto;">
-                                            <div class="card-body ">
-                                                <h4 class="mx-auto m-3">Proposal For Transportation</h4>
-                                                <div class="row p-2 m-2 border border-warning rounded ">
-                                                    <strong>NHAI Proposal-</strong>
-                                                    <small>
-                                                        A1 – New Alignment (Vadipatti – Ayilangudyi) - NH-744 and
-                                                        Widening
-                                                        of road upto Thirumangalam
+                                        </div>                                        
+                                        <div class="card" style="height: 60vh; overflow-y: auto;">
+                                            <div class="card-body">
+                                                <h4 class="mx-auto m-3" data-i18n="transportation_proposal_title">Proposal For Transportation</h4>
+                                                <div class="row p-2 m-2 border border-warning rounded">
+                                                    <strong data-i18n="nhai_proposal">NHAI Proposal-</strong>
+                                                    <small data-i18n="nhai_proposal_description">
+                                                        A1 – New Alignment (Vadipatti – Ayilangudyi) - NH-744 and Widening of road upto Thirumangalam
                                                     </small>
-
                                                 </div>
                                                 <div class="row p-2 m-2 border border-warning rounded">
-                                                    <strong>Master Plan Proposal-</strong>
-                                                    <small>
-                                                        B1- Widening existing road SH72 Thirumangalam Bye-pass to
-                                                        Nachikulam
-                                                        -25KM
+                                                    <strong data-i18n="master_plan_proposal">Master Plan Proposal-</strong>
+                                                    <small data-i18n="master_plan_proposal_description">
+                                                        B1- Widening existing road SH72 Thirumangalam Bye-pass to Nachikulam -25KM
                                                         C1- Sub-Arterial Road- Sholavanthan to Narasingam-25.5Km
                                                         C2- Sub-Arterial Road- Tirumangalam- Airport – 11Km
                                                         C3- Sub-Arterial Road- Thekutheru-Idiyapatti- 24.5KM
                                                     </small>
-
-
                                                 </div>
                                                 <div class="row p-2 m-2 border border-warning rounded">
-                                                    <strong>TRUCK TERMINAL PROPOSALS</strong>
-                                                    <small>1 Truck parking facilities in Madurai corporation –
-                                                        Kochadai</small>
-
+                                                    <strong data-i18n="truck_terminal_proposals">TRUCK TERMINAL PROPOSALS</strong>
+                                                    <small data-i18n="truck_terminal_proposal_description">
+                                                        1 Truck parking facilities in Madurai corporation – Kochadai
+                                                    </small>
                                                 </div>
-
                                             </div>
-                                        </div>
-                                        <div class="card " style="height: 60vh ;">
-                                            <h4 class="mx-auto mt-3">Transport Proposal</h4>
-                                            <img class="card-img-top img-fluid" src="assets/img/webp/image42.webp"
-                                                alt="Card image cap">
-                                            <div class="card-body ">
-
+                                        </div>                                      
+                                        <div class="card" style="height: 60vh; overflow-y: auto;"">
+                                            <h4 class="mx-auto mt-3" data-i18n="transport_proposal_title">Transport Proposal</h4>
+                                            <img class="card-img-top img-fluid" src="assets/img/webp/image42.webp" alt="Card image cap">
+                                            <div class="card-body">
                                                 <div class="container">
-                                                    <div class="row ">
-                                                        <p><b>Bus Schedule:</b></p>
-                                                        <ul class="overflowScroller">
-                                                            <li class="border border-bottom p-2"><b>Mattuthavanai-
-                                                                    Thiruparankundram-Mattuthavani:</b> Distance: 56 km,
-                                                                Headway: 10 mins, Frequency: 6 buses/hr, Avg Speed: 30
-                                                                km/hr, Trips per Bus: 7, Trips Generated: 91</li>
-                                                            <li class="border border-bottom p-2">
-                                                                <b>Thiruparangundram-Thirumangalam-Thiruparangundram:</b>
-                                                                Distance: 30 km, Headway: 15 mins, Frequency: 4
-                                                                buses/hr, Avg Speed: 30 km/hr, Trips per Bus: 12, Trips
-                                                                Generated: 60
-                                                            </li>
-                                                            <li class="border border-bottom p-2">
-                                                                <b>Thirumangalam-Chekanurani-Thirumangalam:</b>
-                                                                Distance: 37 km, Headway: 20 mins, Frequency: 3
-                                                                buses/hr, Avg Speed: 40 km/hr, Trips per Bus: 13, Trips
-                                                                Generated: 52
-                                                            </li>
-                                                            <li class="border border-bottom p-2"><b>South East Loop:</b>
-                                                                Distance: 42 km, Headway: 20 mins, Frequency: 3
-                                                                buses/hr, Avg Speed: 40 km/hr, Trips per Bus: 12, Trips
-                                                                Generated: 48</li>
-                                                            <li class="border border-bottom p-2"><b>Paravai-
-                                                                    Vadipatti-Alanganallur-Paravai:</b> Distance: 52 km,
-                                                                Headway: 20 mins, Frequency: 3 buses/hr, Avg Speed: 40
-                                                                km/hr, Trips per Bus: 10, Trips Generated: 50</li>
-                                                            <li class="border border-bottom p-2">
-                                                                <b>Chekanurani-Sholavandhan-vadipatti-Chekanurani:</b>
-                                                                Distance: 58 km, Headway: 20 mins, Frequency: 3
-                                                                buses/hr, Avg Speed: 40 km/hr, Trips per Bus: 9, Trips
-                                                                Generated: 45
-                                                            </li>
-                                                            <li class="border border-bottom p-2">
-                                                                <b>Mattuthavani-pudur-A.Vallalapatti-melur-Mattuthavani:</b>
-                                                                Distance: 61 km, Headway: 20 mins, Frequency: 3
-                                                                buses/hr, Avg Speed: 40 km/hr, Trips per Bus: 9, Trips
-                                                                Generated: 54
-                                                            </li>
-                                                            <li class="border border-bottom p-2">
-                                                                <b>Mattuthavani-melur-thirupuvanam-Mattuthavani:</b>
-                                                                Distance: 65 km, Headway: 20 mins, Frequency: 3
-                                                                buses/hr, Avg Speed: 40 km/hr, Trips per Bus: 8, Trips
-                                                                Generated: 48
-                                                            </li>
+                                                    <div class="row">
+                                                        <p><b data-i18n="bus_schedule">Bus Schedule:</b></p>
+                                                        <ul >
+                                                            <li class="border border-bottom p-2"><b data-i18n="bus_schedule_item1">Mattuthavanai-Thiruparankundram-Mattuthavani:</b> Distance: 56 km, Headway: 10 mins, Frequency: 6 buses/hr, Avg Speed: 30 km/hr, Trips per Bus: 7, Trips Generated: 91</li>
+                                                            <li class="border border-bottom p-2"><b data-i18n="bus_schedule_item2">Thiruparangundram-Thirumangalam-Thiruparangundram:</b> Distance: 30 km, Headway: 15 mins, Frequency: 4 buses/hr, Avg Speed: 30 km/hr, Trips per Bus: 12, Trips Generated: 60</li>
+                                                            <li class="border border-bottom p-2"><b data-i18n="bus_schedule_item3">Thirumangalam-Chekanurani-Thirumangalam:</b> Distance: 37 km, Headway: 20 mins, Frequency: 3 buses/hr, Avg Speed: 40 km/hr, Trips per Bus: 13, Trips Generated: 52</li>
+                                                            <li class="border border-bottom p-2"><b data-i18n="bus_schedule_item4">South East Loop:</b> Distance: 42 km, Headway: 20 mins, Frequency: 3 buses/hr, Avg Speed: 40 km/hr, Trips per Bus: 12, Trips Generated: 48</li>
+                                                            <li class="border border-bottom p-2"><b data-i18n="bus_schedule_item5">Paravai-Vadipatti-Alanganallur-Paravai:</b> Distance: 52 km, Headway: 20 mins, Frequency: 3 buses/hr, Avg Speed: 40 km/hr, Trips per Bus: 10, Trips Generated: 50</li>
+                                                            <li class="border border-bottom p-2"><b data-i18n="bus_schedule_item6">Chekanurani-Sholavandhan-vadipatti-Chekanurani:</b> Distance: 58 km, Headway: 20 mins, Frequency: 3 buses/hr, Avg Speed: 40 km/hr, Trips per Bus: 9, Trips Generated: 45</li>
+                                                            <li class="border border-bottom p-2"><b data-i18n="bus_schedule_item7">Mattuthavani-pudur-A.Vallalapatti-melur-Mattuthavani:</b> Distance: 61 km, Headway: 20 mins, Frequency: 3 buses/hr, Avg Speed: 40 km/hr, Trips per Bus: 9, Trips Generated: 54</li>
+                                                            <li class="border border-bottom p-2"><b data-i18n="bus_schedule_item8">Mattuthavani-melur-thirupuvanam-Mattuthavani:</b> Distance: 65 km, Headway: 20 mins, Frequency: 3 buses/hr, Avg Speed: 40 km/hr, Trips per Bus: 8, Trips Generated: 48</li>
                                                         </ul>
-
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                        <div class="card " style="height: 60vh ;overflow-y: auto;">
-                                            <div class="card-body ">
-
-                                                <div class="row mb-2">
-                                                    <div class="col-md-6"><img class="img-fluid"
-                                                            src="assets/img/webp/image39.webp" alt=""></div>
-                                                    <div class="col-md-6 mt-2">
-                                                        <small><b>Improve Pedesterain Infrastructure</b>-along with road
-                                                            section or rerouting.</small>
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-2">
-                                                    <div class="col-md-6 mt-2">
-                                                        <small><b>Ola/ Uber Zone</b> in Airport and Railway
-                                                            Station</small>
-                                                    </div>
-                                                    <div class="col-md-6"><img class="img-fluid"
-                                                            src="assets/img/webp/image40.webp" alt=""></div>
-                                                </div>
-                                                <div class="row mb-2">
-                                                    <div class="col-md-6"><img class="img-fluid"
-                                                            src="assets/img/webp/image41.webp" alt="">
-                                                    </div>
-                                                    <div class="col-md-6 mt-2">
-                                                        <small><b>Parking- Smart City Proposals On</b>- Street Parking,
-                                                            Proposed cars and all.</small>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                        <div class="card " style="height: 60vh ;overflow-y: auto;">
-                                            <div class="card-body ">
-                                                <h6 class="p-2">PROPOSALS FOR BLUE & GREEN </h6>
-                                                <img class="card-img-top img-fluid" src="assets/img/webp/image47.webp"
-                                                    alt="Card image cap">
-                                                <div class="overflowScroller2">
-
-                                                    <div class="row p-2 m-2 border border-success rounded"
-                                                        style="background-color:#c8de9f ;">
-                                                        <small>
-                                                            Rich Eco-Sensitive Characteristics (R. Vaigai, Biodiversity
-                                                            Site, Prioritised Wetlands
-                                                        </small>
-
-                                                    </div>
-                                                    <div class="row p-2 m-2 border border-success rounded"
-                                                        style="background-color:#c8de9f ;">
-                                                        <small>
-                                                            River Vaigai’s Cultural Link - Chittirai Thiruvizha
-
-                                                        </small>
-
-                                                    </div>
-                                                    <div class="row p-2 m-2 border border-danger rounded"
-                                                        style="background-color:#ffa4a4 ;">
-                                                        <small>
-                                                            Rich Eco-Sensitive Characteristics (R. Vaigai, Biodiversity
-                                                            Site, Prioritised Wetlands
-                                                        </small>
-
-                                                    </div>
-                                                    <div class="row p-2 m-2 border border-danger rounded"
-                                                        style="background-color:#ffa4a4 ;">
-                                                        <small>
-                                                            River Vaigai’s Cultural Link - Chittirai Thiruvizha
-
-                                                        </small>
-
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card " style="height: 60vh ;overflow-y: auto;">
-                                            <div class="card-body ">
+                                        <div class="card" style="height: 60vh; overflow-y: auto;">
+                                            <div class="card-body">
+                                                <div class="row mb-2">
+                                                    <div class="col-md-6"><img class="img-fluid" src="assets/img/webp/image39.webp" alt=""></div>
+                                                    <div class="col-md-6 mt-2">
+                                                        <small><b data-i18n="pedestrian_infrastructure">Improve Pedestrian Infrastructure</b> - <span data-i18n="road_section_rerouting">along with road section or rerouting</span>.</small>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-md-6 mt-2">
+                                                        <small><b data-i18n="ola_uber_zone">Ola/Uber Zone</b> <span data-i18n="in_airport_railway_station">in Airport and Railway Station</span></small>
+                                                    </div>
+                                                    <div class="col-md-6"><img class="img-fluid" src="assets/img/webp/image40.webp" alt=""></div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-md-6"><img class="img-fluid" src="assets/img/webp/image41.webp" alt=""></div>
+                                                    <div class="col-md-6 mt-2">
+                                                        <small><b data-i18n="parking_smart_city_proposals">Parking - Smart City Proposals On</b> - <span data-i18n="street_parking_proposed_cars">Street Parking, Proposed cars and all.</span></small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        <div class="card" style="height: 60vh; overflow-y: auto;">
+                                            <div class="card-body">
+                                                <h6 class="p-2" data-i18n="proposals_for_blue_green">PROPOSALS FOR BLUE & GREEN</h6>
+                                                <img class="card-img-top img-fluid" src="assets/img/webp/image47.webp" alt="Card image cap">
+                                                    <div class="row p-2 m-2 border border-success rounded" style="background-color:#c8de9f ;">
+                                                        <small data-i18n="rich_eco_sensitive_characteristics">Rich Eco-Sensitive Characteristics (R. Vaigai, Biodiversity Site, Prioritized Wetlands)</small>
+                                                    </div>
+                                                    <div class="row p-2 m-2 border border-success rounded" style="background-color:#c8de9f ;">
+                                                        <small data-i18n="river_vaigai_cultural_link">River Vaigai’s Cultural Link - Chittirai Thiruvizha</small>
+                                                    </div>
+                                                    <div class="row p-2 m-2 border border-danger rounded" style="background-color:#ffa4a4 ;">
+                                                        <small data-i18n="rich_eco_sensitive_characteristics">Rich Eco-Sensitive Characteristics (R. Vaigai, Biodiversity Site, Prioritized Wetlands)</small>
+                                                    </div>
+                                                    <div class="row p-2 m-2 border border-danger rounded" style="background-color:#ffa4a4 ;">
+                                                        <small data-i18n="river_vaigai_cultural_link">River Vaigai’s Cultural Link - Chittirai Thiruvizha</small>
+                                                    </div>
+
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card" style="height: 60vh; overflow-y: auto;">
+                                            <div class="card-body">
                                                 <h3 class="text-success" style="font-weight: bolder;">1</h3>
-                                                <img class="card-img-top img-fluid" src="assets/img/webp/image48.webp"
-                                                    alt="Card image cap">
-
-                                                <img class="card-img-top" src="assets/img/webp/image53.webp"
-                                                    alt="Card image cap">
-
-                                                <img class="card-img-top" src="assets/img/webp/image54.webp"
-                                                    alt="Card image cap">
-
-                                                <div class="overflowScroller2 ">
-                                                    <h6>Conservation of Eco-sensitive Region
-                                                    </h6>
-                                                    <p>Existing Proposal : Prioritized Wetlands: Vandiyur </p>
-                                                    <h6 style="color: #c8de9f;">T.Kunnathur Wetland Redevelopment is
-                                                        proposed ( Area: 0.99 sqkm)
-                                                        Eco-park of 98100 sqm area near Aritapatti Biodiversity site is
-                                                        proposed
-                                                    </h6>
+                                                <img class="card-img-top img-fluid" src="assets/img/webp/image48.webp" alt="Card image cap">
+                                                <img class="card-img-top" src="assets/img/webp/image53.webp" alt="Card image cap">
+                                                <img class="card-img-top" src="assets/img/webp/image54.webp" alt="Card image cap">
+                                                <div class="overflowScroller2">
+                                                    <h6 data-i18n="conservation_of_eco_sensitive_region">Conservation of Eco-sensitive Region</h6>
+                                                    <p data-i18n="existing_proposal">Existing Proposal : Prioritized Wetlands: Vandiyur</p>
+                                                    <h6 style="color: #c8de9f;" data-i18n="tkunnathur_wetland_redevelopment">T.Kunnathur Wetland Redevelopment is proposed ( Area: 0.99 sqkm) Eco-park of 98100 sqm area near Aritapatti Biodiversity site is proposed</h6>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card " style="height: 60vh ;overflow-y: auto;">
-                                            <div class="card-body ">
+                                        
+                                        <div class="card" style="height: 60vh; overflow-y: auto;">
+                                            <div class="card-body">
                                                 <h3 class="text-success" style="font-weight: bolder;">2</h3>
-                                                <h6>Integrating Blue-Green Infrastructure.</h6>
-                                                <p>Vaigai Front : River + Parks + NMT Pathways</p>
-                                                <img class="card-img-top img-fluid" src="assets/img/webp/image55.webp"
-                                                    alt="Card image cap">
+                                                <h6 data-i18n="integrating_blue_green_infrastructure">Integrating Blue-Green Infrastructure.</h6>
+                                                <p data-i18n="vaigai_front">Vaigai Front : River + Parks + NMT Pathways</p>
+                                                <img class="card-img-top img-fluid" src="assets/img/webp/image55.webp" alt="Card image cap">
                                                 <div>
-                                                    <h6 class="text-success pt-2">Channel + Parks+Jogging cycling
-                                                        Tracks,
-                                                        Activity area
-                                                        For a stretch of 7 km.
-                                                    </h6>
-                                                    <img class="card-img-top img-fluid"
-                                                        src="assets/img/webp/image56.webp" alt="Card image cap">
+                                                    <h6 class="text-success pt-2" data-i18n="channel_parks_jogging_cycling_tracks">Channel + Parks + Jogging cycling Tracks, Activity area For a stretch of 7 km.</h6>
+                                                    <img class="card-img-top img-fluid" src="assets/img/webp/image56.webp" alt="Card image cap">
                                                 </div>
-
                                                 <div>
-                                                    <img class="card-img-top img-fluid"
-                                                        src="assets/img/webp/image49.webp" alt="Card image cap">
-                                                    <h6 style="color: #c8de9f;">Ghats development
-                                                    </h6>
-                                                    <p>near Kalazhagar ritual spot ( Area: 8316 sqkm) </p>
+                                                    <img class="card-img-top img-fluid" src="assets/img/webp/image49.webp" alt="Card image cap">
+                                                    <h6 style="color: #c8de9f;" data-i18n="ghats_development">Ghats development</h6>
+                                                    <p data-i18n="near_kalazhagar_ritual_spot">near Kalazhagar ritual spot ( Area: 8316 sqkm)</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card " style="height: 60vh ;overflow-y: auto;">
-                                            <div class="card-body ">
+                                        
+                                        <div class="card" style="height: 60vh; overflow-y: auto;">
+                                            <div class="card-body">
                                                 <h3 class="text-success" style="font-weight: bolder;">3</h3>
-                                                <h6>Treating Vulnerable zones
-                                                    in LPA
-                                                </h6>
-                                                <p>Increasing Ground water recharge </p>
-                                                <img class="card-img-top img-fluid" src="assets/img/webp/image57.webp"
-                                                    alt="Card image cap">
+                                                <h6 data-i18n="treating_vulnerable_zones_in_lpa">Treating Vulnerable zones in LPA</h6>
+                                                <p data-i18n="increasing_ground_water_recharge">Increasing Groundwater Recharge</p>
+                                                <img class="card-img-top img-fluid" src="assets/img/webp/image57.webp" alt="Card image cap">
                                                 <div>
-                                                    <h6 class="text-success pt-2">Land reclamation near
-                                                        vacant lands near
-                                                        Pudukullam water body ( 0.494 sqkm)
-
-                                                    </h6>
-                                                    <div class="row p-2 m-2 border border-primary rounded"
-                                                        style="background-color:#9fbade ;">
-                                                        <small>
-                                                            Flood Prone Zone
-
-                                                        </small>
+                                                    <h6 class="text-success pt-2" data-i18n="land_reclamation_near_vacant_lands">Land reclamation near vacant lands near Pudukullam water body (0.494 sqkm)</h6>
+                                                    <div class="row p-2 m-2 border border-primary rounded" style="background-color:#9fbade ;">
+                                                        <small data-i18n="flood_prone_zone">Flood Prone Zone</small>
                                                     </div>
-                                                    <div class="row p-2 m-2 border border-primary rounded"
-                                                        style="background-color:#9fbade ;">
-                                                        <small>
-                                                            Connecting Water Channel and vacant land reclamation
-
-
-                                                        </small>
+                                                    <div class="row p-2 m-2 border border-primary rounded" style="background-color:#9fbade ;">
+                                                        <small data-i18n="connecting_water_channel_and_vacant_land_reclamation">Connecting Water Channel and vacant land reclamation</small>
                                                     </div>
-                                                    <div class="row p-2 m-2 border border-warning rounded"
-                                                        style="background-color:#ded49f ;">
-                                                        <small>
-                                                            Drought Zone
-
-
-                                                        </small>
+                                                    <div class="row p-2 m-2 border border-warning rounded" style="background-color:#ded49f ;">
+                                                        <small data-i18n="drought_zone">Drought Zone</small>
                                                     </div>
-                                                    <div class="row p-2 m-2 border border-warning rounded"
-                                                        style="background-color:#ded49f ;">
-                                                        <small>
-                                                            Watershed Management
-                                                            (Protecting the land use, Agroforestry )- Separate DPR can
-                                                            be proposed
-
-
-                                                        </small>
+                                                    <div class="row p-2 m-2 border border-warning rounded" style="background-color:#ded49f ;">
+                                                        <small data-i18n="watershed_management">Watershed Management (Protecting the land use, Agroforestry) - Separate DPR can be proposed</small>
                                                     </div>
-
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card " style="height: 60vh ;overflow-y: auto;">
-                                            <div class="card-body ">
+                                        
+                                        <div class="card" style="height: 60vh; overflow-y: auto;">
+                                            <div class="card-body">
                                                 <h3 class="text-success" style="font-weight: bolder;">4</h3>
-                                                <h6>Enhancement of existing green and blue cover in LPA
-
-                                                </h6>
-                                                <img class="card-img-top img-fluid" src="assets/img/webp/image51.webp"
-                                                    alt="Card image cap">
-                                                <p>Urban Forestry in - Ambalathadi -9 pt
-                                                    1.00 acre.</p>
-                                                <img class="card-img-top img-fluid" src="assets/img/webp/image52.webp"
-                                                    alt="Card image cap">
-                                                <p>Reclamation of Abandoned quarries at
-                                                    Vandiyur (2.63 ha)
-                                                    Katchaikatti (6.62 ha)
-                                                    Virelipatti (1.94 ha)
-                                                    Kulasekaran Kottai (0.25 ha)
-                                                    Urban Forestry
-
-                                                </p>
-
+                                                <h6 data-i18n="enhancement_of_existing_green_and_blue_cover_in_lpa">Enhancement of existing green and blue cover in LPA</h6>
+                                                <img class="card-img-top img-fluid" src="assets/img/webp/image51.webp" alt="Card image cap">
+                                                <p data-i18n="urban_forestry_in_ambalathadi">Urban Forestry in - Ambalathadi - 9 pt 1.00 acre.</p>
+                                                <img class="card-img-top img-fluid" src="assets/img/webp/image52.webp" alt="Card image cap">
+                                                <p data-i18n="reclamation_of_abandoned_quarries">Reclamation of Abandoned quarries at Vandiyur (2.63 ha) Katchaikatti (6.62 ha) Virelipatti (1.94 ha) Kulasekaran Kottai (0.25 ha) Urban Forestry</p>
                                             </div>
                                         </div>
+                                        
                                     </div>
                                 </div>
-
                             </div>
                         </div>
-
                     </div>
                 </div>
-
             </div>
-
             </div>
         </section><!-- End sc table Section -->
-
-
-        <!-- ======= Contact Section ======= -->
-        <section id="contact" class="contact">
-            <div class="container" data-aos="fade-up">
-
+        <section id="contact" class="contact" data-aos="fade-up">
+            <div class="container">
                 <div class="section-title">
-                    <h2>FeedBack</h2>
+                    <h2 data-i18n="feedback_section_title">FeedBack</h2>
                 </div>
-
                 <div class="row justify-content-center align-content-center">
-
-
-                    <div class="col-lg-7 mt-5  ">
+                    <div class="col-lg-7 mt-5">
                         <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                             <div class="row">
                                 <div class="form-group col-md-6">
-                                    <label for="name">Your Name</label>
+                                    <label for="name" data-i18n="your_name_label">Your Name</label>
                                     <input type="text" name="name" class="form-control" id="name" required>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="name">Your Email</label>
+                                    <label for="email" data-i18n="your_email_label">Your Email</label>
                                     <input type="email" class="form-control" name="email" id="email" required>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="name">Subject</label>
+                                <label for="subject" data-i18n="subject_label">Subject</label>
                                 <input type="text" class="form-control" name="subject" id="subject" required>
                             </div>
                             <div class="form-group">
-                                <label for="name">Message</label>
+                                <label for="message" data-i18n="message_label">Message</label>
                                 <textarea class="form-control" name="message" rows="10" required></textarea>
                             </div>
                             <div class="my-3">
-                                <div class="loading">Loading</div>
+                                <div class="loading" data-i18n="loading_text">Loading</div>
                                 <div class="error-message"></div>
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                                <div class="sent-message" data-i18n="message_sent_text">Your message has been sent. Thank you!</div>
                             </div>
-                            <div class="text-center"><button type="submit">Send Message</button></div>
+                            <div class="text-center"><button type="submit" data-i18n="send_message_button">Send Message</button></div>
                         </form>
                     </div>
-
                 </div>
-
             </div>
         </section><!-- End Contact Section -->
+        
     </main><!-- End #main -->
-
     <!-- ======= Footer ======= -->
     <footer id="footer">
-
         <!-- <div class="footer-newsletter">
       <div class="container">
         <div class="row justify-content-center">
@@ -1741,11 +900,9 @@ NHAI/State Highways
         </div>
       </div>
     </div> -->
-
         <!-- <div class="footer-top">
       <div class="container">
         <div class="row">
-
           <div class="col-lg-3 col-md-6 footer-contact">
             <h3>Arsha</h3>
             <p>
@@ -1756,7 +913,6 @@ NHAI/State Highways
               <strong>Email:</strong> info@example.com<br>
             </p>
           </div>
-
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
@@ -1767,7 +923,6 @@ NHAI/State Highways
               <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
           </div>
-
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
@@ -1778,7 +933,6 @@ NHAI/State Highways
               <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
             </ul>
           </div>
-
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Social Networks</h4>
             <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
@@ -1790,11 +944,9 @@ NHAI/State Highways
               <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
           </div>
-
         </div>
       </div>
     </div> -->
-
         <div class="container footer-bottom clearfix">
             <div class="copyright">
                 <!-- &copy; Designed by <strong><span>Rajkumar</span></strong>. -->
@@ -1808,11 +960,9 @@ NHAI/State Highways
             </div>
         </div>
     </footer><!-- End Footer -->
-
     <div id="preloader"></div>
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
-
     <!-- Vendor JS Files -->
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1827,7 +977,5 @@ NHAI/State Highways
     <script src="assets/js/main.js"></script>
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-
 </body>
-
 </html>
