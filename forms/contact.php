@@ -51,6 +51,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $ColdStorage = $_POST["ColdStorage"];
   $LogisticHub = $_POST["LogisticHub"];
   $EconomySatisfaction = $_POST["EconomySatisfaction"];
+  $DailyTransport = $_POST["DailyTransport"];
+  $TravelDistance = $_POST["TravelDistance"];
+  $PreferredPublicTransport = $_POST["PreferredPublicTransport"];
+  $ParkingFacilityHome = $_POST["ParkingFacilityHome"];
+  $ParkingFacilitiesPublic = $_POST["ParkingFacilitiesPublic"];
+  $ElectricVehicleOption = isset($_POST["ElectricVehicleOption"]) ? $_POST["ElectricVehicleOption"] : "";
+  $ElectricVehicleReason = isset($_POST["ElectricVehicleReason"]) ? $_POST["ElectricVehicleReason"] : "";
+  $ChargingFacilities = $_POST["ChargingFacilities"];
+  $DedicatedCycleTrack = $_POST["DedicatedCycleTrack"];
+  $NoVehiclesZone = $_POST["NoVehiclesZone"];
+  $PedestrianWalkways = $_POST["PedestrianWalkways"];
+  $TrafficJunctions = $_POST["TrafficJunctions"];
+  $ParaTransitJunctions = $_POST["ParaTransitJunctions"];
+  $NewSubArterialRoad = $_POST["NewSubArterialRoad"];
+  $AlternativeTransportInitiatives = isset($_POST["AlternativeTransportInitiatives"]) ? $_POST["AlternativeTransportInitiatives"] : "";
+  $PublicTransportSatisfaction = $_POST["PublicTransportSatisfaction"];
+  $WaterSupply = $_POST["WaterSupply"];
+  $WaterSupplyFrequency = $_POST["WaterSupplyFrequency"];
+  $WaterStagnation = $_POST["WaterStagnation"];
+  $SewageTreatment = $_POST["SewageTreatment"];
+
+  $wasteSegregation = $_POST["waste_segregation"];
+  $decentralizationSolidWaste = $_POST["decentralization_solid_waste"];
+  $solidWasteSuggestions = $_POST["solid_waste_suggestions"];
+  
 } else {
   // If the form is not submitted, display an error message
   echo "Error: Form not submitted.";

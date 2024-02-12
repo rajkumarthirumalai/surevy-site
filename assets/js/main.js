@@ -320,3 +320,14 @@ document.addEventListener('DOMContentLoaded', function() {
   const defaultLanguage = 'en';
   loadLanguageFile(defaultLanguage);
 });
+
+function toggleEVTextArea() {
+  var evYesRadio = document.getElementById('ElectricVehicleYes');
+  var evTextArea = document.getElementById('ElectricVehicleReason');
+
+  if (evYesRadio.checked) {
+      evTextArea.style.display = 'block';
+  } else {
+      evTextArea.style.display = 'none';
+  }
+}
