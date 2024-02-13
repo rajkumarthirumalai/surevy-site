@@ -338,6 +338,7 @@ function showImage(imageNumber) {
   document.getElementById('image2').style.display = 'none';
   document.getElementById('image3').style.display = 'none';
   document.getElementById('image4').style.display = 'none';
+  document.getElementById('image5').style.display = 'none';
 
   // Show the selected image
   document.getElementById('image' + imageNumber).style.display = 'block';

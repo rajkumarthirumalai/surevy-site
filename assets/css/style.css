@@ -121,7 +121,7 @@ h6 {
 
 #header .logo {
   font-size: 30px;
-  margin: 0;
+
   padding: 0;
   line-height: 1;
   font-weight: 500; 
@@ -131,10 +131,12 @@ h6 {
 
 #header .logo a {
   color: #fff;
+  margin: 0 ;
 }
 
 #header .logo img {
-  max-height: 40px;
+  margin: 0 10px 0 20px;
+  max-height: 80px;
 }
 
 /*--------------------------------------------------------------
@@ -2221,5 +2223,20 @@ a:hover {
   display: none
 }
 #image4{
+  display: none
+}
+#image1{
+  display: none
+}
+#uniDiv2{
+  display: none
+}
+#uniDiv3{
+  display: none
+}
+#uniDiv4{
+  display: none
+}
+#uniDiv1{
   display: none
 }

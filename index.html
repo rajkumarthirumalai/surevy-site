@@ -34,11 +34,18 @@
     <link rel="stylesheet" href="assets/fonts/icomoon/style.css">
 
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-<style>
-      h4[data-bs-toggle="collapse"]:hover {
-    cursor: pointer;
-  }
-</style>
+    <style>
+        h4[data-bs-toggle="collapse"]:hover {
+            cursor: pointer;
+
+        }
+
+        .blockquote-custom {
+            position: relative;
+            font-size: 1.1rem;
+            border-left: #37517e;
+        }
+    </style>
 </head>
 
 <body>
@@ -46,6 +53,7 @@
     <!-- Header Section -->
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
+            <a href="index.html" class="logo me-auto"><img src="assets/img/logo2.png" alt=""></a>
             <div class="me-auto">
                 <h1 class="logo"><a href="index.html" data-i18n="madurai">Madurai</a></h1>
                 <p style="color: white; font-size: 10px;" data-i18n="transform_message">Transform sleepless city with
@@ -77,17 +85,15 @@
                     <li><a class="nav-link scrollto" href="#landuse-proposal" data-i18n="landuse_proposal">Land Use
                             Proposal</a></li>
                     <li><a class="nav-link scrollto" href="#contact" data-i18n="feedback">Feedback</a></li>
-                    <li><a class="getstarted scrollto" href="survey-form.html" data-i18n="citizen_survey">Citizen
-                            Survey</a></li>
-
-                    <!-- Language Selector -->
                     <li>
-                        <select id="language-selector" class="form-select mx-3"
-                            style="border-radius: 25px; background-color: #37517e ;border:1px #47b2e4 solid; color: white;"
-                            onchange="changeLanguage(this.value)">
-                            <option value="en" data-i18n="english">English</option>
-                            <option value="ta" data-i18n="tamil">Tamil</option>
-                        </select>
+                        <a class="nav-link scrollto">
+                            <select id="language-selector" class="form-select mx-3"
+                                style="border-radius: 25px; background-color: #37517e ;border:1px #47b2e4 solid; color: white;"
+                                onchange="changeLanguage(this.value)">
+                                <option value="en" data-i18n="english">English</option>
+                                <option value="ta" data-i18n="tamil">Tamil</option>
+                            </select>
+                        </a>
                     </li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
@@ -100,17 +106,21 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1">
+                <div class="col-lg-9 d-flex flex-column justify-content-center ">
                     <h1 data-i18n="madurai_master_plan">Madurai Master Plan 2021-2041</h1>
                     <h3 style="color: rgb(255, 255, 255); font-weight: bolder;" data-i18n="transform_message">Transform
                         sleepless city with enduring vision</h3>
-                    <div class="d-flex justify-content-center justify-content-lg-start">
-                        <a href="survey-form.html" class="btn-get-started scrollto" data-i18n="citizen_survey">Citizen
-                            Survey</a>
-                        <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i
-                            class="bi bi-play-circle"></i><span data-i18n="watch_video">Watch Video</span></a> -->
-                    </div>
+                 
                 </div>
+                <div class="col-lg-3 ">
+                  <div class="citizenFilled p-5 border-dark rounded bg-light my-3" style="background:  rgba(255, 255, 255, 0.5)">
+                    <h1></h1>
+                    <h4>Citizen Filled the Survey</h4>
+                  </div>
+                  <div class="changeLpa p-5  border-dark rounded bg-light my-3" style="background:  rgba(255, 255, 255, 0.5)">
+                    <h4>Changed in Proposed Land use</h4>
+                  </div>
+                </div>  
             </div>
         </div>
 
@@ -135,219 +145,256 @@
 
                     <!-- Left Column -->
 
-                    <div class="col-lg-4">
-
-
-                        <!-- LPA Statistics -->
-                        <!-- <div class="row p-3 mt-3 mx-auto border border-warning rounded">
-                            <div class="col-lg-6"><span data-i18n="total_lpa_area">Total LPA Area</span><br>
-                                <strong><label class="text-warning">1254.93</label> Sq.km</strong>
-                            </div>
-                            <div class="col-lg-6"><span data-i18n="total_lpa_population">Total LPA Population</span><br>
-                                <strong><label class="text-warning">22,63,115</label></strong>
-                            </div>
-                        </div> -->
-
-                        <div class="overall-lpa-info-container row p-3 my-3 mx-auto border border-warning rounded accordion"
-                            id="accordionExample4" onclick="showImage(1)">
-                            <h2 class="accordion-header" id="headingFour">
-                                <h4 data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true"
-                                    aria-controls="collapseFour" data-i18n="overall_lpa">Overall LPA</h4>
-                            </h2>
-                            <div id="collapseFour" class="row accordion-collapse collapse mx-auto"
-                                aria-labelledby="headingFour" data-bs-parent="#accordionExample4">
-                                <div class="row mx-auto">
-                                    <div class="col-lg-6"><span data-i18n="total_lpa_area">Total LPA Area</span><br>
-                                        <strong><label class="text-warning">1254.93</label> Sq.km</strong>
+                    <div class="col-lg-6">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <!-- Overall LPA -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="true"
+                                        aria-controls="flush-collapseOne" onclick="showImage(5)">
+                                        Overall LPA
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <span>Total LPA Area</span><br>
+                                                <strong><label class="text-warning">1254.93</label> Sq.km</strong>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <span>Total LPA Population</span><br>
+                                                <strong><label class="text-warning">22,63,115</label></strong>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-6"><span data-i18n="total_lpa_population">Total LPA
-                                            Population</span><br>
-                                        <strong><label class="text-warning">22,63,115</label></strong>
+                                </div>
+                            </div>
+
+                            <!-- Town Panchayat -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo" onclick="showImage(1)">
+                                        Corporation
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <span>Area</span><br>
+                                                <strong><label class="text-warning">76.11</label> Sq.km</strong><br><br>
+                                            </div>
+                                            <!-- <div class="col-lg-4">
+                                                <span>No of Town Panchayats</span><br>
+                                                <strong><label class="text-warning">5</label><br><br></strong>
+                                            </div> -->
+                                            <div class="col-lg-4">
+                                                <span>Population</span><br>
+                                                <strong><label class="text-warning">22,63,115</label><br><br></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Municipality -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree" onclick="showImage(2)">
+                                        Municipality
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <!-- Thirumangalam -->
+                                            <div class="col-lg-12 mb-2">
+                                                <span>Area</span><br>
+                                                <strong><label class="text-warning">25.95</label> Sq.km</strong>
+                                            </div>
+                                            <hr>
+                                            <div class="col-lg-6">
+                                                <span>Thirumangalam Area</span><br>
+                                                <strong><label class="text-warning">13.64</label> Sq.km</strong>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <span>Thirumangalam Population</span><br>
+                                                <strong><label class="text-warning">51,194</label></strong>
+                                            </div>
+                                            <!-- Melur -->
+                                            <div class="col-lg-6">
+                                                <span>Melur Area</span><br>
+                                                <strong><label class="text-warning">12.31</label> Sq.km</strong>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div>
+                                                    <span>Melur Population</span><br>
+                                                    <strong><label class="text-warning">40,017</label></strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Town Panchayat (Duplicate) -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                        aria-controls="flush-collapseFour" onclick="showImage(3)">
+                                        Town Panchayat
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <span>Area</span><br>
+                                                <strong><label class="text-warning">76.11</label> Sq.km</strong><br><br>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <span>No of Town Panchayats</span><br>
+                                                <strong><label class="text-warning">5</label><br><br></strong>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <span>Population</span><br>
+                                                <strong><label class="text-warning">22,63,115</label><br><br></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Village Panchayat -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                        aria-controls="flush-collapseFive" onclick="showImage(4)">
+                                        Village Panchayat
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <span>Area</span><br>
+                                                <strong><label class="text-warning">1004.90</label>
+                                                    Sq.km</strong><br><br>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <span>No of Village Panchayats</span><br>
+                                                <strong><label class="text-warning">316</label><br><br></strong>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <span>Population</span><br>
+                                                <strong><label class="text-warning">22,63,115</label><br><br></strong>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
-
-                        <!-- Municipality Statistics -->
-                        <div class="municipality-info-container row p-3 my-3 mx-auto border border-warning rounded accordion"
-                            id="accordionExample" onclick="showImage(2)">
-                            <h2 class="accordion-header" id="headingOne">
-
-                                <h4 data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                                    aria-controls="collapseOne" data-i18n="municipality">Municipality</h4>
-
-                            </h2>
-
-                            <div id="collapseOne" class="row accordion-collapse collapse mx-auto"
-                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <!-- Thirumangalam -->
-                                <div class="row mx-auto">
-                                    <span class="ms-auto">
-                                        <span data-i18n="area">Area</span>
-                                        <strong><label class="text-warning" for="|">25.95</label> Sq.km</strong>
-                                    </span>
-
-                                    <div class="col-lg-6 mobile-hide-border " style="border-right: 1px solid #ccc;">
-                                        <!-- Thirumangalam -->
-                                        <div class="mt-2">
-                                            <span data-i18n="thirumangalam_area">Thirumangalam Area</span><br>
-                                            <strong><label class="text-warning" for="|">13.64</label> Sq.km</strong>
-                                        </div>
-                                        <div class="mt-2">
-                                            <span data-i18n="thirumangalam_population">Thirumangalam
-                                                Population</span><br>
-                                            <strong><label class="text-warning" for="|">51,194 </label></strong>
-                                        </div>
-                                    </div>
-                                    <!-- Melur -->
-                                    <div class="col-lg-6">
-                                        <div class="mt-2">
-                                            <span data-i18n="melur_area">Melur Area</span><br>
-                                            <strong><label class="text-warning" for="|">12.31</label> Sq.km</strong>
-                                        </div>
-                                        <div class="mt-2">
-                                            <span data-i18n="melur_population">Melur Population</span><br>
-                                            <strong><label class="text-warning" for="|">40,017</label></strong>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-
-                        <!-- Town Panchayat Statistics -->
-                        <div class="town-panchayat-info-container row p-3 my-3 mx-auto border border-warning rounded accordion"
-                            id="accordionExample2" onclick="showImage(3)">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <h4 data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
-                                    aria-controls="collapseTwo" data-i18n="town_panchayat">Town Panchayat</h4>
-                            </h2>
-                            <div id="collapseTwo" class="row accordion-collapse collapse mx-auto"
-                                aria-labelledby="headingTwo" data-bs-parent="#accordionExample2">
-                                <div class="row mx-auto">
-                                    <div class="col-lg-4">
-                                        <span data-i18n="area">Area</span> <br>
-                                        <strong><label class="text-warning" for="|">76.11</label> Sq.km</strong><br><br>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <span data-i18n="number_of_town_panchayats">No of Town Panchayats</span> <br>
-                                        <strong><label class="text-warning" for="|">5</label> <br><br></strong>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <span data-i18n="population">Population</span> <br>
-                                        <strong><label class="text-warning" for="|">22,63,115</label> <br><br></strong>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <!-- Village Panchayat Statistics -->
-                        <div class="village-panchayat-info-container row p-3 my-3 mx-auto border border-warning rounded accordion"
-                            id="accordionExample3" onclick="showImage(4)">
-                            <h2 class="accordion-header" id="headingThree">
-                                <h4 data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true"
-                                    aria-controls="collapseThree" data-i18n="village_panchayat">Village Panchayat</h4>
-                            </h2>
-                            <div id="collapseThree" class="row accordion-collapse collapse mx-auto"
-                                aria-labelledby="headingThree" data-bs-parent="#accordionExample3">
-                                <div class="row mx-auto">
-                                    <div class="col-lg-4">
-                                        <span data-i18n="area">Area</span> <br>
-                                        <strong><label class="text-warning" for="|">1004.90</label>
-                                            Sq.km<br><br></strong>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <span data-i18n="number_of_village_panchayats">No of Village Panchayats</span>
-                                        <br>
-                                        <strong><label class="text-warning" for="|">316</label> <br><br></strong>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <span data-i18n="population">Population</span><br>
-                                        <strong><label class="text-warning" for="|">22,63,115</label> <br><br></strong>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <!-- Know More Button -->
-                        <a href="./knowmore.html" class="btn-get-started scrollto" data-i18n="know_more"><span>Know
-                                more</span></a>
                     </div>
 
 
-                    <div class="img-container col-lg-5">
-                        <a id="image1" href="assets/pdf/Corporation.pdf">
+                    <div class="img-container col-lg-6">
+                        <a id="image5" target="_blank" href="assets/pdf/PROPOSED MasterPlan Map - LPA.pdf">
+                            <img src="assets/img/pdfImages/PROPOSED-MasterPlan-Map-LPA-pdf.png" class="img-fluid my-2"
+                                alt="">
+                        </a>
+                        <a id="image1" target="_blank" href="assets/pdf/Corporation.pdf">
                             <img src="assets/img/pdfImages/Corporation-pdf.png" class="img-fluid my-2" alt="">
                         </a>
-                        <a id="image2" href="assets/pdf/Municipality.pdf">
+                        <a id="image2" target="_blank" href="assets/pdf/Municipality.pdf">
                             <img src="assets/img/pdfImages/Municipality-pdf.png" class="img-fluid my-2" alt="">
                         </a>
-                        <a id="image3" href="assets/pdf/Town Panchayat.pdf">
+                        <a id="image3" target="_blank" href="assets/pdf/Town Panchayat.pdf">
                             <img src="assets/img/pdfImages/Town-Panchayat-pdf.png" class="img-fluid my-2" alt="">
                         </a>
-                        <a id="image4" href="assets/pdf/Villages.pdf">
+                        <a id="image4" target="_blank" href="assets/pdf/Villages.pdf">
                             <img src="assets/img/pdfImages/Villages-pdf.png" class="img-fluid my-2" alt="">
                         </a>
                     </div>
 
                     <!-- Right Column -->
 
-                    <div class="col-lg-3">
-                        <h4 data-i18n="about_your_lpa">About your LPA</h4>
-                        <div class=" row p-3 my-3 mx-auto border border-warning rounded accordion">
-
+                    <!-- <div class="col-lg-3">
+                        <div id="uniDiv5">
+                            <h4 data-i18n="">A</h4>
+                            <div class=" row p-3 my-3 mx-auto border border-warning rounded accordion">
+                            </div>
                         </div>
-                    </div>
+                        <div id="uniDiv1">
+                            <h4 data-i18n="">A</h4>
+                            <div class=" row p-3 my-3 mx-auto border border-warning rounded accordion">
+                            </div>
+                        </div>
+                        <div id="uniDiv2">
+                            <h4 data-i18n="">A</h4>
+                            <div class=" row p-3 my-3 mx-auto border border-warning rounded accordion">
+                            </div>
+                        </div>
+                        <div id="uniDiv3">
+                            <h4 data-i18n="">A</h4>
+                            <div class=" row p-3 my-3 mx-auto border border-warning rounded accordion">
+                            </div>
+                        </div>
+                        <div id="uniDiv4">
+                            <h4 data-i18n="">A</h4>
+                            <div class=" row p-3 my-3 mx-auto border border-warning rounded accordion">
+                            </div>
+                        </div>
+                    </div> -->
                 </div>
-
-
-
 
                 <!-- Images -->
                 <div class="row">
                     <div class="col-lg-6 py-2" data-aos="fade-up">
-                        <div class="card p-3 border rounded" style="background-color: #37517e;">
-                            <div class="card-body ">
-                                <h2 class="card-title  border-primary rounded-pill p-2 bg-light ">First
-                                    Master Plan</h2>
-                                <h4 class="card-title  border-primary rounded-pill p-2 bg-light"
-                                    data-i18n="1995_master_plan"> <strong data-i18n="1995_master_plan">1995
-                                        Master Plan – Approved</strong>
-                                </h4>
-                                <h4 class="card-title  border-primary rounded-pill p-2 bg-light"><span
-                                        data-i18n="total_area">Total Area –
-                                    </span><strong>720.97 Sq.km</strong>
-                                </h4>
-                            </div>
-                            <img class="card-img-top" src="assets/img/masterplan/pink.png" alt=""
-                                style="padding: 20px; border-radius: 35px;">
-                        </div>
+                        <!-- CUSTOM BLOCKQUOTE -->
+                        <blockquote class="blockquote blockquote-custom bg-white shadow"
+                            style="border-left: #37517e 20px solid;">
+                            <br>
+                            <h2 class="">First Master Plan</h2>
+                            <h4 class="" data-i18n="1995_master_plan"><strong data-i18n="1995_master_plan">1995 Master
+                                    Plan – Approved</strong>
+                            </h4>
+                            <hr>
+                            <span data-i18n="total_area">Total Area –</span><strong>720.97 Sq.km</strong>
+                            <img class="card-img-top" src="assets/img/masterplan/pink.png"
+                                style="padding: 35px 25px; border-radius: 35px;" alt="">
+                        </blockquote><!-- END -->
                     </div>
                     <div class="col-lg-6 py-2" data-aos="fade-up">
-                        <div class="card p-3 border rounded" style="background-color: #37517e;">
-                            <div class="card-body">
-                                <h2 class="card-title  border-primary rounded-pill p-2 bg-light ">Second
-                                    Master Plan
-                                </h2>
-                                <h4 class="card-title  border-primary rounded-pill p-2 bg-light"><strong
-                                        data-i18n="master_plan_2021_2041">Master
-                                        Plan 2021 – 2041</strong>
-                                </h4>
-                                <h4 class="card-title  border-primary rounded-pill p-2 bg-light"><span
-                                        data-i18n="total_area">Total Area –
-                                    </span><strong>1254.93 Sq.km</strong>
-                                </h4>
-                            </div>
+                        <!-- CUSTOM BLOCKQUOTE -->
+                        <blockquote class="blockquote blockquote-custom bg-white shadow"
+                            style="border-left: #37517e 20px solid;">
+                            <br>
+                            <h2 class="">Second Master Plan</h2>
+                            <h4 class=""><strong data-i18n="master_plan_2021_2041">Master Plan 2021 – 2041</strong>
+                            </h4>
+                            <hr>
+                            <span data-i18n="total_area">Total Area –</span><strong>1254.93 Sq.km</strong>
                             <img class="card-img-top" src="assets/img/masterplan/violet.png"
-                                style="padding:  35px 25px; border-radius: 35px;" alt="">
-                        </div>
+                                style=" padding: 45px 25px; border-radius: 35px;" alt="">
+                        </blockquote><!-- END -->
                     </div>
                 </div>
+
+
+
 
             </div>
 
@@ -371,7 +418,7 @@
         <!-- Planning Area Section End -->
 
         <!-- Demography Section -->
-        <section id="demography" class="demography">
+        <section id="demography" class="demography profile section-bg">
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
@@ -382,15 +429,18 @@
                         <div class="" style="height: 40vh; overflow-y: auto;" data-aos-delay="100">
                             <h4 class="my-2"><a href="" data-i18n="population_distribution">Population Distribution </a>
                             </h4>
-                            <img class="card-img-top img-fluid" src="assets/img/masterplan/demo1.png" height="80vh" alt="Card image cap">
+                            <img class="card-img-top img-fluid" src="assets/img/masterplan/demo1.png" height="80vh"
+                                alt="Card image cap">
                         </div>
                         <div class="" style="height: 40vh; overflow-y: auto;" data-aos-delay="200">
                             <h4 class="my-2"><a href="" data-i18n="growth_rate">Growth Rate</a></h4>
-                            <img class="card-img-top img-fluid" src="assets/img/masterplan/demo2.png" height="80vh" alt="Card image cap">
+                            <img class="card-img-top img-fluid" src="assets/img/masterplan/demo2.png" height="80vh"
+                                alt="Card image cap">
                         </div>
                         <div class="" style="height: 40vh; overflow-y: auto;" data-aos-delay="300">
                             <h4 class="my-2"><a href="" data-i18n="density_per_sq_km">Density per Sq.km</a></h4>
-                            <img class="card-img-top img-fluid" src="assets/img/masterplan/demo3.png" height="80vh" alt="Card image cap">
+                            <img class="card-img-top img-fluid" src="assets/img/masterplan/demo3.png" height="80vh"
+                                alt="Card image cap">
                         </div>
                     </div>
 
@@ -402,66 +452,6 @@
         </section>
         <!-- Demography Section End -->
 
-        <!--demography End  Section -->
-        <!--demography End  Section -->
-        <!-- ======= spatial-growth Section ======= -->
-        <!-- Master Plan Section -->
-        <section id="Master-plan" class="Master-plan why-us" style="background-color: #37517e;">
-            <div class="container-fluid" data-aos="fade-up">
-                <div class="row">
-                    <div class="col-lg-7 d-flex justify-content-center align-items-stretch  order-2 order-lg-1">
-                        <div class="content">
-                            <h3 class="mx-4 text-light" data-i18n="what_is_master_plan"><strong>What is Master
-                                    plan</strong></h3><br>
-                            <ul>
-                                <li class="pt-2 text-light" data-i18n="land_usage">The manner in which the land in the
-                                    planning area shall be used;</li>
-                                <li class="pt-2 text-dark" data-i18n="allotment_reservation">The allotment or
-                                    reservation of land for residential, commercial, industrial and agricultural
-                                    purposes and for parks, play-fields and open spaces;</li>
-                                <li class="pt-2 text-light" data-i18n="allotment_reservation_public_buildings">The
-                                    allotment and reservation of land for public buildings, institutions and for civic
-                                    amenities;</li>
-                                <li class="pt-2 text-dark" data-i18n="provision_national_highways">The making of
-                                    provision for national highways, arterial roads, ring roads, major streets, lines of
-                                    communication including railways, airports and canals;</li>
-                                <li class="pt-2 text-light" data-i18n="traffic_transportation_pattern">The traffic and
-                                    transportation pattern and traffic circulation pattern;</li>
-                                <li class="pt-2 text-dark" data-i18n="major_road_street_improvements">The major road and
-                                    street improvements;</li>
-                                <li class="pt-2 text-light" data-i18n="areas_reserved_future_development">The areas
-                                    reserved for future development, expansion and for new housing;</li>
-                                <li class="pt-2 text-dark" data-i18n="provision_improvement_areas">The provision for the
-                                    improvement of areas of bad layout or obsolete development and slum areas and for
-                                    relocation of population;</li>
-                                <li class="pt-2 text-light" data-i18n="amenities_services_utilities">The amenities,
-                                    services, and utilities;</li>
-                                <li class="pt-2 text-dark" data-i18n="provision_detailed_development">The provision for
-                                    detailed development of specific areas for housing, shopping, industries and civic
-                                    amenities and educational and cultural facilities;</li>
-                                <li class="pt-2 text-light" data-i18n="control_architectural_features">The control of
-                                    architectural features, elevation and frontage of buildings and structures;</li>
-                                <li class="pt-2 text-dark" data-i18n="provision_regulating_zone">The provision for
-                                    regulating the zone, the location, height, number of storeys and size of buildings
-                                    and other structures, the size of the yards and other open spaces and the use of
-                                    buildings, structures and land;</li>
-                                <li class="pt-2 text-light" data-i18n="stages_master_plan">The stages by which the
-                                    Master Plan shall be carried out; and such other matters as may be prescribed.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 align-items-stretch order-1 order-lg-2 img-container d-flex flex-column align-items-center my-2 py-2"
-                        data-aos="zoom-in" data-aos-delay="150">
-                        <img src="assets/img/masterplan/image-039.webp" alt="Image 1" class="img-fluid  my-2 py-2 "
-                            width="80%">
-                        <img src="assets/img/masterplan/existingLanduse.webp" alt="Image 2" class="img-fluid  my-2 py-2"
-                            width="80%">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Master Plan Section End -->
-        <!--Master-plan End  Section -->
         <!-- ======= spatial-growth Section ======= -->
         <section id="spatial-growth" class="spatial-growth why-us">
             <div class="container-fluid" data-aos="fade-up">
@@ -528,9 +518,7 @@
             </div>
         </section>
         <!--vision End  Section -->
-        <!-- =======project-proposal  Section ======= -->
-        <!-- <section id="project-proposal" class="project-proposal">
-    </section> -->
+
         <!--project-proposal End  Section -->
         <!-- ======= Land Use Proposal Section ======= -->
         <section id="landuse-proposal" class="profile" data-aos="fade-up">
@@ -593,37 +581,6 @@
                             </a>
                         </div>
                     </div>
-
-                    <!-- <div class="col-lg-7 justify-content-center align-content-center">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <h4 data-i18n="lpa_land_use_maps">LPA Land Use Maps</h4>
-                                <div class="">
-                                    <a target="" data-i18n="existing_land_use_map_lpa">
-                                        Existing Land Use Map – LPA
-                                    </a>
-                                    <a href="assets/pdf/6_VI_1_2024.pdf">
-                                        <img src="assets/img/pdfImages/6_VI_1_2024-pdf.png" class="img-fluid"
-                                            width="80%" alt="">
-                                    </a>
-                                    <a data-i18n="proposed_land_use_map_lpa">
-                                        Proposed Land Use Map – LPA
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <h4 data-i18n="municipal_land_use_maps">Municipal Land Use Maps</h4>
-                                <div class="">
-                                    <a data-i18n="existing_land_use_map_municipal">
-                                        Existing Land Use Map – Municipal Area
-                                    </a>
-                                    <a data-i18n="proposed_land_use_map_municipal">
-                                        Proposed Land Use Map – Municipal Area
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </section>
@@ -720,9 +677,6 @@
                 <div class="section-title text-left">
                     <h2 class="text-default" data-i18n="project_proposal">project Proposal</h2>
                 </div>
-                <!-- <div class="row">
-                    <div class="col-md-12 ">
-                        <div class="content"> -->
                 <div class="site-section  mb-5">
                     <div class="container owl-2-style">
                         <div class="owl-carousel owl-2">
@@ -1028,21 +982,19 @@
         </section><!-- End sc table Section -->
 
         <div class="section-title">
-            <h2>FAQs</h2>
+            <h2>'FAQ's</h2>
         </div>
         <section id="vision" class="vision cta2">
             <div class="container" data-aos="zoom-in">
-                <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion accordion-flush" id="accordionFlushExample2">
+                    <!-- First Accordion Item -->
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                aria-controls="flush-collapseOne">
+                        <h2 class="accordion-header" id="flush-headingOne-new">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne-new" aria-expanded="false" aria-controls="flush-collapseOne-new">
                                 What is Master Plan?
                             </button>
                         </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapseOne-new" class="accordion-collapse collapse" aria-labelledby="flush-headingOne-new" data-bs-parent="#accordionFlushExample2">
                             <div class="accordion-body">
                                 <ul>
                                     <li>The manner in which the land in the planning area shall be used;</li>
@@ -1070,18 +1022,16 @@
                                 </ul>
                             </div>
                         </div>
-
                     </div>
+                
+                    <!-- Second Accordion Item -->
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                aria-controls="flush-collapseTwo">
+                        <h2 class="accordion-header" id="flush-headingTwo-new">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo-new" aria-expanded="false" aria-controls="flush-collapseTwo-new">
                                 Why is the Master Plan important?
                             </button>
                         </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapseTwo-new" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo-new" data-bs-parent="#accordionFlushExample2">
                             <div class="accordion-body">
                                 <ul>
                                     <li>As the Master Plan is the document that prescribes land use, development control
@@ -1098,19 +1048,16 @@
                                 </ul>
                             </div>
                         </div>
-
                     </div>
+                
+                    <!-- Third Accordion Item -->
                     <div class="accordion-item">
-
-                        <h2 class="accordion-header" id="flush-headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                aria-controls="flush-collapseThree">
+                        <h2 class="accordion-header" id="flush-headingThree-new">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree-new" aria-expanded="false" aria-controls="flush-collapseThree-new">
                                 Are there other plans apart from the Master Plan?
                             </button>
                         </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapseThree-new" class="accordion-collapse collapse" aria-labelledby="flush-headingThree-new" data-bs-parent="#accordionFlushExample2">
                             <div class="accordion-body">
                                 <ul>
                                     <li>The Master Plan is a broad, strategic document that outlines the vision and
@@ -1120,13 +1067,14 @@
                                 </ul>
                             </div>
                         </div>
-
                     </div>
                 </div>
+                
+                
             </div>
         </section>
         <!-- ======= Economic Activities Section ======= -->
-        <section id="contact" class="contact" data-aos="fade-up">
+        <!-- <section id="contact" class="contact" data-aos="fade-up">
             <div class="container">
                 <div class="section-title">
                     <h2 data-i18n="feedback_section_title">FeedBack</h2>
@@ -1164,7 +1112,8 @@
                     </div>
                 </div>
             </div>
-        </section><!-- End Contact Section -->
+        </section> -->
+        <!-- End Contact Section -->
 
     </main><!-- End #main -->
     <!-- ======= Footer ======= -->
