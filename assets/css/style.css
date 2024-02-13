@@ -1079,6 +1079,11 @@ section {
   background-size: cover;
   padding: 150px 0;
 }
+.cta2 {
+  background: linear-gradient(rgba(40, 58, 90, 0.541), rgba(40, 58, 90, 0.678)), url("../img/maduraiCurrent/15.webp") fixed center center;
+  background-size: cover;
+  padding: 150px 0;
+}
 
 .cta h1 {
   color: #fff;
@@ -2199,7 +2204,22 @@ a:hover {
     /* Cursor on hover */
   }
 }
-
+.img-container {
+  text-align: center;
+}
+/* img {
+  max-width: 100%;
+  height: auto;
+} */
 /* Mouse-over effects */
 
 /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+#image2{
+  display: none
+}
+#image3{
+  display: none
+}
+#image4{
+  display: none
+}

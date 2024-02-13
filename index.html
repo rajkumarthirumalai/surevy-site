@@ -34,6 +34,11 @@
     <link rel="stylesheet" href="assets/fonts/icomoon/style.css">
 
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+<style>
+      h4[data-bs-toggle="collapse"]:hover {
+    cursor: pointer;
+  }
+</style>
 </head>
 
 <body>
@@ -127,11 +132,12 @@
 
                 <!-- Content Row -->
                 <div class="row content justify-content-center align-items-center">
-                    <!-- Left Column -->
-                    <div class="col-lg-6">
 
-                        <!-- About your LPA -->
-                        <h4 data-i18n="about_your_lpa">About your LPA</h4>
+                    <!-- Left Column -->
+
+                    <div class="col-lg-4">
+
+
                         <!-- LPA Statistics -->
                         <!-- <div class="row p-3 mt-3 mx-auto border border-warning rounded">
                             <div class="col-lg-6"><span data-i18n="total_lpa_area">Total LPA Area</span><br>
@@ -142,27 +148,31 @@
                             </div>
                         </div> -->
 
-                        <div class="overall-lpa-info-container row p-3 my-3 mx-auto border border-warning rounded accordion" id="accordionExample4">
+                        <div class="overall-lpa-info-container row p-3 my-3 mx-auto border border-warning rounded accordion"
+                            id="accordionExample4" onclick="showImage(1)">
                             <h2 class="accordion-header" id="headingFour">
-                                <h4 data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour" data-i18n="overall_lpa">Overall LPA</h4>
+                                <h4 data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true"
+                                    aria-controls="collapseFour" data-i18n="overall_lpa">Overall LPA</h4>
                             </h2>
-                            <div id="collapseFour" class="row accordion-collapse collapse mx-auto" aria-labelledby="headingFour" data-bs-parent="#accordionExample4">
+                            <div id="collapseFour" class="row accordion-collapse collapse mx-auto"
+                                aria-labelledby="headingFour" data-bs-parent="#accordionExample4">
                                 <div class="row mx-auto">
                                     <div class="col-lg-6"><span data-i18n="total_lpa_area">Total LPA Area</span><br>
                                         <strong><label class="text-warning">1254.93</label> Sq.km</strong>
                                     </div>
-                                    <div class="col-lg-6"><span data-i18n="total_lpa_population">Total LPA Population</span><br>
+                                    <div class="col-lg-6"><span data-i18n="total_lpa_population">Total LPA
+                                            Population</span><br>
                                         <strong><label class="text-warning">22,63,115</label></strong>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+
 
 
                         <!-- Municipality Statistics -->
                         <div class="municipality-info-container row p-3 my-3 mx-auto border border-warning rounded accordion"
-                            id="accordionExample">
+                            id="accordionExample" onclick="showImage(2)">
                             <h2 class="accordion-header" id="headingOne">
 
                                 <h4 data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
@@ -210,7 +220,7 @@
 
                         <!-- Town Panchayat Statistics -->
                         <div class="town-panchayat-info-container row p-3 my-3 mx-auto border border-warning rounded accordion"
-                            id="accordionExample2">
+                            id="accordionExample2" onclick="showImage(3)">
                             <h2 class="accordion-header" id="headingTwo">
                                 <h4 data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
                                     aria-controls="collapseTwo" data-i18n="town_panchayat">Town Panchayat</h4>
@@ -237,7 +247,7 @@
 
                         <!-- Village Panchayat Statistics -->
                         <div class="village-panchayat-info-container row p-3 my-3 mx-auto border border-warning rounded accordion"
-                            id="accordionExample3">
+                            id="accordionExample3" onclick="showImage(4)">
                             <h2 class="accordion-header" id="headingThree">
                                 <h4 data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true"
                                     aria-controls="collapseThree" data-i18n="village_panchayat">Village Panchayat</h4>
@@ -269,19 +279,30 @@
                                 more</span></a>
                     </div>
 
-                    <!-- Right Column -->
-                    <div class="col-lg-6 mt-4">
-                        <!-- Images -->
-                        <a href="assets/pdf/PROPOSED MasterPlan Map - LPA.pdf" target="_blank">
-                            <img src="assets/img/pdfImages/PROPOSED-MasterPlan-Map-LPA-pdf.png" class="img-fluid my-2"
-                                width="60%" alt="">
+
+                    <div class="img-container col-lg-5">
+                        <a id="image1" href="assets/pdf/Corporation.pdf">
+                            <img src="assets/img/pdfImages/Corporation-pdf.png" class="img-fluid my-2" alt="">
                         </a>
-                        <a href="assets/pdf/PROPOSED MasterPlan Map - CORPORATION.pdf" target="_blank">
-                            <img src="assets/img/pdfImages/PROPOSED-MasterPlan-Map-CORPORATION-pdf.png"
-                                class="img-fluid my-2" width="60%" alt="">
+                        <a id="image2" href="assets/pdf/Municipality.pdf">
+                            <img src="assets/img/pdfImages/Municipality-pdf.png" class="img-fluid my-2" alt="">
+                        </a>
+                        <a id="image3" href="assets/pdf/Town Panchayat.pdf">
+                            <img src="assets/img/pdfImages/Town-Panchayat-pdf.png" class="img-fluid my-2" alt="">
+                        </a>
+                        <a id="image4" href="assets/pdf/Villages.pdf">
+                            <img src="assets/img/pdfImages/Villages-pdf.png" class="img-fluid my-2" alt="">
                         </a>
                     </div>
 
+                    <!-- Right Column -->
+
+                    <div class="col-lg-3">
+                        <h4 data-i18n="about_your_lpa">About your LPA</h4>
+                        <div class=" row p-3 my-3 mx-auto border border-warning rounded accordion">
+
+                        </div>
+                    </div>
                 </div>
 
 
@@ -289,15 +310,16 @@
 
                 <!-- Images -->
                 <div class="row">
-                    <div class="col-lg-6 py-2">
-                        <div class="card" style="background-color: #bfe9fd;">
+                    <div class="col-lg-6 py-2" data-aos="fade-up">
+                        <div class="card p-3 border rounded" style="background-color: #37517e;">
                             <div class="card-body ">
-                                <h2 class="card-title border border-primary rounded bg-light text-primary">First Master Plan</h2>
-                                <h4 class="card-title border border-primary rounded bg-light"
+                                <h2 class="card-title  border-primary rounded-pill p-2 bg-light ">First
+                                    Master Plan</h2>
+                                <h4 class="card-title  border-primary rounded-pill p-2 bg-light"
                                     data-i18n="1995_master_plan"> <strong data-i18n="1995_master_plan">1995
                                         Master Plan – Approved</strong>
                                 </h4>
-                                <h4 class="card-title border border-primary rounded bg-light"><span
+                                <h4 class="card-title  border-primary rounded-pill p-2 bg-light"><span
                                         data-i18n="total_area">Total Area –
                                     </span><strong>720.97 Sq.km</strong>
                                 </h4>
@@ -306,17 +328,17 @@
                                 style="padding: 20px; border-radius: 35px;">
                         </div>
                     </div>
-                    <div class="col-lg-6 py-2">
-                        <div class="card" style="background-color: #bfe9fd;">
+                    <div class="col-lg-6 py-2" data-aos="fade-up">
+                        <div class="card p-3 border rounded" style="background-color: #37517e;">
                             <div class="card-body">
-                                <h2 class="card-title border border-primary rounded bg-light text-primary">Second
+                                <h2 class="card-title  border-primary rounded-pill p-2 bg-light ">Second
                                     Master Plan
                                 </h2>
-                                <h4 class="card-title border border-primary rounded bg-light"><strong
+                                <h4 class="card-title  border-primary rounded-pill p-2 bg-light"><strong
                                         data-i18n="master_plan_2021_2041">Master
                                         Plan 2021 – 2041</strong>
                                 </h4>
-                                <h4 class="card-title border border-primary rounded bg-light"><span
+                                <h4 class="card-title  border-primary rounded-pill p-2 bg-light"><span
                                         data-i18n="total_area">Total Area –
                                     </span><strong>1254.93 Sq.km</strong>
                                 </h4>
@@ -355,34 +377,27 @@
                 <div class="section-title">
                     <h2 data-i18n="demography">Demography</h2>
                 </div>
-
                 <div class="row justify-content-center align-content-center">
-                    <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="icon-box">
+                    <div class="owl-carousel owl-2">
+                        <div class="" style="height: 40vh; overflow-y: auto;" data-aos-delay="100">
                             <h4 class="my-2"><a href="" data-i18n="population_distribution">Population Distribution </a>
                             </h4>
-                            <img src="assets/img/masterplan/demo1.png" class="img-fluid" height="80vh" width="80%"
-                                alt="">
+                            <img class="card-img-top img-fluid" src="assets/img/masterplan/demo1.png" height="80vh" alt="Card image cap">
                         </div>
-                    </div>
-
-                    <div class="col-xl-4 col-md-6 mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="icon-box">
+                        <div class="" style="height: 40vh; overflow-y: auto;" data-aos-delay="200">
                             <h4 class="my-2"><a href="" data-i18n="growth_rate">Growth Rate</a></h4>
-                            <img src="assets/img/masterplan/demo2.png" class="img-fluid" height="80vh" width="80%"
-                                alt="">
+                            <img class="card-img-top img-fluid" src="assets/img/masterplan/demo2.png" height="80vh" alt="Card image cap">
                         </div>
-                    </div>
-
-                    <div class="col-xl-4 col-md-6 mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
-                        <div class="icon-box">
+                        <div class="" style="height: 40vh; overflow-y: auto;" data-aos-delay="300">
                             <h4 class="my-2"><a href="" data-i18n="density_per_sq_km">Density per Sq.km</a></h4>
-                            <img src="assets/img/masterplan/demo3.png" class="img-fluid" height="80vh" width="80%"
-                                alt="">
+                            <img class="card-img-top img-fluid" src="assets/img/masterplan/demo3.png" height="80vh" alt="Card image cap">
                         </div>
                     </div>
 
                 </div>
+            </div>
+
+            </div>
             </div>
         </section>
         <!-- Demography Section End -->
@@ -664,43 +679,7 @@
                 </div>
             </div>
         </section>
-        <!-- ======= Economic Activities Section ======= -->
-        <section id="economic" class="why-us section-bg" data-aos="fade-up">
-            <div class="container">
-                <div class="section-title text-left">
-                    <h2 class="text-default" data-i18n="economic_activities_section_title">Economic Activities</h2>
-                </div>
-                <div class="mind-map">
-                    <div class="center-circle">
-                        <p>Economic Base</p>
-                        <div class="square top">
-                            <img src="assets/img/maduraiCurrent/agriculture.webp" alt=""
-                                style="border-radius: 15px; width: 250px; height: 100px;" />
-                        </div>
-                        <div class="square right-top">
-                            <img src="assets/img/maduraiCurrent/ssi.webp" alt=""
-                                style="border-radius: 15px; width: 250px; height: 100px;" />
-                        </div>
-                        <div class="square right-bottom">
-                            <img src="assets/img/maduraiCurrent/large-ins.webp" alt=""
-                                style="border-radius: 15px; width: 250px; height: 100px;" />
-                        </div>
-                        <div class="square bottom">
-                            <img src="assets/img/maduraiCurrent/temple.webp" alt=""
-                                style="border-radius: 15px; width: 250px; height: 100px;" />
-                        </div>
-                        <div class="square left-bottom">
-                            <img src="assets/img/maduraiCurrent/tour.webp" alt=""
-                                style="border-radius: 15px; width: 250px; height: 100px;" />
-                        </div>
-                        <div class="square left-top">
-                            <img src="assets/img/maduraiCurrent/education.webp" alt=""
-                                style="border-radius: 15px; width: 250px; height: 100px;" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
         <!-- ======= potential development Section ======= -->
         <section id="potential-development" class="why-us section-bg" data-aos="fade-up">
             <div class="container">
@@ -1047,6 +1026,106 @@
                 </div>
             </div>
         </section><!-- End sc table Section -->
+
+        <div class="section-title">
+            <h2>FAQs</h2>
+        </div>
+        <section id="vision" class="vision cta2">
+            <div class="container" data-aos="zoom-in">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                What is Master Plan?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>The manner in which the land in the planning area shall be used;</li>
+                                    <li>The allotment or reservation of land for residential, commercial, industrial,
+                                        and agricultural purposes and for parks, play-fields, and open spaces;</li>
+                                    <li>The allotment and reservation of land for public buildings, institutions, and
+                                        for civic amenities;</li>
+                                    <li>The making of provision for national highways, arterial roads, ring roads, major
+                                        streets, lines of communication including railways, airports, and canals;</li>
+                                    <li>The traffic and transportation pattern and traffic circulation pattern;</li>
+                                    <li>The major road and street improvements;</li>
+                                    <li>The areas reserved for future development, expansion, and for new housing;</li>
+                                    <li>The provision for the improvement of areas of bad layout or obsolete development
+                                        and slum areas and for relocation of population;</li>
+                                    <li>The amenities, services, and utilities;</li>
+                                    <li>The provision for detailed development of specific areas for housing, shopping,
+                                        industries, and civic amenities and educational and cultural facilities;</li>
+                                    <li>The control of architectural features, elevation, and frontage of buildings and
+                                        structures;</li>
+                                    <li>The provision for regulating the zone, the location, height, number of storeys
+                                        and size of buildings and other structures, the size of the yards and other open
+                                        spaces and the use of buildings, structures, and land;</li>
+                                    <li>The stages by which the Master Plan shall be carried out; and such other matters
+                                        as may be prescribed.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Why is the Master Plan important?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>As the Master Plan is the document that prescribes land use, development control
+                                        and building regulations, and policy recommendations that are adopted by
+                                        different government departments, it plays a crucial role in defining the
+                                        direction of growth of the city.</li>
+                                    <li>The Master Plan is important for investors and businesses to identify priority
+                                        areas of interest and ensure that the development is in line with the
+                                        government’s vision.</li>
+                                    <li>More importantly, the Master Plan is important to every citizen as the city’s
+                                        growth affects everyday matters like the use of natural resources, transport,
+                                        health, inclusivity, safety, quality of life, access to green spaces, vibrant
+                                        public spaces, etc.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Are there other plans apart from the Master Plan?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>The Master Plan is a broad, strategic document that outlines the vision and
+                                        strategy for a city and is not meant to be a blueprint.</li>
+                                    <li>Using the Master Plan as a guide, Detailed Development Plans (DDPs) and Local
+                                        Area Plans (LAPs) are made.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======= Economic Activities Section ======= -->
         <section id="contact" class="contact" data-aos="fade-up">
             <div class="container">
                 <div class="section-title">
