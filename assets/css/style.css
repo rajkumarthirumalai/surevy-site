@@ -692,6 +692,12 @@ section {
   position: relative;
   color: #37517e;
 }
+.section-title h4 {
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  color: #37517e;
+}
 
 .section-title h2::before {
   content: "";
@@ -738,6 +744,7 @@ section {
 .clients img:hover {
   filter: none;
   transform: scale(1.1);
+  border-radius: 25px !important;
 }
 
 @media (max-width: 768px) {
@@ -2239,4 +2246,7 @@ a:hover {
 }
 #uniDiv1{
   display: none
+}
+img{
+  border-radius: 25px;
 }
