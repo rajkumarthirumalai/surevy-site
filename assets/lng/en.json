@@ -230,5 +230,25 @@
   "local_business_initiatives_label": "44. Initiatives to support local businesses / products.",
   "necessary_option_label": "A. Necessary",
   "not_necessary_option_label": "B. Not Necessary",
-  "additional_suggestions_label": "45. Do you have any additional suggestions? Specify:"
+  "additional_suggestions_label": "45. Do you have any additional suggestions? Specify:",
+
+
+
+  "your_name_label": "Name of the person making objections and Suggestions",
+  "mobile_label": "Mobile No*",
+  "ward_label": "Ward*",
+  "block_label": "Block*",
+  "ts_no_label": "TS No",
+  "taluk_label": "Taluk",
+  "village_label": "Village Name*",
+  "survey_no_label": "Survey No*",
+  "sub_division_no_label": "Sub Division No*",
+  "patta_no_label": "Patta No*",
+  "land_use_category_label": "Category of Land Use*",
+  "consented_land_use_label": "Land Use in the Consented Master Plan*",
+  "suggested_land_use_label": "Land Use Suggested*",
+  "other_objections_label": "Other Objections (if any)",
+  "loading_text": "Loading",
+  "message_sent_text": "Your message has been sent. Thank you!",
+  "send_message_button": "Send Message"
 }
