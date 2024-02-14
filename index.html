@@ -46,9 +46,18 @@
             border-left: #37517e;
         }
 
-        .qrimg {
-            max-height: 200px;
-            max-width: 200px;
+        .img-mobile-large {
+            max-width: 30%;
+            /* Adjust image size as needed */
+        }
+
+        @media (max-width: 768px) {
+
+            /* Adjust breakpoint as needed */
+            .img-mobile-large {
+                max-width: 70%;
+                /* Adjust image size as needed */
+            }
         }
     </style>
 </head>
@@ -80,7 +89,7 @@
                             <li><a href="#demography" data-i18n="demography">Demography</a></li>
                             <li><a href="#spatial-growth" data-i18n="spatial_growth">Spatial Growth</a></li>
                             <li><a href="#vision" data-i18n="vision">Vision</a></li>
-                            <li><a href="#media" data-i18n="what_is_master_plan">Media</a></li>
+                            <li><a href="#media">Media</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -559,7 +568,7 @@
                                 <li>
                                     <p>
                                         <span style="font-size: 30px; color: #37517e;">Spatial shift :</span> <span
-                                            style="font-size: 25px;" data-i18n="satellite_images_comparison">
+                                            style="font-size: 25px;">
                                             Vaigai River divide the city into two halves and development in the south
                                             side of the river is comparatively higher than the north side..
 
@@ -569,7 +578,7 @@
                                 <li>
                                     <p>
                                         <span style="font-size: 30px; color: #37517e;"> Radial Development :</span>
-                                        <span style="font-size: 25px;" data-i18n="city_development_direction">
+                                        <span style="font-size: 25px;">
                                             Development in the North side is towards Melur and South towards
                                             Thirumangalam (SH-101).
 
@@ -579,7 +588,7 @@
                                 <li>
                                     <p>
                                         <span style="font-size: 30px; color: #37517e;"> Concentration Persist :</span>
-                                        <span style="font-size: 25px;" data-i18n="prominent_road_and_commercial">
+                                        <span style="font-size: 25px;">
                                             Thirumangalam Municipality growing as a Commercial Hub next to Core City.
 
                                         </span>
@@ -588,15 +597,20 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-5 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="col-lg-5 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1"
+                        data-aos="zoom-in" data-aos-delay="150">
                         <div class="row ">
                             <div class="col-md-6">
-                                <img src="assets/img/ppt/2.jpg" alt="" data-aos="zoom-in" data-aos-delay="150" class="img-fluid p-2">
-                                <img src="assets/img/ppt/3.jpg" alt="" data-aos="zoom-in" data-aos-delay="250" class="img-fluid p-2">
+                                <img src="assets/img/ppt/2.jpg" alt="" data-aos="zoom-in" data-aos-delay="150"
+                                    class="img-fluid p-2">
+                                <img src="assets/img/ppt/3.jpg" alt="" data-aos="zoom-in" data-aos-delay="250"
+                                    class="img-fluid p-2">
                             </div>
                             <div class="col-md-6">
-                                <img src="assets/img/ppt/4.jpg" alt="" data-aos="zoom-in" data-aos-delay="350" class="img-fluid p-2">
-                                <img src="assets/img/ppt/5.jpg" alt="" data-aos="zoom-in" data-aos-delay="450" class="img-fluid p-2">
+                                <img src="assets/img/ppt/4.jpg" alt="" data-aos="zoom-in" data-aos-delay="350"
+                                    class="img-fluid p-2">
+                                <img src="assets/img/ppt/5.jpg" alt="" data-aos="zoom-in" data-aos-delay="450"
+                                    class="img-fluid p-2">
                             </div>
                         </div>
                         &nbsp;
@@ -630,13 +644,18 @@
                 </div>
                 <div class="row content justify-content-center align-content-center">
                     <div class="col-lg-6 justify-content-center align-content-center">
-                        <h4 data-i18n="existing_land_use">Existing Land Use - 2021</h4>
-                        <img src="assets/img/masterplan/lannduse2021.webp" class="img-fluid" width="80%" alt="">
+                        <a target="_blank" href="assets/pdf/EXISTING MasterPlan Map - CORPORATION.pdf">
+                            <h4 data-i18n="existing_land_use">Existing Land Use - 2021</h4>
+                            <img src="assets/img/pdfImages/EXISTING-MasterPlan-Map-CORPORATION-pdf.png"
+                                class="img-fluid" width="65%" alt="">
+                        </a>
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0">
-                        <h4 data-i18n="proposed_land_use">Proposed Land Use - 2041</h4>
-                        <img src="assets/img/masterplan/PROPOSED-MasterPlan-Map-LPA-pdf.png" class="img-fluid"
-                            width="80%" alt="">
+                        <a target="_blank" href="assets/pdf/PROPOSED MasterPlan Map - LPA.pdf">
+                            <h4 data-i18n="proposed_land_use">Proposed Land Use - 2041</h4>
+                            <img src="assets/img/masterplan/PROPOSED-MasterPlan-Map-LPA-pdf.png" class="img-fluid"
+                                width="80%" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -748,12 +767,13 @@
                 </div>
                 <div class="row justify-content-center"> <!-- Centering the row -->
                     <div class="col-lg-12 text-center"> <!-- Centering the column content -->
-                        <img src="assets/img/qrcode.png" alt="" class="img-fluid mx-auto d-block" style="max-width: 20%;" /> <!-- Centering the image -->
+                        <img src="assets/img/qrcode.png" alt="" class="img-fluid mx-auto d-block img-mobile-large" />
+                        <!-- Centering the image -->
                     </div>
                 </div>
             </div>
-            
         </section>
+
 
         <!-- End potential Section -->
         <!-- ======= sc table section ======= -->
@@ -1185,11 +1205,11 @@
                     <div class="col-lg-7 mt-5">
                         <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                             <div class="row">
-                                <div class="form-group col-md-6">
+                                <div class="form-group col-md-12">
                                     <label for="name" data-i18n="your_name_label">Your Name</label>
                                     <input type="text" name="name" class="form-control" id="name" required>
                                 </div>
-                                <div class="form-group col-md-6">
+                                <div class="form-group col-md-12">
                                     <label for="email" data-i18n="your_email_label">Your Email</label>
                                     <input type="email" class="form-control" name="email" id="email" required>
                                 </div>
