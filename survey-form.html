@@ -44,7 +44,62 @@
 
 <body>
 
+    <!-- Header Section -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center">
+            <a href="index.html" class="logo me-auto"><img src="assets/img/logo2.png" alt=""></a>
+            <div class="me-auto">
+                <h5 class="logo"><a href="index.html" data-i18n="tra1">Directorate of Town and Country Planning Madurai District
+                    </a></h5>
+            </div>
 
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <!-- Menu Items -->
+                    <li><a class="nav-link scrollto active" href="#profile" data-i18n="profile">Profile</a></li>
+                    <li class="dropdown">
+                        <a href="#" data-i18n="master_plan">
+                            <span data-i18n="master_plan">Master Plan</span> <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul>
+                            <li><a href="#planning-area" data-i18n="planning_area">Planning Area</a></li>
+                            <li><a href="#demography" data-i18n="demography">Demography</a></li>
+                            <li><a href="#spatial-growth" data-i18n="spatial_growth">Spatial Growth</a></li>
+                            <li><a href="#vision" data-i18n="vision">Vision</a></li>
+                            <li><a href="#media" data-i18n="what_is_master_plan">Media</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">
+                            <span data-i18n="tra2" >Downloads</span> <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul>
+                            <li><a data-i18n="tra3" href="#LandUseMap">Land Use Map</a></li>
+                            <li><a data-i18n="tra4" href="#GovermentOrder">Goverment Order</a></li>
+                            <li><a data-i18n="tra5" href="#Schedule">Schedule</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="#project-proposal" data-i18n="project_proposal">Project
+                            Proposal</a></li>
+                    <li><a class="nav-link scrollto" href="#contact" data-i18n="feedback">Feedback</a></li>
+                    <li>
+                        <a class="nav-link scrollto">
+                            <select id="language-selector" class="form-select mx-3"
+                                style="border-radius: 25px; background-color: #37517e ;border:1px #47b2e4 solid; color: white;"
+                                onchange="changeLanguage(this.value)">
+                                <option value="en" data-i18n="english">English</option>
+                                <option value="ta" data-i18n="tamil">Tamil</option>
+                            </select>
+                        </a>
+                    </li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+        </div>
+    </header><!-- End Header -->
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact mt-5">
         <div class="container justify-content-center " data-aos="fade-up">
@@ -56,21 +111,21 @@
 
 
                 <div class="col-lg-10 mt-5  ">
-                    <form action="forms/survey.php" method="post" role="form" >
+                    <form action="forms/survey.php" method="post" role="form" class="php-email-form">
                         <form class="needs-validation was-validated" novalidate="">
                             <div class="row g-3">
                                 <div class="row mt-5 justify-content-center">
                                     <div class="col-sm-5">
                                         <label for="age" class="form-label" data-i18n="age">Age</label>
                                         <input type="text" class="form-control" id="age" name="age" placeholder=""
-                                            value="" >
+                                            value="" required>
                                         <div class="invalid-feedback" data-i18n="valid_age_required">Valid Age is
                                             required.</div>
                                     </div>
 
                                     <div class="col-md-3">
                                         <label for="sex" class="form-label" data-i18n="gender">Gender</label>
-                                        <select class="form-select" id="sex" name="sex" >
+                                        <select class="form-select" id="sex" name="sex" required>
                                             <option value="" data-i18n="select">Select</option>
                                             <option value="male" data-i18n="male">Male</option>
                                             <option value="female" data-i18n="female">Female</option>
@@ -83,7 +138,7 @@
                                     <div class="col-sm-4">
                                         <label for="locality" class="form-label" data-i18n="locality">Locality</label>
                                         <input type="text" class="form-control" id="locality" name="locality"
-                                            placeholder="" >
+                                            placeholder="" required>
                                         <div class="invalid-feedback" data-i18n="locality_required">Locality is
                                             required.</div>
                                     </div>
@@ -94,14 +149,14 @@
                                         <label for="occupation" class="form-label"
                                             data-i18n="occupation">Occupation</label>
                                         <input type="text" class="form-control" id="occupation" name="occupation"
-                                            placeholder="" value="" >
+                                            placeholder="" value="" required>
                                         <div class="invalid-feedback" data-i18n="valid_occupation_required">Valid
                                             Occupation is required.</div>
                                     </div>
 
                                     <div class="col-md-4">
                                         <label for="income" class="form-label">Scale of Annual Income (INR)</label>
-                                        <select class="form-select" id="income" name="income" >
+                                        <select class="form-select" id="income" name="income" required>
                                             <option value="" data-i18n="select">Select</option>
                                             <option value="0-100000">&#8377;0-&#8377;100,000</option>
                                             <option value="100001-300000">&#8377;100,001-&#8377;300,000</option>
@@ -136,13 +191,13 @@
                                         our area?</label>
                                     <div class="form-check">
                                         <input id="KnowaboutMasterPlan_yes" name="KnowaboutMasterPlan" type="radio"
-                                            class="form-check-input" value="yes" >
+                                            class="form-check-input" value="yes" required>
                                         <label class="form-check-label" for="KnowaboutMasterPlan_yes" data-i18n="yes">A.
                                             Yes</label>
                                     </div>
                                     <div class="form-check">
                                         <input id="KnowaboutMasterPlan_no" name="KnowaboutMasterPlan" type="radio"
-                                            class="form-check-input" value="no" >
+                                            class="form-check-input" value="no" required>
                                         <label class="form-check-label" for="KnowaboutMasterPlan_no" data-i18n="no">B.
                                             No</label>
                                     </div>
@@ -153,13 +208,13 @@
                                         cold storage and value addition for agriculture and perishable goods?</label>
                                     <div class="form-check">
                                         <input id="ColdStorage_yes" name="ColdStorage" type="radio"
-                                            class="form-check-input" value="necessary" >
+                                            class="form-check-input" value="necessary" required>
                                         <label class="form-check-label" for="ColdStorage_yes" data-i18n="necessary">A.
                                             Necessary</label>
                                     </div>
                                     <div class="form-check">
                                         <input id="ColdStorage_no" name="ColdStorage" type="radio"
-                                            class="form-check-input" value="not_necessary" >
+                                            class="form-check-input" value="not_necessary" required>
                                         <label class="form-check-label" for="ColdStorage_no"
                                             data-i18n="not_necessary">B. Not Necessary</label>
                                     </div>
@@ -173,13 +228,13 @@
                                         logistic hub along the NH-38 alignment?</label>
                                     <div class="form-check">
                                         <input id="LogisticHub_yes" name="LogisticHub" type="radio"
-                                            class="form-check-input" value="necessary" >
+                                            class="form-check-input" value="necessary" required>
                                         <label class="form-check-label" for="LogisticHub_yes" data-i18n="necessary">A.
                                             Necessary</label>
                                     </div>
                                     <div class="form-check">
                                         <input id="LogisticHub_no" name="LogisticHub" type="radio"
-                                            class="form-check-input" value="not_necessary" >
+                                            class="form-check-input" value="not_necessary" required>
                                         <label class="form-check-label" for="LogisticHub_no"
                                             data-i18n="not_necessary">B. Not Necessary</label>
                                     </div>
@@ -190,7 +245,7 @@
                                         data-i18n="economy_satisfaction">4. How satisfied are you with the Economy
                                         Sector within Madurai on a scale of 1 to 5?</label>
                                     <input type="range" id="EconomySatisfaction" name="EconomySatisfaction"
-                                        class="form-range range-slider" min="1" max="5" >
+                                        class="form-range range-slider" min="1" max="5" required>
                                 </div>
                             </div>
 
@@ -203,25 +258,25 @@
                                         What is your Daily mode of transport?</label>
                                     <div class="form-check">
                                         <input id="DailyTransport_2wheeler" name="DailyTransport" type="radio"
-                                            class="form-check-input" value="2_wheeler" >
+                                            class="form-check-input" value="2_wheeler" required>
                                         <label class="form-check-label" for="DailyTransport_2wheeler"
                                             data-i18n="two_wheeler">A. 2 wheeler</label>
                                     </div>
                                     <div class="form-check">
                                         <input id="DailyTransport_4wheeler" name="DailyTransport" type="radio"
-                                            class="form-check-input" value="4_wheeler" >
+                                            class="form-check-input" value="4_wheeler" required>
                                         <label class="form-check-label" for="DailyTransport_4wheeler"
                                             data-i18n="four_wheeler">B. 4 wheeler</label>
                                     </div>
                                     <div class="form-check">
                                         <input id="DailyTransport_Bus" name="DailyTransport" type="radio"
-                                            class="form-check-input" value="Bus" >
+                                            class="form-check-input" value="Bus" required>
                                         <label class="form-check-label" for="DailyTransport_Bus" data-i18n="bus">C.
                                             Bus</label>
                                     </div>
                                     <div class="form-check">
                                         <input id="DailyTransport_Others" name="DailyTransport" type="radio"
-                                            class="form-check-input" value="Others" >
+                                            class="form-check-input" value="Others" required>
                                         <label class="form-check-label" for="DailyTransport_Others"
                                             data-i18n="others">D. Others</label>
                                     </div>
@@ -231,7 +286,7 @@
                                     <label for="TravelDistance" class="form-label" data-i18n="travel_distance">6. Travel
                                         Distance in km (1-5):</label>
                                     <input type="number" id="TravelDistance" name="TravelDistance" class="form-control"
-                                        min="1" max="5" >
+                                        min="1" max="5" required>
                                 </div>
                             </div>
 
@@ -243,19 +298,19 @@
                                         transportation mode to commute?</label>
                                     <div class="form-check">
                                         <input id="PreferredPublicTransport_Bus" name="PreferredPublicTransport"
-                                            type="radio" class="form-check-input" value="Bus" >
+                                            type="radio" class="form-check-input" value="Bus" required>
                                         <label class="form-check-label" for="PreferredPublicTransport_Bus"
                                             data-i18n="bus">A. Bus</label>
                                     </div>
                                     <div class="form-check">
                                         <input id="PreferredPublicTransport_Train" name="PreferredPublicTransport"
-                                            type="radio" class="form-check-input" value="Train" >
+                                            type="radio" class="form-check-input" value="Train" required>
                                         <label class="form-check-label" for="PreferredPublicTransport_Train"
                                             data-i18n="train">B. Train</label>
                                     </div>
                                     <div class="form-check">
                                         <input id="PreferredPublicTransport_Others" name="PreferredPublicTransport"
-                                            type="radio" class="form-check-input" value="Others" >
+                                            type="radio" class="form-check-input" value="Others" required>
                                         <label class="form-check-label" for="PreferredPublicTransport_Others"
                                             data-i18n="others">C. Others</label>
                                     </div>
@@ -267,13 +322,13 @@
                                         Home?</label>
                                     <div class="form-check">
                                         <input id="ParkingFacilityHome_Yes" name="ParkingFacilityHome" type="radio"
-                                            class="form-check-input" value="Yes" >
+                                            class="form-check-input" value="Yes" required>
                                         <label class="form-check-label" for="ParkingFacilityHome_Yes" data-i18n="yes">A.
                                             Yes</label>
                                     </div>
                                     <div class="form-check">
                                         <input id="ParkingFacilityHome_No" name="ParkingFacilityHome" type="radio"
-                                            class="form-check-input" value="No" >
+                                            class="form-check-input" value="No" required>
                                         <label class="form-check-label" for="ParkingFacilityHome_No" data-i18n="no">B.
                                             No</label>
                                     </div>
@@ -289,13 +344,13 @@
                                         Public Places?</label>
                                     <div class="form-check">
                                         <input id="ParkingFacilitiesPublic_Yes" name="ParkingFacilitiesPublic"
-                                            type="radio" class="form-check-input" value="Yes" >
+                                            type="radio" class="form-check-input" value="Yes" required>
                                         <label class="form-check-label" for="ParkingFacilitiesPublic_Yes"
                                             data-i18n="yes">A. Yes</label>
                                     </div>
                                     <div class="form-check">
                                         <input id="ParkingFacilitiesPublic_No" name="ParkingFacilitiesPublic"
-                                            type="radio" class="form-check-input" value="No" >
+                                            type="radio" class="form-check-input" value="No" required>
                                         <label class="form-check-label" for="ParkingFacilitiesPublic_No"
                                             data-i18n="no">B. No</label>
                                     </div>
@@ -332,13 +387,13 @@
                                         Places for EV?</label>
                                     <div class="form-check">
                                         <input id="ChargingFacilities_Yes" name="ChargingFacilities" type="radio"
-                                            class="form-check-input" value="Yes" >
+                                            class="form-check-input" value="Yes" required>
                                         <label class="form-check-label" for="ChargingFacilities_Yes" data-i18n="yes">A.
                                             Yes</label>
                                     </div>
                                     <div class="form-check">
                                         <input id="ChargingFacilities_No" name="ChargingFacilities" type="radio"
-                                            class="form-check-input" value="No" >
+                                            class="form-check-input" value="No" required>
                                         <label class="form-check-label" for="ChargingFacilities_No" data-i18n="no">B.
                                             No</label>
                                     </div>
@@ -355,13 +410,13 @@
                                         bodies</label>
                                     <div class="form-check">
                                         <input id="DedicatedCycleTrack_Yes" name="DedicatedCycleTrack" type="radio"
-                                            class="form-check-input" value="Yes" >
+                                            class="form-check-input" value="Yes" required>
                                         <label class="form-check-label" for="DedicatedCycleTrack_Yes" data-i18n="yes">A.
                                             Yes</label>
                                     </div>
                                     <div class="form-check">
                                         <input id="DedicatedCycleTrack_No" name="DedicatedCycleTrack" type="radio"
-                                            class="form-check-input" value="No" >
+                                            class="form-check-input" value="No" required>
                                         <label class="form-check-label" for="DedicatedCycleTrack_No" data-i18n="no">B.
                                             No</label>
                                     </div>
@@ -372,13 +427,13 @@
                                         Streets become a No Vehicles Zone from Chithirai to Avani</label>
                                     <div class="form-check">
                                         <input id="NoVehiclesZone_Yes" name="NoVehiclesZone" type="radio"
-                                            class="form-check-input" value="Yes" >
+                                            class="form-check-input" value="Yes" required>
                                         <label class="form-check-label" for="NoVehiclesZone_Yes" data-i18n="yes">A.
                                             Yes</label>
                                     </div>
                                     <div class="form-check">
                                         <input id="NoVehiclesZone_No" name="NoVehiclesZone" type="radio"
-                                            class="form-check-input" value="No" >
+                                            class="form-check-input" value="No" required>
                                         <label class="form-check-label" for="NoVehiclesZone_No" data-i18n="no">B.
                                             No</label>
                                     </div>
@@ -394,13 +449,13 @@
                                         Mattuthavani</label>
                                     <div class="form-check">
                                         <input id="PedestrianWalkways_Yes" name="PedestrianWalkways" type="radio"
-                                            class="form-check-input" value="Yes" >
+                                            class="form-check-input" value="Yes" required>
                                         <label class="form-check-label" for="PedestrianWalkways_Yes" data-i18n="yes">A.
                                             Yes</label>
                                     </div>
                                     <div class="form-check">
                                         <input id="PedestrianWalkways_No" name="PedestrianWalkways" type="radio"
-                                            class="form-check-input" value="No" >
+                                            class="form-check-input" value="No" required>
                                         <label class="form-check-label" for="PedestrianWalkways_No" data-i18n="no">B.
                                             No</label>
                                     </div>
@@ -411,13 +466,13 @@
                                         Improvising traffic junctions in Simmakkal, Vadamalayan, and Goripalayam</label>
                                     <div class="form-check">
                                         <input id="TrafficJunctions_Yes" name="TrafficJunctions" type="radio"
-                                            class="form-check-input" value="Yes" >
+                                            class="form-check-input" value="Yes" required>
                                         <label class="form-check-label" for="TrafficJunctions_Yes" data-i18n="yes">A.
                                             Yes</label>
                                     </div>
                                     <div class="form-check">
                                         <input id="TrafficJunctions_No" name="TrafficJunctions" type="radio"
-                                            class="form-check-input" value="No" >
+                                            class="form-check-input" value="No" required>
                                         <label class="form-check-label" for="TrafficJunctions_No" data-i18n="no">B.
                                             No</label>
                                     </div>
@@ -432,13 +487,13 @@
                                         Bus etc.) to ensure last mile connectivity.</label>
                                     <div class="form-check">
                                         <input id="ParaTransitJunctions_Yes" name="ParaTransitJunctions" type="radio"
-                                            class="form-check-input" value="Yes" >
+                                            class="form-check-input" value="Yes" required>
                                         <label class="form-check-label" for="ParaTransitJunctions_Yes"
                                             data-i18n="yes">A. Yes</label>
                                     </div>
                                     <div class="form-check">
                                         <input id="ParaTransitJunctions_No" name="ParaTransitJunctions" type="radio"
-                                            class="form-check-input" value="No" >
+                                            class="form-check-input" value="No" required>
                                         <label class="form-check-label" for="ParaTransitJunctions_No" data-i18n="no">B.
                                             No</label>
                                     </div>
@@ -450,13 +505,13 @@
                                         Idiyappatti and Sholavanthan to Narasingam.</label>
                                     <div class="form-check">
                                         <input id="NewSubArterialRoad_Yes" name="NewSubArterialRoad" type="radio"
-                                            class="form-check-input" value="Yes" >
+                                            class="form-check-input" value="Yes" required>
                                         <label class="form-check-label" for="NewSubArterialRoad_Yes" data-i18n="yes">A.
                                             Yes</label>
                                     </div>
                                     <div class="form-check">
                                         <input id="NewSubArterialRoad_No" name="NewSubArterialRoad" type="radio"
-                                            class="form-check-input" value="No" >
+                                            class="form-check-input" value="No" required>
                                         <label class="form-check-label" for="NewSubArterialRoad_No" data-i18n="no">B.
                                             No</label>
                                     </div>
@@ -481,7 +536,7 @@
                                         5?</label>
                                     <input type="range" id="PublicTransportSatisfaction"
                                         name="PublicTransportSatisfaction" class="form-range range-slider" min="1"
-                                        max="5" >
+                                        max="5" required>
                                 </div>
                             </div>
 
@@ -494,13 +549,13 @@
                                         you have access to daily water supply at your residence?</label>
                                     <div class="form-check">
                                         <input id="WaterSupply_Yes" name="WaterSupply" type="radio"
-                                            class="form-check-input" value="Yes" >
+                                            class="form-check-input" value="Yes" required>
                                         <label class="form-check-label" for="WaterSupply_Yes" data-i18n="yes">A.
                                             Yes</label>
                                     </div>
                                     <div class="form-check">
                                         <input id="WaterSupply_No" name="WaterSupply" type="radio"
-                                            class="form-check-input" value="No" >
+                                            class="form-check-input" value="No" required>
                                         <label class="form-check-label" for="WaterSupply_No" data-i18n="no">B.
                                             No</label>
                                     </div>
@@ -538,13 +593,13 @@
                                         issues during rain in your area?</label>
                                     <div class="form-check">
                                         <input id="WaterStagnation_Yes" name="WaterStagnation" type="radio"
-                                            class="form-check-input" value="Yes" >
+                                            class="form-check-input" value="Yes" required>
                                         <label class="form-check-label" for="WaterStagnation_Yes" data-i18n="yes">A.
                                             Yes</label>
                                     </div>
                                     <div class="form-check">
                                         <input id="WaterStagnation_No" name="WaterStagnation" type="radio"
-                                            class="form-check-input" value="No" >
+                                            class="form-check-input" value="No" required>
                                         <label class="form-check-label" for="WaterStagnation_No" data-i18n="no">B.
                                             No</label>
                                     </div>
@@ -556,13 +611,13 @@
                                         treatment facility at your locality</label>
                                     <div class="form-check">
                                         <input id="SewageTreatment_Necessary" name="SewageTreatment" type="radio"
-                                            class="form-check-input" value="Necessary" >
+                                            class="form-check-input" value="Necessary" required>
                                         <label class="form-check-label" for="SewageTreatment_Necessary"
                                             data-i18n="necessary">A. Necessary</label>
                                     </div>
                                     <div class="form-check">
                                         <input id="SewageTreatment_NotNecessary" name="SewageTreatment" type="radio"
-                                            class="form-check-input" value="Not Necessary" >
+                                            class="form-check-input" value="Not Necessary" required>
                                         <label class="form-check-label" for="SewageTreatment_NotNecessary"
                                             data-i18n="not_necessary">B. Not Necessary</label>
                                     </div>
@@ -579,13 +634,13 @@
                                         and dry waste while disposing from home?</label>
                                     <div class="form-check">
                                         <input id="WasteSegregation_Yes" name="waste_segregation" type="radio"
-                                            class="form-check-input" value="Yes" >
+                                            class="form-check-input" value="Yes" required>
                                         <label class="form-check-label" for="WasteSegregation_Yes"
                                             data-i18n="yes_option">A. Yes</label>
                                     </div>
                                     <div class="form-check">
                                         <input id="WasteSegregation_No" name="waste_segregation" type="radio"
-                                            class="form-check-input" value="No" >
+                                            class="form-check-input" value="No" required>
                                         <label class="form-check-label" for="WasteSegregation_No"
                                             data-i18n="no_option">B. No</label>
                                     </div>
@@ -600,7 +655,7 @@
                                         your locality?</label>
                                     <div class="form-check">
                                         <input id="DecentralizationSolidWaste_Agree" name="decentralization_solid_waste"
-                                            type="radio" class="form-check-input" value="Agree" >
+                                            type="radio" class="form-check-input" value="Agree" required>
                                         <label class="form-check-label" for="DecentralizationSolidWaste_Agree"
                                             data-i18n="agree_option">A.
                                             Agree</label>
@@ -608,7 +663,7 @@
                                     <div class="form-check">
                                         <input id="DecentralizationSolidWaste_Disagree"
                                             name="decentralization_solid_waste" type="radio" class="form-check-input"
-                                            value="Disagree" >
+                                            value="Disagree" required>
                                         <label class="form-check-label" for="DecentralizationSolidWaste_Disagree"
                                             data-i18n="disagree_option">B.
                                             Disagree</label>
@@ -637,7 +692,7 @@
                                         data-i18n="neighborhood_safety_label">27. On a scale of 1 to 5, How safe do you
                                         feel in your neighborhood at night?</label>
                                     <input type="range" id="NeighborhoodSafetyNight" name="neighborhood_safety_night"
-                                        class="form-range range-slider" min="1" max="5" >
+                                        class="form-range range-slider" min="1" max="5" required>
                                 </div>
                                 <!-- 28th question -->
 
@@ -648,7 +703,7 @@
                                         1 to 5)</label>
                                     <input type="range" id="EmergencyServicesSatisfaction"
                                         name="emergency_services_satisfaction" class="form-range range-slider" min="1"
-                                        max="5" >
+                                        max="5" required>
                                 </div>
                             </div>
 
@@ -661,7 +716,7 @@
                                         accessibility of police services in our city? (Scale 1 to 5)</label>
                                     <input type="range" id="PoliceServicesSatisfaction"
                                         name="police_services_satisfaction" class="form-range range-slider" min="1"
-                                        max="5" >
+                                        max="5" required>
                                 </div>
                                 <!-- 30th question -->
 
@@ -670,7 +725,7 @@
                                         data-i18n="fire_services_satisfaction_label">30. Are you satisfied with the
                                         accessibility of fire services in our city? (Scale 1 to 5)</label>
                                     <input type="range" id="FireServicesSatisfaction" name="fire_services_satisfaction"
-                                        class="form-range range-slider" min="1" max="5" >
+                                        class="form-range range-slider" min="1" max="5" required>
                                 </div>
                             </div>
 
@@ -682,7 +737,7 @@
                                         accessibility of medical services in our city? (Scale 1 to 5)</label>
                                     <input type="range" id="MedicalServicesSatisfaction"
                                         name="medical_services_satisfaction" class="form-range range-slider" min="1"
-                                        max="5" >
+                                        max="5" required>
                                 </div>
                                 <!-- 32nd question -->
                                 <div class="col-md-5 my-2">
@@ -705,7 +760,7 @@
                                         you with the accessibility and quality of parks and green spaces in our
                                         city?</label>
                                     <input type="range" id="ParksSatisfaction" name="parks_satisfaction"
-                                        class="form-range range-slider" min="1" max="5" >
+                                        class="form-range range-slider" min="1" max="5" required>
                                 </div>
                                 <!-- 34th question -->
                                 <div class="col-md-5 my-2">
@@ -713,7 +768,7 @@
                                         data-i18n="distance_to_park_label">34. Distance (in km) from your home to the
                                         nearest park:</label>
                                     <input type="number" id="DistanceToPark" name="distance_to_park"
-                                        class="form-control" min="0" max="30" step="0.1" >
+                                        class="form-control" min="0" max="30" step="0.1" required>
                                 </div>
                             </div>
 
@@ -750,14 +805,14 @@
                                     <div class="form-check">
                                         <input id="UtilizationAbandonedQuarry_Necessary"
                                             name="utilization_abandoned_quarry" type="radio" class="form-check-input"
-                                            value="Necessary" >
+                                            value="Necessary" required>
                                         <label class="form-check-label" for="UtilizationAbandonedQuarry_Necessary"
                                             data-i18n="necessary_option_label">A. Necessary</label>
                                     </div>
                                     <div class="form-check">
                                         <input id="UtilizationAbandonedQuarry_NotNecessary"
                                             name="utilization_abandoned_quarry" type="radio" class="form-check-input"
-                                            value="Not Necessary" >
+                                            value="Not Necessary" required>
                                         <label class="form-check-label" for="UtilizationAbandonedQuarry_NotNecessary"
                                             data-i18n="not_necessary_option_label">B. Not Necessary</label>
                                     </div>
@@ -769,13 +824,13 @@
                                         like Mudakkathan, Ilanthaikulam, Angamalpuram and few others.</label>
                                     <div class="form-check">
                                         <input id="RevampingWaterBodies_Necessary" name="revamping_water_bodies"
-                                            type="radio" class="form-check-input" value="Necessary" >
+                                            type="radio" class="form-check-input" value="Necessary" required>
                                         <label class="form-check-label" for="RevampingWaterBodies_Necessary"
                                             data-i18n="necessary_option_label">A. Necessary</label>
                                     </div>
                                     <div class="form-check">
                                         <input id="RevampingWaterBodies_NotNecessary" name="revamping_water_bodies"
-                                            type="radio" class="form-check-input" value="Not Necessary" >
+                                            type="radio" class="form-check-input" value="Not Necessary" required>
                                         <label class="form-check-label" for="RevampingWaterBodies_NotNecessary"
                                             data-i18n="not_necessary_option_label">B. Not Necessary</label>
                                     </div>
@@ -790,13 +845,13 @@
                                         drain channels across Kirudhumal, Avaniapuram, and Periyar channel.</label>
                                     <div class="form-check">
                                         <input id="DesiltingDrainChannels_Necessary" name="desilting_drain_channels"
-                                            type="radio" class="form-check-input" value="Necessary" >
+                                            type="radio" class="form-check-input" value="Necessary" required>
                                         <label class="form-check-label" for="DesiltingDrainChannels_Necessary"
                                             data-i18n="necessary_option_label">A. Necessary</label>
                                     </div>
                                     <div class="form-check">
                                         <input id="DesiltingDrainChannels_NotNecessary" name="desilting_drain_channels"
-                                            type="radio" class="form-check-input" value="Not Necessary" >
+                                            type="radio" class="form-check-input" value="Not Necessary" required>
                                         <label class="form-check-label" for="DesiltingDrainChannels_NotNecessary"
                                             data-i18n="not_necessary_option_label">B. Not Necessary</label>
                                     </div>
@@ -809,13 +864,13 @@
                                         ecosystem?</label>
                                     <div class="form-check">
                                         <input id="RevitalizationWetlands_Necessary" name="revitalization_wetlands"
-                                            type="radio" class="form-check-input" value="Necessary" >
+                                            type="radio" class="form-check-input" value="Necessary" required>
                                         <label class="form-check-label" for="RevitalizationWetlands_Necessary"
                                             data-i18n="necessary_option_label">A. Necessary</label>
                                     </div>
                                     <div class="form-check">
                                         <input id="RevitalizationWetlands_NotNecessary" name="revitalization_wetlands"
-                                            type="radio" class="form-check-input" value="Not Necessary" >
+                                            type="radio" class="form-check-input" value="Not Necessary" required>
                                         <label class="form-check-label" for="RevitalizationWetlands_NotNecessary"
                                             data-i18n="not_necessary_option_label">B. Not Necessary</label>
                                     </div>
@@ -830,13 +885,13 @@
                                         species?</label>
                                     <div class="form-check">
                                         <input id="EcoPark_Necessary" name="eco_park" type="radio"
-                                            class="form-check-input" value="Necessary" >
+                                            class="form-check-input" value="Necessary" required>
                                         <label class="form-check-label" for="EcoPark_Necessary"
                                             data-i18n="necessary_option_label">A. Necessary</label>
                                     </div>
                                     <div class="form-check">
                                         <input id="EcoPark_NotNecessary" name="eco_park" type="radio"
-                                            class="form-check-input" value="Not Necessary" >
+                                            class="form-check-input" value="Not Necessary" required>
                                         <label class="form-check-label" for="EcoPark_NotNecessary"
                                             data-i18n="not_necessary_option_label">B. Not Necessary</label>
                                     </div>
@@ -860,13 +915,13 @@
                                         landscape and its importance on cultural identity.</label>
                                     <div class="form-check">
                                         <input id="TourismCircuit_Necessary" name="tourism_circuit" type="radio"
-                                            class="form-check-input" value="Necessary" >
+                                            class="form-check-input" value="Necessary" required>
                                         <label class="form-check-label" for="TourismCircuit_Necessary"
                                             data-i18n="necessary_option_label">A. Necessary</label>
                                     </div>
                                     <div class="form-check">
                                         <input id="TourismCircuit_NotNecessary" name="tourism_circuit" type="radio"
-                                            class="form-check-input" value="Not Necessary" >
+                                            class="form-check-input" value="Not Necessary" required>
                                         <label class="form-check-label" for="TourismCircuit_NotNecessary"
                                             data-i18n="not_necessary_option_label">B. Not Necessary</label>
                                     </div>
@@ -878,19 +933,24 @@
                                         businesses / products.</label>
                                     <div class="form-check">
                                         <input id="LocalBusinessInitiatives_Necessary" name="local_business_initiatives"
-                                            type="radio" class="form-check-input" value="Necessary" >
+                                            type="radio" class="form-check-input" value="Necessary" required>
                                         <label class="form-check-label" for="LocalBusinessInitiatives_Necessary"
                                             data-i18n="necessary_option_label">A. Necessary</label>
                                     </div>
                                     <div class="form-check">
                                         <input id="LocalBusinessInitiatives_NotNecessary"
                                             name="local_business_initiatives" type="radio" class="form-check-input"
-                                            value="Not Necessary" >
+                                            value="Not Necessary" required>
                                         <label class="form-check-label" for="LocalBusinessInitiatives_NotNecessary"
                                             data-i18n="not_necessary_option_label">B. Not Necessary</label>
                                     </div>
                                 </div>
                             </div>
+
+
+
+
+
 
                             <div class="row my-3 justify-content-center">
                                 <div class="col-md-10 my-2">

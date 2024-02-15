@@ -314,5 +314,16 @@
   "other_objections_label": "Other Objections (if any)",
   "loading_text": "Loading",
   "message_sent_text": "Your message has been sent. Thank you!",
-  "send_message_button": "Send Message"
+  "send_message_button": "Send Message",
+
+
+
+  "initiatives_to_protect_natural_habitats_title":"Initiatives to protect natural habitats title",
+  "heritage_tourism_development_title":"Heritage and Tourism Development",
+"initiatives_to_promote_heritage_title":"Of the below mentioned, what initiatives could be undertaken to promote Heritage, trade and economic growth?",
+
+"water_supply_frequency": "Water Supply Frequency",
+"water_stagnation_issues": "Water Stagnation Issues",
+"opinion_sewage_treatment": "Opinion on Sewage Treatment",
+"physical_infrastructure":"Physical Infrastructure"
 }

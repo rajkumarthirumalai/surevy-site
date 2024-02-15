@@ -297,5 +297,12 @@
   "local_business_initiatives_label": "44. உள்ளூர் வணிக உதவிகளை ஆராய்ச்சி / தயாரிப்புகளை ஆரம்பிக்கும் ஒருங்கிணைப்புகள் தேவையா?",
   "necessary_option_label": " தேவையானது",
   "not_necessary_option_label": " தேவையற்றது",
-  "additional_suggestions_label": "45. உங்களிடம் ஏதேனும் கூடுதல் பரிந்துரைகள் உள்ளதா ? குறிப்பிடவும்:"
+  "additional_suggestions_label": "45. உங்களிடம் ஏதேனும் கூடுதல் பரிந்துரைகள் உள்ளதா ? குறிப்பிடவும்:",
+  "initiatives_to_protect_natural_habitats_title": "இயற்கை நிலவுகளை பாதுகாக்க முயன்றுகொள்ளும் முயன்மைகள் தலைப்பு",
+  "heritage_tourism_development_title": "பாரம்பரியம் மற்றும் சுற்றுலா வளர்ச்சி முயற்சிகள் தலைப்பு",
+  "initiatives_to_promote_heritage_title": "பாரம்பரியத்தை, வர்த்தகத்தை மற்றும் பொருளாதார வளர்ச்சியை உயர்த்த முயற்சிகள் தலைப்பு",
+  "water_supply_frequency": "நீர் வழங்கும் அளவு",
+  "water_stagnation_issues": "நீர் நிரப்பு சிக்கல்கள்",
+  "opinion_sewage_treatment": "உச்சநீர் சிக்கல் சிகிச்சையின் கருத்து"
+
 }
