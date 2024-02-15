@@ -298,7 +298,6 @@
   "necessary_option_label": "A. Necessary",
   "not_necessary_option_label": "B. Not Necessary",
   "additional_suggestions_label": "45. Do you have any additional suggestions? Specify:",
-  "your_name_label": "Name of the person making objections and Suggestions",
   "mobile_label": "Mobile No*",
   "ward_label": "Ward*",
   "block_label": "Block*",
@@ -315,15 +314,12 @@
   "loading_text": "Loading",
   "message_sent_text": "Your message has been sent. Thank you!",
   "send_message_button": "Send Message",
-
-
-
-  "initiatives_to_protect_natural_habitats_title":"Initiatives to protect natural habitats title",
-  "heritage_tourism_development_title":"Heritage and Tourism Development",
-"initiatives_to_promote_heritage_title":"Of the below mentioned, what initiatives could be undertaken to promote Heritage, trade and economic growth?",
-
-"water_supply_frequency": "Water Supply Frequency",
-"water_stagnation_issues": "Water Stagnation Issues",
-"opinion_sewage_treatment": "Opinion on Sewage Treatment",
-"physical_infrastructure":"Physical Infrastructure"
+  "initiatives_to_protect_natural_habitats_title": "Initiatives to protect natural habitats title",
+  "heritage_tourism_development_title": "Heritage and Tourism Development",
+  "initiatives_to_promote_heritage_title": "Of the below mentioned, what initiatives could be undertaken to promote Heritage, trade and economic growth?",
+  "access_water_supply": "20. Do you have access to daily water supply at your residence?",
+  "water_supply_frequency": "21. Frequency (per day/two days once/etc):",
+  "water_stagnation_issues": "22. Water Stagnation Issues",
+  "opinion_sewage_treatment": "23. Opinion on Sewage Treatment",
+  "physical_infrastructure": "Physical Infrastructure"
 }
