@@ -26,7 +26,7 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/0abd9394cb.js" crossorigin="anonymous"></script>
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
 
@@ -64,8 +64,8 @@
                     </a></h5>
             </div>
 
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+
 
             <nav id="navbar" class="navbar">
                 <ul>
@@ -80,12 +80,13 @@
                             <li><a href="#demography" data-i18n="demography">Demography</a></li>
                             <li><a href="#spatial-growth" data-i18n="spatial_growth">Spatial Growth</a></li>
                             <li><a href="#vision" data-i18n="vision">Vision</a></li>
-                            <li><a href="#media" data-i18n="what_is_master_plan">Media</a></li>
+                            <li><a href="#media" data-i18n="media">Media</a></li>
+                            <li><a href="#faq" data-i18n="what_is_master_plan">FAQ</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#">
-                            <span data-i18n="tra2" >Downloads</span> <i class="bi bi-chevron-down"></i>
+                            <span data-i18n="tra2">Downloads</span> <i class="bi bi-chevron-down"></i>
                         </a>
                         <ul>
                             <li><a data-i18n="tra3" href="#LandUseMap">Land Use Map</a></li>
@@ -97,19 +98,19 @@
                             Proposal</a></li>
                     <li><a class="nav-link scrollto" href="#contact" data-i18n="feedback">Feedback</a></li>
                     <li>
-                        <a class="nav-link scrollto">
-                            <select id="language-selector" class="form-select mx-3"
+                        <span>
+                            <select id="language-selector" class="form-select mx-sm-5"
                                 style="border-radius: 25px; background-color: #37517e ;border:1px #47b2e4 solid; color: white;"
                                 onchange="changeLanguage(this.value)">
                                 <option value="en" data-i18n="english">English</option>
                                 <option value="ta" data-i18n="tamil">Tamil</option>
                             </select>
-                        </a>
+                        </span>
                     </li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
-        </div>
+                    </div>
     </header><!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
@@ -333,19 +334,20 @@
 
                     <div class="img-container col-lg-6">
                         <a id="image5" target="_blank" href="assets/pdf/PROPOSED MasterPlan Map - LPA.pdf">
-                            <img src="assets/img/pdfImages/overall.png" class="img-fluid my-2" alt="">
+                            <img src="assets/img/pdfImages/overall.png" class="img-fluid img-zoom my-2" alt="">
                         </a>
                         <a id="image1" target="_blank" href="assets/pdf/Corporation.pdf">
-                            <img src="assets/img/pdfImages/Corporation-pdf.png" class="img-fluid my-2" alt="">
+                            <img src="assets/img/pdfImages/Corporation-pdf.png" class="img-fluid img-zoom my-2" alt="">
                         </a>
                         <a id="image2" target="_blank" href="assets/pdf/Municipality.pdf">
-                            <img src="assets/img/pdfImages/Municipality-pdf.png" class="img-fluid my-2" alt="">
+                            <img src="assets/img/pdfImages/Municipality-pdf.png" class="img-fluid img-zoom my-2" alt="">
                         </a>
                         <a id="image3" target="_blank" href="assets/pdf/Town Panchayat.pdf">
-                            <img src="assets/img/pdfImages/Town-Panchayat-pdf.png" class="img-fluid my-2" alt="">
+                            <img src="assets/img/pdfImages/Town-Panchayat-pdf.png" class="img-fluid img-zoom my-2"
+                                alt="">
                         </a>
                         <a id="image4" target="_blank" href="assets/pdf/Villages.pdf">
-                            <img src="assets/img/pdfImages/Villages-pdf.png" class="img-fluid my-2" alt="">
+                            <img src="assets/img/pdfImages/Villages-pdf.png" class="img-fluid img-zoom my-2" alt="">
                         </a>
                     </div>
 
@@ -385,7 +387,7 @@
                     <div class="col-lg-6 py-2" data-aos="fade-up">
                         <!-- CUSTOM BLOCKQUOTE -->
                         <blockquote class="blockquote blockquote-custom bg-white shadow"
-                            style="border-left: #37517e 20px solid;">
+                            style="border-left: #37517e 10px solid;">
                             <br>
                             <h2 class="" data-i18n="tra23">First Master Plan</h2>
                             <h4 class="" data-i18n="1995_master_plan"><strong data-i18n="1995_master_plan">1995 Master
@@ -400,7 +402,7 @@
                     <div class="col-lg-6 py-2" data-aos="fade-up">
                         <!-- CUSTOM BLOCKQUOTE -->
                         <blockquote class="blockquote blockquote-custom bg-white shadow"
-                            style="border-left: #37517e 20px solid;">
+                            style="border-left: #37517e 10px solid;">
                             <br>
                             <h2 class="" data-i18n="tra24">Second Master Plan</h2>
                             <h4 class=""><strong data-i18n="master_plan_2021_2041">Master Plan 2021 – 2041</strong>
@@ -430,7 +432,7 @@
                 </div>
                 <div class="row justify-content-center align-content-center">
                     <div class="col-lg-10 text-center text-lg-start">
-                        <img src="assets/img/landuse28.jpg" class="img-fluid" alt="">
+                        <img src="assets/img/landuse28.jpg" class="img-fluid img-zoom" alt="">
                     </div>
                 </div>
             </div>
@@ -452,15 +454,15 @@
                             </div>
                             <h4 class="my-2"><a href="" data-i18n="population_distribution">Population Distribution </a>
                             </h4>
-                            <img class="card-img-top img-fluid" src="assets/img/ppt/7.jpg" height="80vh"
+                            <img class="card-img-top img-fluid img-zoom" src="assets/img/ppt/7.jpg" height="80vh"
                                 alt="Card image cap">
                             <h4 class="my-2"><a href="" data-i18n="tra27">Population Growth </a>
                             </h4>
-                            <img class="card-img-top img-fluid" src="assets/img/ppt/10.jpg" height="80vh"
+                            <img class="card-img-top img-fluid img-zoom" src="assets/img/ppt/10.jpg" height="80vh"
                                 alt="Card image cap">
                             <h4 class="my-2"><a href="" data-i18n="tra28">Population Density </a>
                             </h4>
-                            <img class="card-img-top img-fluid" src="assets/img/ppt/11.jpg" height="80vh"
+                            <img class="card-img-top img-fluid img-zoom" src="assets/img/ppt/11.jpg" height="80vh"
                                 alt="Card image cap">
                         </div>
                         <div class="" style="height: 50vh; overflow-y: auto;" data-aos-delay="200">
@@ -468,7 +470,7 @@
                                 <h4 data-i18n="tra29">ECONOMY</h4>
                             </div>
                             <h4 class="my-2"><a href="" data-i18n="tra30">INDUSTRIAL CLUSTERS</a></h4>
-                            <img class="card-img-top img-fluid" src="assets/img/ppt/6.jpg" height="80vh"
+                            <img class="card-img-top img-fluid img-zoom" src="assets/img/ppt/6.jpg" height="80vh"
                                 alt="Card image cap">
                         </div>
                         <div class="" style="height: 50vh; overflow-y: auto;" data-aos-delay="300">
@@ -476,10 +478,10 @@
                                 <h4 data-i18n="tra31">TRANSPORTATION</h4>
                             </div>
                             <h4 class="my-2"><a href="" data-i18n="tra32">Existing Road Network LPA</a></h4>
-                            <img class="card-img-top img-fluid" src="assets/img/ppt/8.jpg" height="80vh"
+                            <img class="card-img-top img-fluid img-zoom" src="assets/img/ppt/8.jpg" height="80vh"
                                 alt="Card image cap">
                             <h4 class="my-2"><a href="" data-i18n="tra33">Existing Road Network LPA</a></h4>
-                            <img class="card-img-top img-fluid" src="assets/img/ppt/9.jpg" height="80vh"
+                            <img class="card-img-top img-fluid img-zoom" src="assets/img/ppt/9.jpg" height="80vh"
                                 alt="Card image cap">
                         </div>
                         <div class="" style="height: 50vh; overflow-y: auto;" data-aos-delay="100">
@@ -489,16 +491,16 @@
                             <h4 class="my-2"><a href="" data-i18n="tra35">Waterbodies in LPA
                                 </a>
                             </h4>
-                            <img class="card-img-top img-fluid" src="assets/img/ppt/12.jpg" height="80vh"
+                            <img class="card-img-top img-fluid img-zoom" src="assets/img/ppt/12.jpg" height="80vh"
                                 alt="Card image cap">
                             <h4 class="my-2"><a href="" data-i18n="tra36">Ground Water Status
                                 </a>
                             </h4>
-                            <img class="card-img-top img-fluid" src="assets/img/ppt/13.jpg" height="80vh"
+                            <img class="card-img-top img-fluid img-zoom" src="assets/img/ppt/13.jpg" height="80vh"
                                 alt="Card image cap">
                             <h4 class="my-2"><a href="" data-i18n="tra37">Contour and Slope </a>
                             </h4>
-                            <img class="card-img-top img-fluid" src="assets/img/ppt/18.jpg" height="80vh"
+                            <img class="card-img-top img-fluid img-zoom" src="assets/img/ppt/18.jpg" height="80vh"
                                 alt="Card image cap">
                         </div>
                         <div class="" style="height: 50vh; overflow-y: auto;" data-aos-delay="100">
@@ -508,16 +510,16 @@
                             </div>
                             <h4 class="my-2"><a href="" data-i18n="tra39"> Schools</a>
                             </h4>
-                            <img class="card-img-top img-fluid" src="assets/img/ppt/15.jpg" height="80vh"
+                            <img class="card-img-top img-fluid img-zoom" src="assets/img/ppt/15.jpg" height="80vh"
                                 alt="Card image cap">
                             <h4 class="my-2"><a href="" data-i18n="tra40"> Colleges </a>
                             </h4>
-                            <img class="card-img-top img-fluid" src="assets/img/ppt/14.jpg" height="80vh"
+                            <img class="card-img-top img-fluid img-zoom" src="assets/img/ppt/14.jpg" height="80vh"
                                 alt="Card image cap">
                             <h4 class="my-2"><a href="" data-i18n="tra41"> Police Stations
                                 </a>
                             </h4>
-                            <img class="card-img-top img-fluid" src="assets/img/ppt/19.jpg" height="80vh"
+                            <img class="card-img-top img-fluid img-zoom" src="assets/img/ppt/19.jpg" height="80vh"
                                 alt="Card image cap">
                         </div>
                         <div class="" style="height: 50vh; overflow-y: auto;" data-aos-delay="100">
@@ -528,11 +530,11 @@
                             <h4 class="my-2"><a href="" data-i18n="tra43"> Over head tanks
                                 </a>
                             </h4>
-                            <img class="card-img-top img-fluid" src="assets/img/ppt/16.jpg" height="80vh"
+                            <img class="card-img-top img-fluid img-zoom" src="assets/img/ppt/16.jpg" height="80vh"
                                 alt="Card image cap">
                             <h4 class="my-2"><a href="" data-i18n="tra44"> Substations </a>
                             </h4>
-                            <img class="card-img-top img-fluid" src="assets/img/ppt/17.jpg" height="80vh"
+                            <img class="card-img-top img-fluid img-zoom" src="assets/img/ppt/17.jpg" height="80vh"
                                 alt="Card image cap">
                         </div>
                     </div>
@@ -558,7 +560,7 @@
                             <ul>
                                 <li>
                                     <p>
-                                       <span style="font-size: 25px;"  data-i18n="tra47">
+                                        <span style="font-size: 25px;" data-i18n="tra47">
                                             Vaigai River divide the city into two halves and development in the south
                                             side of the river is comparatively higher than the north side..
                                         </span>
@@ -566,8 +568,8 @@
                                 </li>
                                 <li>
                                     <p>
-                                        
-                                        <span style="font-size: 25px;"  data-i18n="tra49">
+
+                                        <span style="font-size: 25px;" data-i18n="tra49">
                                             Development in the North side is towards Melur and South towards
                                             Thirumangalam (SH-101).
 
@@ -576,8 +578,8 @@
                                 </li>
                                 <li>
                                     <p>
-                                        
-                                        <span style="font-size: 25px;"  data-i18n="tra51">
+
+                                        <span style="font-size: 25px;" data-i18n="tra51">
                                             Thirumangalam Municipality growing as a Commercial Hub next to Core City.
 
                                         </span>
@@ -586,19 +588,24 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-5 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="col-lg-5 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1"
+                        data-aos="zoom-in" data-aos-delay="150">
                         <div class="row ">
                             <div class="col-md-6">
                                 <h1>1980</h1>
-                                <img src="assets/img/ppt/2.jpg" alt="" data-aos="zoom-in" data-aos-delay="150" class="img-fluid p-2">
+                                <img src="assets/img/ppt/2.jpg" alt="" data-aos="zoom-in" data-aos-delay="150"
+                                    class="img-fluid img-zoom p-2">
                                 <h1>1990</h1>
-                                <img src="assets/img/ppt/3.jpg" alt="" data-aos="zoom-in" data-aos-delay="250" class="img-fluid p-2">
+                                <img src="assets/img/ppt/3.jpg" alt="" data-aos="zoom-in" data-aos-delay="250"
+                                    class="img-fluid img-zoom p-2">
                             </div>
                             <div class="col-md-6">
                                 <h1>2010</h1>
-                                <img src="assets/img/ppt/4.jpg" alt="" data-aos="zoom-in" data-aos-delay="350" class="img-fluid p-2">
+                                <img src="assets/img/ppt/4.jpg" alt="" data-aos="zoom-in" data-aos-delay="350"
+                                    class="img-fluid img-zoom p-2">
                                 <h1>2020</h1>
-                                <img src="assets/img/ppt/5.jpg" alt="" data-aos="zoom-in" data-aos-delay="450" class="img-fluid p-2">
+                                <img src="assets/img/ppt/5.jpg" alt="" data-aos="zoom-in" data-aos-delay="450"
+                                    class="img-fluid img-zoom p-2">
                             </div>
                         </div>
                         &nbsp;
@@ -633,11 +640,11 @@
                 <div class="row content justify-content-center align-content-center">
                     <div class="col-lg-6 justify-content-center align-content-center">
                         <h4 data-i18n="existing_land_use">Existing Land Use - 2021</h4>
-                        <img src="assets/img/existing.jpeg" class="img-fluid" width="60%" alt="">
+                        <img src="assets/img/existing.jpeg" class="img-fluid img-zoom" width="60%" alt="">
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0">
                         <h4 data-i18n="proposed_land_use">Proposed Land Use - 2041</h4>
-                        <img src="assets/img/masterplan/PROPOSED-MasterPlan-Map-LPA-pdf.png" class="img-fluid"
+                        <img src="assets/img/masterplan/PROPOSED-MasterPlan-Map-LPA-pdf.png" class="img-fluid img-zoom"
                             width="80%" alt="">
                     </div>
                 </div>
@@ -653,34 +660,34 @@
 
                     <div class="col-lg-5 justify-content-center align-content-center" id="GovermentOrder">
                         <h4 data-i18n="government_order">Government Order</h4>
-                        <a href="assets/pdf/Madurai master plan G.O.pdf">
+                        <a target="_blank" href="assets/pdf/Madurai master plan G.O.pdf">
                             <img src="assets/img/masterplan/govermentOrder.webp" class="img-fluid" width="80%" alt="">
                         </a>
                     </div>
                     <div class="col-lg-5 justify-content-center align-content-center">
                         <h4 data-i18n="tamilnadu_government_gazette">Tamilnadu Goverment Gazette</h4>
-                        <a href="assets/pdf/6_VI_1_2024.pdf">
+                        <a target="_blank" href="assets/pdf/6_VI_1_2024.pdf">
                             <img src="assets/img/pdfImages/6_VI_1_2024-pdf.png" class="img-fluid" width="80%" alt="">
                         </a>
                     </div>
                     <div class="row justify-content-center align-content-center mt-4" id="Schedule">
                         <div class="col-lg-3 justify-content-center align-content-center ">
                             <h4 data-i18n="madurai_master_plan_vol1">Madurai Master Plan LU Schedule-Vol-I(i)</h4>
-                            <a href="assets/pdf/Final Madurai - Vol 1 - Print.pdf">
+                            <a target="_blank" href="assets/pdf/Final Madurai - Vol 1 - Print.pdf">
                                 <img src="assets/img/pdfImages/Final-Madurai-Vol-1-Print-pdf.png" class="img-fluid"
                                     width="80%" alt="">
                             </a>
                         </div>
                         <div class="col-lg-3 justify-content-center align-content-center">
                             <h4 data-i18n="madurai_master_plan_vol2">Madurai Master Plan LU Schedule-Vol-I(ii)</h4>
-                            <a href="assets/pdf/Final Madurai Vol 2 - Print.pdf">
+                            <a target="_blank" href="assets/pdf/Final Madurai Vol 2 - Print.pdf">
                                 <img src="assets/img/pdfImages/Final-Madurai-Vol-1-Print-pdf.png" class="img-fluid"
                                     width="80%" alt="">
                             </a>
                         </div>
                         <div class="col-lg-3 justify-content-center align-content-center">
                             <h4 data-i18n="madurai_master_plan_vol3">Madurai Master Plan LU Schedule-Vol-I(iii)</h4>
-                            <a href="assets/pdf/Madurai Vol 3 - Print.pdf">
+                            <a target="_blank" href="assets/pdf/Madurai Vol 3 - Print.pdf">
                                 <img src="assets/img/pdfImages/Final-Madurai-Vol-1-Print-pdf.png" class="img-fluid"
                                     width="80%" alt="">
                             </a>
@@ -703,40 +710,43 @@
                 </ul>
                 <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/10.webp" class="img-fluid"
-                                alt=""></div>
+                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/10.webp"
+                                class="img-fluid img-zoom" alt=""></div>
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/2.webp" class="img-fluid" alt="">
+                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/2.webp"
+                                class="img-fluid img-zoom" alt="">
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/11.webp" class="img-fluid"
-                                alt=""></div>
+                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/11.webp"
+                                class="img-fluid img-zoom" alt=""></div>
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/3.webp" class="img-fluid" alt="">
+                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/3.webp"
+                                class="img-fluid img-zoom" alt="">
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/12.webp" class="img-fluid"
-                                alt=""></div>
+                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/12.webp"
+                                class="img-fluid img-zoom" alt=""></div>
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/13.webp" class="img-fluid"
-                                alt=""></div>
+                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/13.webp"
+                                class="img-fluid img-zoom" alt=""></div>
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/5.webp" class="img-fluid" alt="">
+                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/5.webp"
+                                class="img-fluid img-zoom" alt="">
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/14.webp" class="img-fluid"
-                                alt=""></div>
+                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/14.webp"
+                                class="img-fluid img-zoom" alt=""></div>
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/15.webp" class="img-fluid"
-                                alt=""></div>
+                        <div class="portfolio-img"><img src="assets/img/maduraiCurrent/15.webp"
+                                class="img-fluid img-zoom" alt=""></div>
                     </div>
                 </div>
             </div>
@@ -751,24 +761,27 @@
                 <div class="row justify-content-center"> <!-- Centering the row -->
                     <div class="col-lg-4 text-center"> <!-- Centering the column content -->
                         <h3>Scan to Site</h3>
-                        <img src="assets/img/madurailpa.png" alt="" class="img-fluid mx-auto d-block" style="max-width: 50%;" /> <!-- Centering the image -->
+                        <img src="assets/img/madurailpa.png" alt="" class="img-fluid img-zoom mx-auto d-block"
+                            style="max-width: 50%;" /> <!-- Centering the image -->
                     </div>
                     <div class="col-lg-4 text-center"> <!-- Centering the column content -->
                         <h3>Objections </h3>
-                        <img src="assets/img/objections.png" alt="" class="img-fluid mx-auto d-block" style="max-width: 50%;" /> <!-- Centering the image -->
+                        <img src="assets/img/objections.png" alt="" class="img-fluid img-zoom mx-auto d-block"
+                            style="max-width: 50%;" /> <!-- Centering the image -->
                     </div>
                     <div class="col-lg-4 text-center"> <!-- Centering the column content -->
                         <h3>Survey</h3>
-                        <img src="assets/img/maduraiSurvery.png" alt="" class="img-fluid mx-auto d-block" style="max-width: 50%;" /> <!-- Centering the image -->
+                        <img src="assets/img/maduraiSurvery.png" alt="" class="img-fluid img-zoom mx-auto d-block"
+                            style="max-width: 50%;" /> <!-- Centering the image -->
                     </div>
                 </div>
             </div>
-            
+
         </section>
 
         <!-- End potential Section -->
         <!-- ======= sc table section ======= -->
-        <section id="smart-city" section-bg>
+        <section id="project-proposal" section-bg>
             <div class="col-lg-10  mx-auto " data-aos="fade-up">
                 <div class="section-title text-left">
                     <h2 class="text-default" data-i18n="project_proposal">project Proposal</h2>
@@ -782,7 +795,8 @@
                                     Economy</h4>
                             </div>
 
-                            <img class="card-img-top img-fluid" src="assets/img/webp/image34.webp" alt="Card image cap">
+                            <img class="card-img-top img-fluid img-zoom" src="assets/img/webp/image34.webp"
+                                alt="Card image cap">
                             <div class="card-body">
                                 <ul>
                                     <li>
@@ -849,7 +863,7 @@
                         <div class="card" style="height: 80vh; overflow-y: auto;">
                             <div class="card-body">
                                 <h3 class="m-2 " style="font-weight: bolder;">1</h3>
-                                <img class="card-img-top img-fluid" src="assets/img/webp/image42.webp"
+                                <img class="card-img-top img-fluid img-zoom" src="assets/img/webp/image42.webp"
                                     alt="Card image cap">
                                 <div class="container">
                                     <div class="row">
@@ -904,8 +918,8 @@
                             <h3 class=" m-2" style="font-weight: bolder;">2</h3>
                             <div class="card-body">
                                 <div class="row mb-2">
-                                    <div class="col-md-6"><img class="img-fluid" src="assets/img/webp/image39.webp"
-                                            alt=""></div>
+                                    <div class="col-md-6"><img class="img-fluid img-zoom"
+                                            src="assets/img/webp/image39.webp" alt=""></div>
                                     <div class="col-md-6 mt-2">
                                         <small><b data-i18n="pedestrian_infrastructure">Improve
                                                 Pedestrian Infrastructure</b> - <span
@@ -919,12 +933,12 @@
                                                 data-i18n="in_airport_railway_station">in Airport and
                                                 Railway Station</span></small>
                                     </div>
-                                    <div class="col-md-6"><img class="img-fluid" src="assets/img/webp/image40.webp"
-                                            alt=""></div>
+                                    <div class="col-md-6"><img class="img-fluid img-zoom"
+                                            src="assets/img/webp/image40.webp" alt=""></div>
                                 </div>
                                 <div class="row mb-2">
-                                    <div class="col-md-6"><img class="img-fluid" src="assets/img/webp/image41.webp"
-                                            alt=""></div>
+                                    <div class="col-md-6"><img class="img-fluid img-zoom"
+                                            src="assets/img/webp/image41.webp" alt=""></div>
                                     <div class="col-md-6 mt-2">
                                         <small><b data-i18n="parking_smart_city_proposals">Parking -
                                                 Smart City Proposals On</b> - <span
@@ -943,7 +957,7 @@
                                     <h4 class="p-2" data-i18n="proposals_for_blue_green">PROPOSALS FOR BLUE
                                         & GREEN</h4>
                                 </div>
-                                <img class="card-img-top img-fluid" src="assets/img/webp/image47.webp"
+                                <img class="card-img-top img-fluid img-zoom" src="assets/img/webp/image47.webp"
                                     alt="Card image cap">
                                 <div class="row p-2 m-2 border border-success rounded"
                                     style="background-color:#c8de9f ;">
@@ -974,7 +988,7 @@
                         <div class="card" style="height: 80vh; overflow-y: auto;">
                             <div class="card-body">
                                 <h3 class="text-success" style="font-weight: bolder;">1</h3>
-                                <img class="card-img-top img-fluid" src="assets/img/webp/image48.webp"
+                                <img class="card-img-top img-fluid img-zoom" src="assets/img/webp/image48.webp"
                                     alt="Card image cap">
                                 <img class="card-img-top" src="assets/img/webp/image53.webp" alt="Card image cap">
                                 <img class="card-img-top" src="assets/img/webp/image54.webp" alt="Card image cap">
@@ -998,18 +1012,18 @@
                                     Blue-Green Infrastructure.</h6>
                                 <p data-i18n="vaigai_front">Vaigai Front : River + Parks + NMT Pathways
                                 </p>
-                                <img class="card-img-top img-fluid" src="assets/img/webp/image55.webp"
+                                <img class="card-img-top img-fluid img-zoom" src="assets/img/webp/image55.webp"
                                     alt="Card image cap">
                                 <div>
                                     <h6 class="text-success pt-2" data-i18n="channel_parks_jogging_cycling_tracks">
                                         Channel + Parks
                                         + Jogging cycling Tracks, Activity area For a stretch of 7 km.
                                     </h6>
-                                    <img class="card-img-top img-fluid" src="assets/img/webp/image56.webp"
+                                    <img class="card-img-top img-fluid img-zoom" src="assets/img/webp/image56.webp"
                                         alt="Card image cap">
                                 </div>
                                 <div>
-                                    <img class="card-img-top img-fluid" src="assets/img/webp/image49.webp"
+                                    <img class="card-img-top img-fluid img-zoom" src="assets/img/webp/image49.webp"
                                         alt="Card image cap">
                                     <h6 style="color: #c8de9f;" data-i18n="ghats_development">Ghats
                                         development</h6>
@@ -1026,7 +1040,7 @@
                                     zones in LPA</h6>
                                 <p data-i18n="increasing_ground_water_recharge">Increasing Groundwater
                                     Recharge</p>
-                                <img class="card-img-top img-fluid" src="assets/img/webp/image57.webp"
+                                <img class="card-img-top img-fluid img-zoom" src="assets/img/webp/image57.webp"
                                     alt="Card image cap">
                                 <div>
                                     <h6 class="text-success pt-2" data-i18n="land_reclamation_near_vacant_lands">
@@ -1061,11 +1075,11 @@
                                 <h3 class="text-success" style="font-weight: bolder;">4</h3>
                                 <h6 data-i18n="enhancement_of_existing_green_and_blue_cover_in_lpa">
                                     Enhancement of existing green and blue cover in LPA</h6>
-                                <img class="card-img-top img-fluid" src="assets/img/webp/image51.webp"
+                                <img class="card-img-top img-fluid img-zoom" src="assets/img/webp/image51.webp"
                                     alt="Card image cap">
                                 <p data-i18n="urban_forestry_in_ambalathadi">Urban Forestry in -
                                     Ambalathadi - 9 pt 1.00 acre.</p>
-                                <img class="card-img-top img-fluid" src="assets/img/webp/image52.webp"
+                                <img class="card-img-top img-fluid img-zoom" src="assets/img/webp/image52.webp"
                                     alt="Card image cap">
                                 <p data-i18n="reclamation_of_abandoned_quarries">Reclamation of
                                     Abandoned quarries at Vandiyur (2.63 ha) Katchaikatti (6.62 ha)
@@ -1084,7 +1098,7 @@
             </div>
 
         </section><!-- End sc table Section -->
-
+        <span id="faq"></span>
         <div class="section-title">
             <h2 data-i18n="tra53">FAQ's</h2>
         </div>
@@ -1096,7 +1110,7 @@
                         <h2 class="accordion-header" id="flush-headingOne-new">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseOne-new" aria-expanded="false"
-                                aria-controls="flush-collapseOne-new"  data-i18n="tra54">
+                                aria-controls="flush-collapseOne-new" data-i18n="tra54">
                                 What is Master Plan?
                             </button>
                         </h2>
@@ -1104,19 +1118,34 @@
                             aria-labelledby="flush-headingOne-new" data-bs-parent="#accordionFlushExample2">
                             <div class="accordion-body">
                                 <ul>
-                                    <li data-i18n="tra55">The manner in which the land in the planning area shall be used;</li>
-                                    <li data-i18n="tra56">The allotment or reservation of land for residential, commercial, industrial,and agricultural purposes and for parks, play-fields, and open spaces;</li>
-                                    <li data-i18n="tra57">The allotment and reservation of land for public buildings, institutions, andfor civic amenities;</li>
-                                    <li data-i18n="tra58">The making of provision for national highways, arterial roads, ring roads, major streets, lines of communication including railways, airports, and canals;</li>
-                                    <li data-i18n="tra59">The traffic and transportation pattern and traffic circulation pattern;</li>
+                                    <li data-i18n="tra55">The manner in which the land in the planning area shall be
+                                        used;</li>
+                                    <li data-i18n="tra56">The allotment or reservation of land for residential,
+                                        commercial, industrial,and agricultural purposes and for parks, play-fields, and
+                                        open spaces;</li>
+                                    <li data-i18n="tra57">The allotment and reservation of land for public buildings,
+                                        institutions, andfor civic amenities;</li>
+                                    <li data-i18n="tra58">The making of provision for national highways, arterial roads,
+                                        ring roads, major streets, lines of communication including railways, airports,
+                                        and canals;</li>
+                                    <li data-i18n="tra59">The traffic and transportation pattern and traffic circulation
+                                        pattern;</li>
                                     <li data-i18n="tra60">The major road and street improvements;</li>
-                                    <li data-i18n="tra61">The areas reserved for future development, expansion, and for new housing;</li>
-                                    <li data-i18n="tra62">The provision for the improvement of areas of bad layout or obsolete development and slum areas and for relocation of population;</li>
+                                    <li data-i18n="tra61">The areas reserved for future development, expansion, and for
+                                        new housing;</li>
+                                    <li data-i18n="tra62">The provision for the improvement of areas of bad layout or
+                                        obsolete development and slum areas and for relocation of population;</li>
                                     <li data-i18n="tra63">The amenities, services, and utilities;</li>
-                                    <li data-i18n="tra64">The provision for detailed development of specific areas for housing, shopping,industries, and civic amenities and educational and cultural facilities;</li>
-                                    <li data-i18n="tra65">The control of architectural features, elevation, and frontage of buildings and structures;</li>
-                                    <li data-i18n="tra66">The provision for regulating the zone, the location, height, number of storeys and size of buildings and other structures, the size of the yards and other open spaces and the use of buildings, structures, and land;</li>
-                                    <li data-i18n="tra67">The stages by which the Master Plan shall be carried out; and such other matters as may be prescribed.</li>
+                                    <li data-i18n="tra64">The provision for detailed development of specific areas for
+                                        housing, shopping,industries, and civic amenities and educational and cultural
+                                        facilities;</li>
+                                    <li data-i18n="tra65">The control of architectural features, elevation, and frontage
+                                        of buildings and structures;</li>
+                                    <li data-i18n="tra66">The provision for regulating the zone, the location, height,
+                                        number of storeys and size of buildings and other structures, the size of the
+                                        yards and other open spaces and the use of buildings, structures, and land;</li>
+                                    <li data-i18n="tra67">The stages by which the Master Plan shall be carried out; and
+                                        such other matters as may be prescribed.</li>
                                 </ul>
                             </div>
                         </div>
@@ -1135,9 +1164,17 @@
                             aria-labelledby="flush-headingTwo-new" data-bs-parent="#accordionFlushExample2">
                             <div class="accordion-body">
                                 <ul>
-                                    <li data-i18n="tra69">As the Master Plan is the document that prescribes land use, development control and building regulations, and policy recommendations that are adopted by different government departments, it plays a crucial role in defining the direction of growth of the city.</li>
-                                    <li data-i18n="tra70">The Master Plan is important for investors and businesses to identify priority areas of interest and ensure that the development is in line with the government’s vision.</li>
-                                    <li data-i18n="tra71">More importantly, the Master Plan is important to every citizen as the city’s growth affects everyday matters like the use of natural resources, transport, health, inclusivity, safety, quality of life, access to green spaces, vibrant public spaces, etc.</li>
+                                    <li data-i18n="tra69">As the Master Plan is the document that prescribes land use,
+                                        development control and building regulations, and policy recommendations that
+                                        are adopted by different government departments, it plays a crucial role in
+                                        defining the direction of growth of the city.</li>
+                                    <li data-i18n="tra70">The Master Plan is important for investors and businesses to
+                                        identify priority areas of interest and ensure that the development is in line
+                                        with the government’s vision.</li>
+                                    <li data-i18n="tra71">More importantly, the Master Plan is important to every
+                                        citizen as the city’s growth affects everyday matters like the use of natural
+                                        resources, transport, health, inclusivity, safety, quality of life, access to
+                                        green spaces, vibrant public spaces, etc.</li>
                                 </ul>
                             </div>
                         </div>
@@ -1156,8 +1193,10 @@
                             aria-labelledby="flush-headingThree-new" data-bs-parent="#accordionFlushExample2">
                             <div class="accordion-body">
                                 <ul>
-                                    <li data-i18n="tra73">The Master Plan is a broad, strategic document that outlines the vision and strategy for a city and is not meant to be a blueprint.</li>
-                                    <li data-i18n="tra74">Using the Master Plan as a guide, Detailed Development Plans (DDPs) and Local Area Plans (LAPs) are made.</li>
+                                    <li data-i18n="tra73">The Master Plan is a broad, strategic document that outlines
+                                        the vision and strategy for a city and is not meant to be a blueprint.</li>
+                                    <li data-i18n="tra74">Using the Master Plan as a guide, Detailed Development Plans
+                                        (DDPs) and Local Area Plans (LAPs) are made.</li>
                                 </ul>
                             </div>
                         </div>
@@ -1210,6 +1249,17 @@
         <!-- End Contact Section -->
 
     </main><!-- End #main -->
+    <!-- Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="" class="img-fluid img-zoom" alt="Zoomed Image">
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- ======= Footer ======= -->
     <footer id="footer">
         <!-- <div class="footer-newsletter">
@@ -1225,56 +1275,37 @@
         </div>
       </div>
     </div> -->
-        <!-- <div class="footer-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Arsha</h3>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-          </div>
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Social Networks</h4>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-md-6 footer-contact">
+                        <h4>District town and country planning office Madurai district</h4>
+                        <p>
+                            Sector VI anayur, <br>
+                            mudakkathan main road, koodal pudur,<br>
+                            Madurai, Tamil Nadu 625017 <br><br>
+                            <strong>Email:</strong>lpamadurai@gmail.com<br>
+                        </p>
+                    </div>
+                    <div class=" col-md-6 footer-links">
+                        <h4>Our Social Networks</h4>
+                        <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+                        <div class="social-links mt-3">
+                            <a href="https://twitter.com/lpa_madurai" class="twitter"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://www.instagram.com/lpa_madurai" class="instagram"><i
+                                    class="bx bxl-instagram"></i></a>
+                            <!-- <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> -->
+                            <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+                            <!-- <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div> -->
         <div class="container footer-bottom clearfix">
             <div class="copyright">
-                <!-- &copy; Designed by <strong><span>Rajkumar</span></strong>. -->
+                &copy; Designed by <strong><span>Rajkumar</span></strong>.
             </div>
             <div class="credits">
                 <!-- All the links in the footer should remain intact. -->

@@ -344,3 +344,10 @@ function showImage(imageNumber) {
   document.getElementById('image' + imageNumber).style.display = 'block';
 }
 
+$(document).ready(function(){
+  $('.img-zoom').click(function(){
+    var imgSrc = $(this).attr('src');
+    $('#imageModal img').attr('src', imgSrc);
+    $('#imageModal').modal('show');
+  });
+});
