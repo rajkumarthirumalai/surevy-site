@@ -265,11 +265,11 @@ $(function() {
             loop: true,
             stagePadding: 0,
             margin: 20,
-            smartSpeed: 1000,
+            smartSpeed: 8000,
             autoplay: true,
             nav: true,
             dots: true,
-            pauseOnHover: false,
+            pauseOnHover: true,
             responsive:{
                 600:{
                     margin: 20,
