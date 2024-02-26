@@ -1,12 +1,13 @@
 <?php
+// Database connection parameters
 // $servername = "localhost";
-// $username = "madurailpaadmin";
-// $password = "madurailpa";
+// $username = "root";
+// $password = "";
 // $dbname = "i9765003_gpve1";
 
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "i9765003_gpve1";
+$password = "madurailpa";
 $dbname = "i9765003_gpve1";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -28,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST['form_type'] == "feedback") {
 
     if ($conn->query($sql) === TRUE) {
         echo "Feedback submitted successfully";
-    } else {
+            } else {
         echo "Error: " . $conn->error;
     }
 }
@@ -55,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST['form_type'] == "objections")
 
     if ($conn->query($sql) === TRUE) {
         echo "Objections submitted successfully";
-    } else {
+            } else {
         echo "Error: " . $conn->error;
     }
 }

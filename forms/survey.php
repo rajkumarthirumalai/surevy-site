@@ -1,13 +1,14 @@
 <?php
+// Database connection parameters
 // $servername = "localhost";
-// $username = "madurailpaadmin";
-// $password = "madurailpa";
+// $username = "root";
+// $password = "";
 // $dbname = "i9765003_gpve1";
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "i9765003_gpve1";
 
+$servername = "localhost";
+$username = "i9765003_gpve1";
+$password = "madurailpa";
+$dbname = "i9765003_gpve1";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -16,7 +17,6 @@ if ($conn->connect_error) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  var_dump($_POST);
   $age = $_POST['age'];
   $sex = $_POST['sex'];
   $locality = $_POST['locality'];
@@ -80,7 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
   } else {
-    echo "Error: " . $conn->error;
+
   }
 }
 
