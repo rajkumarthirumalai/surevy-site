@@ -185,28 +185,3 @@ Stack trace:
 [29-Feb-2024 04:33:46 UTC] PHP Warning:  Undefined array key "feedback" in /home/kauju2a1k0ol/public_html/forms/feedbacksview.php on line 56
 [29-Feb-2024 09:06:25 UTC] PHP Warning:  Undefined array key "feedback" in /home/kauju2a1k0ol/public_html/forms/feedbacksview.php on line 56
 [29-Feb-2024 09:06:25 UTC] PHP Warning:  Undefined array key "feedback" in /home/kauju2a1k0ol/public_html/forms/feedbacksview.php on line 56
-[01-Mar-2024 12:11:29 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 't receive any proper notices or newspaper notices regarding road formation in...' at line 1 in /home/kauju2a1k0ol/public_html/forms/feedback.php:57
-Stack trace:
-#0 /home/kauju2a1k0ol/public_html/forms/feedback.php(57): mysqli->query()
-#1 {main}
-  thrown in /home/kauju2a1k0ol/public_html/forms/feedback.php on line 57
-[01-Mar-2024 12:11:38 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 't receive any proper notices or newspaper notices regarding road formation in...' at line 1 in /home/kauju2a1k0ol/public_html/forms/feedback.php:57
-Stack trace:
-#0 /home/kauju2a1k0ol/public_html/forms/feedback.php(57): mysqli->query()
-#1 {main}
-  thrown in /home/kauju2a1k0ol/public_html/forms/feedback.php on line 57
-[02-Mar-2024 23:38:18 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 're reading this message proving that contact form advertising works! I can bl...' at line 1 in /home/kauju2a1k0ol/public_html/forms/feedback.php:30
-Stack trace:
-#0 /home/kauju2a1k0ol/public_html/forms/feedback.php(30): mysqli->query()
-#1 {main}
-  thrown in /home/kauju2a1k0ol/public_html/forms/feedback.php on line 30
-[04-Mar-2024 16:04:16 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 's a low-cost and effective way to advertise your offer.Contact me by email or...' at line 1 in /home/kauju2a1k0ol/public_html/forms/feedback.php:30
-Stack trace:
-#0 /home/kauju2a1k0ol/public_html/forms/feedback.php(30): mysqli->query()
-#1 {main}
-  thrown in /home/kauju2a1k0ol/public_html/forms/feedback.php on line 30
-[04-Mar-2024 19:07:51 UTC] PHP Warning:  Undefined array key "feedback" in /home/kauju2a1k0ol/public_html/forms/feedbacksview.php on line 56
-[04-Mar-2024 19:07:51 UTC] PHP Warning:  Undefined array key "feedback" in /home/kauju2a1k0ol/public_html/forms/feedbacksview.php on line 56
-[04-Mar-2024 19:07:51 UTC] PHP Warning:  Undefined array key "feedback" in /home/kauju2a1k0ol/public_html/forms/feedbacksview.php on line 56
-[04-Mar-2024 19:07:51 UTC] PHP Warning:  Undefined array key "feedback" in /home/kauju2a1k0ol/public_html/forms/feedbacksview.php on line 56
-[04-Mar-2024 19:07:51 UTC] PHP Warning:  Undefined array key "feedback" in /home/kauju2a1k0ol/public_html/forms/feedbacksview.php on line 56
