@@ -351,3 +351,30 @@ $(document).ready(function(){
     $('#imageModal').modal('show');
   });
 });
+
+// Function to lazy load sections
+function lazyLoadSections() {
+  const sections = document.querySelectorAll('section');
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1 // Trigger when 10% of the section is visible
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible'); // Add a class to trigger CSS animations, if needed
+        observer.unobserve(entry.target); // Stop observing once section is visible
+      }
+    });
+  }, observerOptions);
+
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+}
+
+// Call the lazyLoadSections function when the page is loaded
+document.addEventListener('DOMContentLoaded', lazyLoadSections);
