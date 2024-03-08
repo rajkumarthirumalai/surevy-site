@@ -36,6 +36,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST['form_type'] == "feedback") {
 
 // Handle second form submission
 if ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST['form_type'] == "objections") {
+    $uploads_dir = 'uploads/'; // Specify the directory where you want to save the uploaded files
+
+if (!empty($_FILES['files']['name'][0])) {
+    foreach ($_FILES['files']['name'] as $key => $val) {
+        $file_name = basename($_FILES['files']['name'][$key]);
+        $file_tmp = $_FILES['files']['tmp_name'][$key];
+        $file_dest = $uploads_dir . $file_name;
+
+        if (move_uploaded_file($file_tmp, $file_dest)) {
+            // File uploaded successfully
+        } else {
+            // Error uploading file
+            echo "Error uploading file: " . $file_name;
+        }
+    }
+}
+
     $name = $_POST['name'];
     $mobile = $_POST['mobile'];
     $ward = $_POST['ward'];
@@ -50,9 +67,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST['form_type'] == "objections")
     $consented_land_use = $_POST['consented_land_use'];
     $suggested_land_use = $_POST['suggested_land_use'];
     $other_objections = $_POST['other_objections'];
+    $file_names = implode(",", $_FILES['files']['name']);
 
-    // Insert data into the objections table
-    $sql = "INSERT INTO objections (name, mobile, ward, block, ts_no, taluk, village, survey_no, sub_division_no, patta_no, land_use_category, consented_land_use, suggested_land_use, other_objections) VALUES ('$name', '$mobile', '$ward', '$block', '$ts_no', '$taluk', '$village', '$survey_no', '$sub_division_no', '$patta_no', '$land_use_category', '$consented_land_use', '$suggested_land_use', '$other_objections')";
+    $sql = "INSERT INTO objections (name, mobile, ward, block, ts_no, taluk, village, survey_no, sub_division_no, patta_no, land_use_category, consented_land_use, suggested_land_use, other_objections, file_names) VALUES ('$name', '$mobile', '$ward', '$block', '$ts_no', '$taluk', '$village', '$survey_no', '$sub_division_no', '$patta_no', '$land_use_category', '$consented_land_use', '$suggested_land_use', '$other_objections', '$file_names')";
 
     if ($conn->query($sql) === TRUE) {
         echo "Objections submitted successfully";

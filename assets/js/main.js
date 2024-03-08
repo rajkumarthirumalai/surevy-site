@@ -378,3 +378,34 @@ function lazyLoadSections() {
 
 // Call the lazyLoadSections function when the page is loaded
 document.addEventListener('DOMContentLoaded', lazyLoadSections);
+
+$(document).ready(function() {
+  $('#files').on('change', function() {
+      var fileList = this.files;
+      var fileListContainer = $('#file-list');
+      fileListContainer.empty(); // Clear previous file list
+
+      // Display selected files
+      for (var i = 0; i < fileList.length; i++) {
+          var fileItem = $('<div class="file-item">' + fileList[i].name + ' <span class="remove-file" data-index="' + i + '">Remove</span></div>');
+          fileListContainer.append(fileItem);
+      }
+  });
+
+  // Remove file on click (event delegation)
+  $('#file-list').on('click', '.remove-file', function() {
+      var index = $(this).data('index');
+      var fileList = $('#files')[0].files;
+      var updatedFileList = Array.from(fileList).filter(function(file, i) {
+          return i !== index;
+      });
+
+      var dataTransfer = new DataTransfer();
+      updatedFileList.forEach(function(file) {
+          dataTransfer.items.add(file);
+      });
+
+      $('#files')[0].files = dataTransfer.files;
+      $(this).parent().remove();
+  });
+});
