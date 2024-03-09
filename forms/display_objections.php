@@ -43,6 +43,27 @@ $html_output .= "<title>Objections Data</title>\n";
 $html_output .= "<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'>\n";
 $html_output .= "</head>\n";
 $html_output .= "<body>\n";
+// Navbar
+$html_output .= "<nav class='navbar navbar-expand-lg navbar-dark bg-dark'>\n";
+$html_output .= "<a class='navbar-brand' href='././display_objections.php'>Dashboard</a>\n";
+$html_output .= "<button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>\n";
+$html_output .= "<span class='navbar-toggler-icon'></span>\n";
+$html_output .= "</button>\n";
+$html_output .= "<div class='collapse navbar-collapse' id='navbarSupportedContent'>\n";
+$html_output .= "<ul class='navbar-nav mr-auto'>\n";
+$html_output .= "<li class='nav-item'>\n";
+$html_output .= "<a class='nav-link' href='./display_objections.php'>Display Objections</a>\n";
+$html_output .= "</li>\n";
+$html_output .= "<li class='nav-item'>\n";
+$html_output .= "<a class='nav-link' href='./feedbacksview.php'>Feedbacks View</a>\n";
+$html_output .= "</li>\n";
+$html_output .= "<li class='nav-item'>\n";
+$html_output .= "<a class='nav-link' href='./surveyview.php'>Survey View</a>\n";
+$html_output .= "</li>\n";
+$html_output .= "</ul>\n";
+$html_output .= "</div>\n";
+$html_output .= "</nav>\n";
+
 $html_output .= "<div >\n";
 $html_output .= "<h1>Objections Data</h1>\n";
 $html_output .= "<table class='table table-bordered'>\n";
